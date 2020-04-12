@@ -13,32 +13,34 @@ const BlogList = ({ allBlogs }) => {
 
   return (
     <>
-      <ul className="list">
-        {allBlogs.length > 1 &&
-          allBlogs.map((post) => (
-            <Link key={post.slug} href={{ pathname: `/blog/${post.slug}` }}>
-              <a>
-                <li>
-                  <div className="hero_image">
-                    <img
-                      src={post.frontmatter.hero_image}
-                      alt={post.frontmatter.hero_image}
+      {allBlogs.length > 1 &&
+        allBlogs.map((post) => (
+          <Link key={post.slug} href={{ pathname: `/blog/${post.slug}` }}>
+            <div class="column">
+              <div class="box blog-post">
+                <div className="hero_image">
+                  <img
+                    src={post.frontmatter.hero_image}
+                    alt={post.frontmatter.hero_image}
+                  />
+                </div>
+                <div className="blog__info">
+                  <h3 class="title is-4">{post.frontmatter.title}</h3>
+                  <div class="date">
+                    <span class="tag">
+                      {reformatDate(post.frontmatter.date)}
+                    </span>
+                  </div>
+                  <p>
+                    <ReactMarkdown
+                      source={truncateSummary(post.markdownBody)}
                     />
-                  </div>
-                  <div className="blog__info">
-                    <h2>{post.frontmatter.title}</h2>
-                    <h3> {reformatDate(post.frontmatter.date)}</h3>
-                    <p>
-                      <ReactMarkdown
-                        source={truncateSummary(post.markdownBody)}
-                      />
-                    </p>
-                  </div>
-                </li>
-              </a>
-            </Link>
-          ))}
-      </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </Link>
+        ))}
     </>
   );
 };

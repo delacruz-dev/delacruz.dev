@@ -1,13 +1,20 @@
 import matter from "gray-matter";
 import BlogList from "../../components/blog-list";
 import Layout from "../../components/layout";
+import Navbar from "../../components/navbar";
+import Footer from "../../components/footer";
 
 const Index = ({ posts }) => {
   return (
     <Layout>
-      <section>
-        <BlogList allBlogs={posts} />
+      <Navbar />
+      <section id="blog" class="section has-background-white-ter">
+        <div class="container has-text-centered">
+          <h2 class="title">Artículos recientes</h2>
+          <BlogList allBlogs={posts} />
+        </div>
       </section>
+      <Footer />
     </Layout>
   );
 };
