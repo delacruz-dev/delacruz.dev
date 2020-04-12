@@ -1,6 +1,6 @@
 ---
 title: "The change is in you"
-date: 2016-12-27
+date: "2016-12-27"
 draft: false
 hide: true
 frontImageSrc: https://cdn-images-1.medium.com/max/2600/1*rc1DGx9OQ1ZCmQXJ6shVLw.jpeg

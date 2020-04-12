@@ -9,8 +9,12 @@
     "phoenix": "rm -rf node_modules package-lock.json && npm install"
   },
   "dependencies": {
+    "glob": "^7.1.6",
+    "gray-matter": "^4.0.2",
     "next": "^9.3.4",
+    "raw-loader": "^4.0.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-markdown": "^4.3.1"
   }
 }

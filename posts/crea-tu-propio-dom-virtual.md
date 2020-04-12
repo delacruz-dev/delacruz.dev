@@ -1,6 +1,6 @@
 ---
 title: "Crea tu propio DOM Virtual"
-date: 2017-12-29
+date: "2017-12-29"
 draft: false
 frontImageSrc: /images/blog-images/virtual-dom-header.jpeg
 ---

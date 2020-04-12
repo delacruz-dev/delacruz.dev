@@ -1,6 +1,6 @@
 ---
 title: "Cómo he organizado mi plan de aprendizaje para 2019"
-date: 2019-01-20
+date: "2019-01-20"
 draft: false
 frontImageSrcSet: '/images/blog-images/learning-plah-header/learning-plah-header_iotvbi_c_scale,w_200.jpg 200w,
 /images/blog-images/learning-plah-header/learning-plah-header_iotvbi_c_scale,w_434.jpg 434w,

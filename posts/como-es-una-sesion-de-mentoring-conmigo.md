@@ -1,6 +1,6 @@
 ---
 title: "¿Cómo es una sesión de mentoring conmigo?"
-date: 2019-09-01
+date: "2019-09-01"
 draft: false
 frontImageSrcSet: '/images/blog-images/como-es-una-sesion-de-mentoring-conmigo/como-es-una-sesion-de-mentoring-conmigo_byipdf_c_scale,w_200.jpg 200w,
 /images/blog-images/como-es-una-sesion-de-mentoring-conmigo/como-es-una-sesion-de-mentoring-conmigo_byipdf_c_scale,w_444.jpg 444w,
