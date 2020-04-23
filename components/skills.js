@@ -20,7 +20,7 @@ function Skills() {
                 <nav className="panel">
                   <div className="panel-block">
                     <span className="panel-icon">
-                      <i className="fas fa-code" aria-hidden="true"></i>
+                      ⚛️
                     </span>
                     Front end development
                     <div className="tags">
@@ -34,7 +34,7 @@ function Skills() {
                   </div>
                   <div className="panel-block">
                     <span className="panel-icon">
-                      <i className="fas fa-server" aria-hidden="true"></i>
+                      💻
                     </span>
                     Back end development
                     <div className="tags">
@@ -47,7 +47,7 @@ function Skills() {
                   </div>
                   <div className="panel-block">
                     <span className="panel-icon">
-                      <i className="fas fa-undo-alt" aria-hidden="true"></i>
+                      ⟲
                     </span>
                     Agile mindset
                     <div className="tags">
@@ -60,7 +60,7 @@ function Skills() {
                   </div>
                   <div className="panel-block">
                     <span className="panel-icon">
-                      <i className="fas fa-magic" aria-hidden="true"></i>
+                      🤖
                     </span>
                     Testing Automation
                     <div className="tags">
@@ -73,7 +73,7 @@ function Skills() {
                   </div>
                   <div className="panel-block">
                     <span className="panel-icon">
-                      <i className="fas fa-comments" aria-hidden="true"></i>
+                      💬
                     </span>
                     Behavioural skills
                     <div className="tags">

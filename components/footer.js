@@ -3,9 +3,9 @@ function Footer() {
     <footer className="footer section has-background-light">
       <div className="content has-text-centered">
         <p>
-          hecho a mano con ❤️por&nbsp;
+          hecho a mano con ❤️por{" "}
           <a href="https://delacruz.dev">Daniel de la Cruz</a>. Sígueme
-          en:&nbsp;
+          en:{" "}
           <a
             title="Twitter"
             href="https://twitter.com/intent/follow?original_referer=https://delacruz.dev&ref_src=twsrc%5Etfw&region=follow_link&screen_name=d4nidev&tw_p=followbutton"

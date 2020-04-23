@@ -1,6 +1,6 @@
 function MentoringIntro() {
   return (
-    <section className="hero is-medium is-primary is-bold">
+    <section className="hero is-medium is-dark is-bold">
       <div className="hero-body mentoring">
         <div className="container has-text-centered">
           <h1 className="title is-size-1-desktop">Mentoring profesional</h1>

@@ -31,7 +31,7 @@ function Contact() {
                       required
                     />
                     <span className="icon is-small is-left">
-                      <i className="fas fa-user"></i>
+                      👤
                     </span>
                   </p>
                 </div>
@@ -45,7 +45,7 @@ function Contact() {
                       placeholder="Email"
                     />
                     <span className="icon is-small is-left">
-                      <i className="fas fa-envelope"></i>
+                      ✉️
                     </span>
                   </p>
                 </div>

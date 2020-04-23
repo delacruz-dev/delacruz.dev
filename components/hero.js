@@ -30,7 +30,7 @@ images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_1400.jpg 1400
           </h2>
           <div className="buttons">
             <a
-              className="button is-large is-medium-mobile is-primary is-outlined"
+              className="button is-large is-medium-mobile is-dark is-outlined"
               alt="Mentoring a medida para programadores de Front-End"
               href="/#skills"
               data-tracking="about-me-hero-cta"
@@ -38,7 +38,7 @@ images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_1400.jpg 1400
               Sobre mí
             </a>
             <a
-              className="button is-large is-medium-mobile is-primary"
+              className="button is-large is-medium-mobile is-dark"
               alt="Mentoring a medida para programadores de Front-End"
               href="/mentoring"
               data-tracking="hero-cta"
@@ -48,9 +48,6 @@ images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_1400.jpg 1400
           </div>
         </div>
       </div>
-      <a className="scroll-down-icon has-text-primary" href="/#skills">
-        <i className="fas fa-2x fa-angle-double-down" aria-hidden="true"></i>
-      </a>
     </section>
   );
 }

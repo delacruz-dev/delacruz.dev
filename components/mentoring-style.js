@@ -22,8 +22,8 @@ function MentoringStyle() {
             <div className="content">
               <div className="columns is-multiline is-centered level">
                 <div className="column is-half level-item">
-                  <div className="has-text-centered has-text-primary">
-                    <i className="fas fa-3x fa-comments"></i>
+                  <div className="has-text-centered has-text-primary is-size-1">
+                    💬
                   </div>
                   <h1 className="title is-size-4 is-spaced">Honestidad</h1>
                   <p>
@@ -33,8 +33,8 @@ function MentoringStyle() {
                   </p>
                 </div>
                 <div className="column is-half level-item">
-                  <div className="has-text-centered has-text-danger">
-                    <i className="fas fa-3x fa-fire"></i>
+                  <div className="has-text-centered has-text-danger is-size-1">
+                    🙇🏻‍♂️
                   </div>
                   <h1 className="title is-size-4 is-spaced">Humildad</h1>
                   <p>
@@ -44,8 +44,8 @@ function MentoringStyle() {
                   </p>
                 </div>
                 <div className="column is-half level-item">
-                  <div className="has-text-centered has-text-success">
-                    <i className="fas fa-3x fa-equals"></i>
+                  <div className="has-text-centered has-text-success is-size-1">
+                    🤝
                   </div>
                   <h1 className="title is-size-4 is-spaced">Igualdad</h1>
                   <p>
@@ -55,8 +55,8 @@ function MentoringStyle() {
                   </p>
                 </div>
                 <div className="column is-half level-item">
-                  <div className="has-text-centered has-text-info">
-                    <i className="fas fa-3x fa-water"></i>
+                  <div className="has-text-centered has-text-info is-size-1">
+                    🌊
                   </div>
                   <h1 className="title is-size-4 is-spaced">Transparencia</h1>
                   <p>

@@ -7,9 +7,7 @@ function Pricing() {
             <div className="columns is-centered">
               <div className="column">
                 <div className="box">
-                  <span className="icon is-large has-text-info is-spaced">
-                    <i className="fas fa-3x fa-user-friends"></i>
-                  </span>
+                  <span className="icon is-large has-text-info is-spaced is-size-1">👥</span>
                   <h1 className="title is-size-4 is-spaced">Acompañamiento técnico</h1>
                   <p className="is-spaced">
                     Elige este plan si lo que necesitas es un compañero de vuelo que te ayude a mejorar técnicamente.
@@ -27,9 +25,7 @@ function Pricing() {
               </div>
               <div className="column">
                 <div className="box">
-                  <span className="icon is-large has-text-info is-spaced">
-                    <i className="fas fa-3x fa-rocket"></i>
-                  </span>
+                  <span className="icon is-large has-text-info is-spaced is-size-1">🚀</span>
                   <h1 className="title is-size-4 is-spaced">Impulsa tu carrera</h1>
                   <p className="is-spaced">
                     Si ya tienes trabajo pero quieres saber qué te falta para ayudar mejor a tu equipo o conseguir un
@@ -47,8 +43,8 @@ function Pricing() {
               </div>
               <div className="column">
                 <div className="box">
-                  <span className="icon is-large has-text-info is-spaced">
-                    <i className="fas fa-3x fa-chalkboard-teacher"></i>
+                  <span className="icon is-large has-text-info is-spaced is-size-1">
+                    👩🏻‍💻
                   </span>
                   <h1 className="title is-size-4 is-spaced">Consigue el trabajo</h1>
                   <p className="is-spaced">

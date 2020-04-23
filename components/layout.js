@@ -30,10 +30,6 @@ function Layout({
         />
         <link
           rel="preconnect dns-prefetch"
-          href="https://use.fontawesome.com"
-        />
-        <link
-          rel="preconnect dns-prefetch"
           href="https://cdnjs.cloudflare.com"
         />
 
@@ -89,12 +85,6 @@ function Layout({
           media="(min-width: 1088px)"
           href="/css/min-1088px.css"
         />
-        <script
-          defer
-          src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
-          integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
-          crossOrigin="anonymous"
-        ></script>
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=UA-141784503-1"
