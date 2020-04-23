@@ -83,7 +83,7 @@ function Pricing() {
             <a
               title="Solicita una sesión gratuita"
               data-tracking="free-session-cta"
-              className="button is-primary is-large is-medium-mobile is-outlined"
+              className="button is-dark is-large is-medium-mobile is-outlined"
               href="/contactar"
             >
               Prueba gratuita
@@ -91,7 +91,7 @@ function Pricing() {
             <a
               title="Contratar"
               data-tracking="hire-cta"
-              className="button is-primary is-large is-medium-mobile"
+              className="button is-dark is-large is-medium-mobile"
               href="/contactar"
             >
               Contratar

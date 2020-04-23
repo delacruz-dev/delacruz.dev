@@ -71,7 +71,7 @@ function MentoringStyle() {
         </div>
         <div className="has-text-centered">
           <a
-            className="button is-large is-medium-mobile is-primary"
+            className="button is-large is-medium-mobile is-dark"
             alt="Mentoring a medida para programadores de Front-End"
             href="/contactar"
             data-tracking="mentoring-style-cta"
