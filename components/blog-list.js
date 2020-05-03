@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
+import blogListStyles from "./blog-list.styles";
 
 const BlogList = ({ allBlogs }) => {
   function truncateSummary(content) {
@@ -12,36 +13,22 @@ const BlogList = ({ allBlogs }) => {
   }
 
   return (
-    <>
+    <div className="content">
       {allBlogs.length > 1 &&
         allBlogs.map((post) => (
           <Link key={post.slug} href={{ pathname: `/blog/${post.slug}` }}>
-            <div class="column">
-              <div class="box blog-post">
-                <div className="hero_image">
-                  <img
-                    src={post.frontmatter.hero_image}
-                    alt={post.frontmatter.hero_image}
-                  />
-                </div>
-                <div className="blog__info">
-                  <h3 class="title is-4">{post.frontmatter.title}</h3>
-                  <div class="date">
-                    <span class="tag">
-                      {reformatDate(post.frontmatter.date)}
-                    </span>
-                  </div>
-                  <p>
-                    <ReactMarkdown
-                      source={truncateSummary(post.markdownBody)}
-                    />
-                  </p>
-                </div>
-              </div>
-            </div>
+            <a>
+              <article>
+                <h3>{post.frontmatter.title}</h3>
+                <span className="date">{reformatDate(post.frontmatter.date)}</span>
+
+                <ReactMarkdown source={truncateSummary(post.markdownBody)} />
+              </article>
+            </a>
           </Link>
         ))}
-    </>
+      <style jsx>{blogListStyles}</style>
+    </div>
   );
 };
 
