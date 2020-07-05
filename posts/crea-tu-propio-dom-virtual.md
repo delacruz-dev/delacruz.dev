@@ -3,8 +3,8 @@ title: "Crea tu propio DOM Virtual"
 date: "2017-12-29"
 draft: false
 frontImageSrc: /images/blog-images/virtual-dom-header.jpeg
-frontListImageSrc: '/images/blog-images/virtual-dom-header.jpeg'
-summary: 'En este artículo me propongo el reto de escribir una pequeña librería para aprovechar y explicar los conceptos que hay detrás del DOM Virtual.'
+frontListImageSrc: "/images/blog-images/virtual-dom-header.jpeg"
+summary: "En este artículo me propongo el reto de escribir una pequeña librería para aprovechar y explicar los conceptos que hay detrás del DOM Virtual."
 ---
 
 Hace poco me pidieron en una entrevista que hiciese una prueba técnica
@@ -24,61 +24,73 @@ documentando los conceptos que hay detrás de una librería de DOM virtual.
 Imaginemos que queremos representar un elemento sencillo del DOM, como por
 ejemplo:
 
-    <div class='hello'>Hello, world!</div>
+```html
+<div class="hello">Hello, world!</div>
+```
 
 Usando una estructura de datos en formato JSON, este nodo podría representarse
 de la siguiente forma:
 
-    {
-      type: 'div',
-      props: { class: 'hello' },
-      children: [ 'Hello, world!' ]
-    }
+```js
+{
+  type: 'div',
+  props: { class: 'hello' },
+  children: [ 'Hello, world!' ]
+}
+```
 
 El tipo de la etiqueta HTML lo podemos almacenar con la propiedad **type**,
 tener un objeto **props** para los atributos y un array de **children** para
 representar cualquier tipo de nodos descendientes del actual. Un ejemplo más
 completo, sería representar una lista desordenada:
 
-    <ul class='list'>
-      <li>list item 1</li>
-      <li>list item 2</li>
-    </ul>
+```html
+<ul class="list">
+  <li>list item 1</li>
+  <li>list item 2</li>
+</ul>
+```
 
 Quedaría:
 
-    {
-      type: 'ul',
-      props: { class: 'list' },
-      children: [{
-        type: 'li',
-        children: [ 'list item 1' ]
-      }, {
-        type: 'li',
-        children: [ 'list item 2' ]
-      }]
-    }
+```js
+{
+  type: 'ul',
+  props: { class: 'list' },
+  children: [{
+    type: 'li',
+    children: [ 'list item 1' ]
+  }, {
+    type: 'li',
+    children: [ 'list item 2' ]
+  }]
+}
+```
 
 ## Escribamos una función que nos ayude a representar el DOM
 
 Escribir una vista completa o incluso un componente de este modo es bastante
 engorroso, así que hagamos una función que nos facilite un poco el trabajo:
 
-    function h(type, props, ...args) {
-      const children = args.length ? [].concat(...args) : null
-      return {
-        type,
-        props,
-        children
-      }
-    }
+```js
+function h(type, props, ...args) {
+  const children = args.length ? [].concat(...args) : null;
+  return {
+    type,
+    props,
+    children,
+  };
+}
+```
 
 Puedes llamar a la función como quieras, no tiene importancia. En el ejemplo,
 utilizo _h()_ porque la idea original para este tipo de funciones viene de
 [hyperscript](https://github.com/hyperhype/hyperscript). Con la función
 anterior, ahora podemos representar el DOM así:
 
-    const div = h('div', { className: 'hello' }, 'Hello, world!')
+```js
+const div = h("div", { className: "hello" }, "Hello, world!");
+```
 
 Fíjate que utilizo **className** porque **class** es una palabra reservada del
 lenguaje.
@@ -97,33 +109,30 @@ de las ideas para escribir este, en el que lo explica a las mil maravillas.
 ayudó a terminar de entenderlo fue utilizar el [REPL de
 Babel](https://babeljs.io/repl). Si escribes en el lado izquierdo lo siguiente:
 
-    const helloWorld = <div className='hello'>Hello, world!</div>
+```js
+const helloWorld = <div className="hello">Hello, world!</div>;
+```
 
 Verás que el resultado, tras transpilar el código JSX, es:
 
-    var helloWorld = React.createElement(
-      'div',
-      { className: 'hello' },
-      'Hello, world!'
-    )
+```js
+var helloWorld = React.createElement("div", { className: "hello" }, "Hello, world!");
+```
 
 Se parece bastante a nuestra función **h()**, ¿verdad? En este caso, Babel asume
 que vas a utilizar React como librería para interpretar JSX, pero también te da
 la opción de proporcionar tu propia función de transpilado, incluyendo el
 siguiente comentario sobre tu código:
 
-    const helloWorld = <div className='hello'>Hello, world!</div>
+```js
+const helloWorld = <div className="hello">Hello, world!</div>;
+```
 
 El resultado, ahora sí, tras el transpilado de Babel, será:
 
-    /*
-     h */
-
-    var helloWorld = h(
-      'div',
-      { className: 'hello' },
-      'Hello, world!'
-    )
+```js
+var helloWorld = h("div", { className: "hello" }, "Hello, world!");
+```
 
 Esto es fantástico, ya que las condiciones de la prueba se siguen cumpliendo:
 JSX no es ninguna librería, tan solo es una sintaxis especial que puede
@@ -145,11 +154,13 @@ Empecemos por algo sencillo: una función _createElement(node)_ a la que le
 pasaremos un nombre de etiqueta HTML y creará dicho elemento utilizando la API
 del DOM de JavaScript:
 
-    function createElement(node) {
-      return typeof node === ‘string’
-        ? document.createTextNode(node)
-        : document.createElement(node.type)
-    }
+```js
+function createElement(node) {
+  return typeof node === ‘string’
+    ? document.createTextNode(node)
+    : document.createElement(node.type)
+}
+```
 
 Ignoremos de momento las _props_ y _children_. La función acepta un nodo de
 nuestra estructura JSON anterior y evalúa si es de tipo **string** para crear un
@@ -160,31 +171,34 @@ Ahora sí, pensemos en los nodos hijos. También serán del mismo tipo del padre
 así que podríamos aplicar una función **recursiva** que llame a _createElement_
 y los vaya añadiendo al nodo padre:
 
-    function createElement(node) {
-      if (typeof node === 'string') {
-        return document.createTextNode(node)
-      }
-      const element = document.createElement(node.type)
-      node.children
-        .map(createElement)
-        .forEach(child => element.appendChild(child))
-      return element
-    }
+```js
+function createElement(node) {
+  if (typeof node === "string") {
+    return document.createTextNode(node);
+  }
+  const element = document.createElement(node.type);
+  node.children.map(createElement).forEach((child) => element.appendChild(child));
+  return element;
+}
+```
 
 Ya podemos probar si funciona, añadiendo el elemento al DOM. Primero, creamos el
 nodo donde se va a renderizar nuestro componente en el HTML:
 
-    ...
-    <body>
-      <div id='root'></div>
-    </body>
+```html
+...
+<body>
+  <div id="root"></div>
+</body>
+```
 
 Y luego, añadimos un simple script que añada el componente al _root:_
 
-    const helloWorld = <div className = 'hello'>Hello, world!</div>
+```js
+const helloWorld = <div className="hello">Hello, world!</div>;
 
-    document.getElementById('root')
-      .appendChild(createElement(helloWorld))
+document.getElementById("root").appendChild(createElement(helloWorld));
+```
 
 Aquí tienes el enlace al ejemplo completo funcionando en [JSFiddle](https://jsfiddle.net/oL0bmwg7/).
 

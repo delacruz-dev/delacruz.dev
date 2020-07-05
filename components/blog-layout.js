@@ -42,12 +42,6 @@ function Layout({ children, title = "Mentoring para programadores - Dani de la C
           content="Mentoring, tutoría y coaching a medida para programadores y programadoras que buscan dar un salto en su carrera profesional."
         />
         <meta name="og:site_name" content="delacruz.dev" />
-        <link rel="stylesheet" href="/css/main.css" />
-        <link rel="stylesheet" href="/css/bulma-timeline.min.css" />
-        <link rel="stylesheet" href="/css/bulma.min.css" />
-        <link rel="stylesheet" media="(max-width: 640px)" href="/css/max-640px.css" />
-        <link rel="stylesheet" media="(min-width: 640px)" href="/css/min-640px.css" />
-        <link rel="stylesheet" media="(min-width: 1088px)" href="/css/min-1088px.css" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141784503-1"></script>
       </Head>
       {children}
