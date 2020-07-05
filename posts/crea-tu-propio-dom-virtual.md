@@ -3,14 +3,14 @@ title: "Crea tu propio DOM Virtual"
 date: "2017-12-29"
 draft: false
 frontImageSrc: /images/blog-images/virtual-dom-header.jpeg
+frontListImageSrc: '/images/blog-images/virtual-dom-header.jpeg'
+summary: 'En este artículo me propongo el reto de escribir una pequeña librería para aprovechar y explicar los conceptos que hay detrás del DOM Virtual.'
 ---
 
 Hace poco me pidieron en una entrevista que hiciese una prueba técnica
 aparentemente sencilla: apenas un par de páginas y una llamada a una API. La
 dificultad estaba en que todo el código debía ser _vanilla JS_. Es decir,
 JavaScript puro y duro, sin utilizar Frameworks ni librerías.
-
-<!--more-->
 
 Como estoy bastante acostumbrado a desarrollar interfaces de usuario por
 componentes, en su momento me dio bastante palo currármelo tanto para una prueba

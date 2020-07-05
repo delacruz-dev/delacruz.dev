@@ -3,7 +3,9 @@ title: "The change is in you"
 date: "2016-12-27"
 draft: false
 hide: true
-frontImageSrc: https://cdn-images-1.medium.com/max/2600/1*rc1DGx9OQ1ZCmQXJ6shVLw.jpeg
+frontImageSrc: 'https://cdn-images-1.medium.com/max/2600/1*rc1DGx9OQ1ZCmQXJ6shVLw.jpeg'
+frontListImageSrc: 'https://cdn-images-1.medium.com/max/2600/1*rc1DGx9OQ1ZCmQXJ6shVLw.jpeg'
+summary: 'I wrote this article some years ago to share my experience working with legacy products and inspire developers to overcome their frustrations to become a change agent.'
 ---
 
 I’ve been working for years at different companies with legacy
@@ -14,8 +16,6 @@ I realiazed how slow we were adding value to our products, how difficult it was
 for us to release what it was supposed to be a simple change. And when my
 product manager asked me why our competitors were releasing new features faster
 than us, I couldn’t give a good answer.
-
-<!-- more -->
 
 After a while, I came to the conclusion that we were talking different
 languages. While I was trying to make product people understand the technical
@@ -39,7 +39,7 @@ during the whole process and everything is going to be fine. Say with me:
 
 > "I won’t give up."
 
-#### Don’t fly solo
+## Don’t fly solo
 
 Does anyone share your point of view? Talk to your teammates, managers, even
 people out of your company and make sure that you’re not the only one with your
@@ -51,7 +51,7 @@ to make. I’m pretty sure about two things:
 1.  **No one is going to do it for you**. Otherwise, you shouldn’t be worried about
     it.
 
-#### Identify the root causes, skip the symptoms
+## Identify the root causes, skip the symptoms
 
 What it’s probably happening is that you’re experiencing situations that are
 making you and your teammates work in a difficult environment. You spend a lot
@@ -73,7 +73,7 @@ problems. Read about these tools and practice them, organize sessions with other
 developers, involve different roles and validate that you’ve got a good
 diagnosis.
 
-#### Collect data
+## Collect data
 
 Now that you’ve got an idea of the shape of the problem and you’ve involved more
 people in your quest to fix it, It’s extremely important to give a step back and
@@ -109,7 +109,7 @@ problems in a way that our business people can understand them. And whilst
 someone could question you about the need of solving a problem based on your
 opinion, **there’s no argument against rough data**.
 
-#### Think of a possible solution
+## Think of a possible solution
 
 No one likes people who only complain about the problems, no matter how much
 effort do you invest in analyzing them. What people want to hear is a solution.
@@ -129,7 +129,7 @@ Again, ask yourselves:
 This is the kind of questions that your manager is going to ask you when you
 mention her what you want to do.
 
-#### Prepare a speech for the management team
+## Prepare a speech for the management team
 
 Now it’s time to convince your boss. This is the most important moment in your
 process to become a change agent, since depending on how well prepared are you
@@ -158,7 +158,7 @@ going to be thinking about one single thing:
 
 And here’s when we come to the most important step of your speech
 
-#### Offer them something they can’t reject
+## Offer them something they can’t reject
 
 What do you think is the purpose of your speech? I’ll tell you: **you are
 selling something**. What you’re selling is your idea to work in something you
@@ -182,7 +182,7 @@ something they hardly can reject. This is what you should aim for:
   not going to fix anything, its purpose is only demonstrates that the proposal is
   doable.
 
-#### Be ready to fail
+## Be ready to fail
 
 If you’ve been reading until this step, you perhaps realized that what we’re
 trying to do is just **convincing people**. Starting with yourself.
@@ -201,7 +201,7 @@ I spent more than one year doing this process at my previous company before I
 found the right arguments to convince my managers. Be persistent and trust
 yourselves.
 
-#### Develop your proof of concept
+## Develop your proof of concept
 
 Once you’ve bought enough time to develop a proof of concept of your solution.
 You’ve got a limited amount of time, so be really focused and work in something
@@ -213,7 +213,7 @@ enlightens the true potential of what you’re trying to do.
 Keep in mind that you’re doing just a proof of concept, so write code that you
 can throw away and dedicate as much time as you can to prepare the fireworks.
 
-#### Design an agile but realistic implementation plan
+## Design an agile but realistic implementation plan
 
 You’ve convinced everyone about your technical problems, they’re aware of the
 impact of not doing anything in their business and you showed them how to fix
@@ -267,7 +267,7 @@ progress every two weeks and you’ll feel relieved of the pressure of a huge
 project. They’ll also feel more comfortable keeping the risk on hold during the
 whole project.
 
-#### Conclusion
+## Conclusion
 
 If you’ve got a technical problem, you are the engineer. Don’t expect anyone to
 come and fix it for you, or ask you to dedicate as time as you need to fix it.

@@ -23,7 +23,7 @@ export default function Meta(props) {
             margin: 0;
             font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
             overflow-x: hidden;
-            color: #000;
+            color: #0e1e25cc;
             font-size: 16px;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
@@ -48,9 +48,14 @@ export default function Meta(props) {
             transition: transform 0.6s ease;
             transform: translateX(10px);
           }
+
+          article a {
+            text-decoration: underline;
+          }
+
           ul {
-            list-style: none;
             margin: 0;
+            margin-left: 1.2em;
             padding-bottom: 0;
             padding-left: 0;
             padding-right: 0;
@@ -60,6 +65,7 @@ export default function Meta(props) {
           }
           ol {
             margin: 0;
+            margin-left: 1.2em;
             padding-bottom: 0;
             padding-left: 0;
             padding-right: 0;
@@ -205,7 +211,7 @@ export default function Meta(props) {
             font-weight: normal;
           }
 
-          p {
+          p, li {
             font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
             font-size: 1.2rem;
             letter-spacing: -0.5px;

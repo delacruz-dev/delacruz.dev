@@ -3,14 +3,14 @@ title: "Lazy load de imágenes utilizando Intersection Observer API en React"
 date: "2018-01-07"
 draft: false
 frontImageSrc: /images/blog-images/lazy-load-header.png
+frontListImageSrc: '/images/blog-images/lazy-load-header.png'
+summary: 'Hace poco buscaba una forma de hacer "carga perezosa" o diferida (lazy loading) de las imágenes en una aplicación hecha con React. Descubrí la API de Intersection Observer y te explico cómo funciona.'
 ---
 
 Hace poco buscaba una forma de hacer carga perezosa ([lazy
 loading](https://en.wikipedia.org/wiki/Lazy_loading)) de imágenes en una
 aplicación hecha en React, y descubrí la [API de Intersection
 Observer](https://w3c.github.io/IntersectionObserver/).
-
-<!--more-->
 
 Antaño, calcular la visibilidad de un componente objetivo respecto a otro
 relativo era bastante engorroso de implementar. Tenías que escuchar eventos del
@@ -29,10 +29,10 @@ una aplicación en la que quieras hacer _lazy loading_ de imágenes.
 ## Creando la aplicación
 
 > TL;DR: En esta sección explicaré qué tipo de aplicación voy a utilizar de
-ejemplo y cómo crearla, para dar un poco de contexto. Si solo te interesa cómo
-implementar Intersection Observer, pasa a la siguiente sección. O si lo
-prefieres, ve directamente al _[repositorio con el código del
-ejemplo](https://github.com/delacruz-dev/lazy-loading-pokemons)_.
+> ejemplo y cómo crearla, para dar un poco de contexto. Si solo te interesa cómo
+> implementar Intersection Observer, pasa a la siguiente sección. O si lo
+> prefieres, ve directamente al _[repositorio con el código del
+> ejemplo](https://github.com/delacruz-dev/lazy-loading-pokemons)_.
 
 Vamos a crear una lista de elementos que contienen imágenes. Para conseguir una
 buena lista de imágenes, voy a utilizar una de mis APIs públicas de Internet
@@ -43,7 +43,9 @@ Voy a crear la aplicación utilizando
 [create-react-app](https://github.com/facebookincubator/create-react-app), para
 no perder el tiempo con configuraciones:
 
-    $ create-react-app lazy-loading-pokemons
+```sh
+$ create-react-app lazy-loading-pokemons
+```
 
 ### Obtener las imágenes
 
@@ -52,7 +54,9 @@ API REST convencional, debería obtener la lista de _/pokemons_ y luego obtener
 el recurso asociado a los _sprites_ de imágenes de cada pokémon. Pero como me
 conozco la API, sé que todos los sprites se encuentran bajo la misma URL:
 
-    const spriteUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`
+```js
+const spriteUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
+```
 
 Donde el id es el [identificador del Pokémon en la
 Pokédex](https://www.pokemon.com/us/pokedex/) que, como sabrás, son
@@ -61,15 +65,16 @@ imágenes que me sirva para montar la aplicación de ejemplo. La siguiente funci
 crea un Array de 150 elementos y luego los mapea para crear objetos _falsos_ con
 el id del Pokémon y el enlace al _sprite_:
 
-    async function fetchPokemons () {
-      return await Array.apply(null, { length: 150 })
-        .map((item, index) => {
-          return {
-            id: index + 1,
-            sprite: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index + 1}.png`
-          }
-        })
-    }
+```js
+async function fetchPokemons() {
+  return await Array.apply(null, { length: 150 }).map((item, index) => {
+    return {
+      id: index + 1,
+      sprite: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index + 1}.png`,
+    };
+  });
+}
+```
 
 ### Crear los componentes de React necesarios
 
@@ -77,63 +82,63 @@ Lo primero que haré será modificar el nodo raíz de la aplicación generada po
 create-react-app: **App.js**, para que solo obtenga los Pokémon y muestre una
 lista de elementos:
 
-    // App.js
+```js
+// App.js
 
-    import React from 'react'
-    import List from './List'
-    import ListItem from './ListItem'
-    import fetchPokemons from './fetchPokemons'
+import React from "react";
+import List from "./List";
+import ListItem from "./ListItem";
+import fetchPokemons from "./fetchPokemons";
 
-    export default class App extends Component {
-      state = { pokemons: [] }
+export default class App extends Component {
+  state = { pokemons: [] };
 
-      async componentDidMount () {
-        const pokemons = await fetchPokemons()
-        this.setState({ pokemons })
-      }
+  async componentDidMount() {
+    const pokemons = await fetchPokemons();
+    this.setState({ pokemons });
+  }
 
-      render() {
-        return (
-          <List>
-          {
-            this.state.pokemons.map(({ id, sprite }) =>
-              <ListItem key={id} sprite={sprite} />
-            )
-          }
-          </List>
-        )
-      }
-    }
+  render() {
+    return (
+      <List>
+        {this.state.pokemons.map(({ id, sprite }) => (
+          <ListItem key={id} sprite={sprite} />
+        ))}
+      </List>
+    );
+  }
+}
+```
 
 Lo siguiente es crear un componente para la lista de elementos: **List.js** el
 cual, como puedes ver, no tiene demasiado misterio:
 
-    // List.js
+```js
+// List.js
 
-    import React from 'react'
+import React from "react";
 
-    const List = ({ children }) => (
-      <ul>
-        {children}
-      </ul>
-    )
+const List = ({ children }) => <ul>{children}</ul>;
 
-    export default List
+export default List;
+```
 
 La lista va a mostrar elementos, donde voy a tener la imagen, así que también
 necesitaré un componente **ListItem.js**. De momento también es muy sencillo:
 
-    // ListItem.js
+```js
+// ListItem.js
 
-    import React from 'react'
+import React from "react";
 
-    const ListItem = ({ sprite }) => (
-      <li>
-        <img src={sprite} />
-      </li>
-    )
+const ListItem = ({ sprite }) => (
+  <li>
+    <img src={sprite} />
+  </li>
+);
 
-    export default List
+export default List;
+```
 
 ### Árbol de peticiones HTTP sin Lazy-loading
 
@@ -160,17 +165,16 @@ una instancia del **IntersectionObserver**. No es necesario crear uno por cada
 imagen, ya que una sola instancia puede escuchar tantos elementos como sea
 necesario. Así que lo haremos a nivel de aplicación en **App.js**:
 
-    // App.js
+```js
+// App.js
 
+// ...
+class App extends Component {
+  state = { pokemons: [] }
 
-    // ...
-
-    class App extends Component {
-      state = { pokemons: [] }
-
-
-      async componentDidMount () {
-      // ...
+  async componentDidMount () {
+  // ...
+```
 
 La API de IntersectionObserver te permite registrar una función de callback que
 se ejecutará en cualquier elemento que entre o salga de otro elemento (o del
@@ -199,12 +203,14 @@ Intersection Observer. En mi configuración, se empezará a disparar el *callbac
 *cuando las imágenes superen el umbral de intersección del 50% a 288px del
 margen inferior del _viewport_:
 
-    // lazyLoad.js
+```js
+// lazyLoad.js
 
-    export const config = {
-      rootMargin: '288px',
-      threshold: 0.5
-    }
+export const config = {
+  rootMargin: "288px",
+  threshold: 0.5,
+};
+```
 
 > Nota: He elegido 288px porque cada sprite que me devuelve la API hace 96 x 96px.
 > Quiero dar tiempo a precargar hasta tres imágenes antes de que aparezcan en el
@@ -227,31 +233,29 @@ En el evento _componentDidMount_ es donde las refs están accesibles por primera
 vez durante el ciclo de vida del componente. Allí será donde llamaremos a
 **.observe()** pasándole como parámetro la referencia a la imagen:
 
-    // ListItem.js (en negrita las modificaciones)
-
-      render () {
-        return (
-          <li>
-            <img src={this.props.sprite}
-     /
-          </li>
-        )
-      }
-    }
+```js
+// ListItem.js (en negrita las modificaciones)
+render () {
+  return (
+    <li>
+      <img src={this.props.sprite} />
+    </li>
+  )
+}
+```
 
 Ahora el componente **ListItem** está preparado para recibir una instancia de
 Intersection Observer, pero aún no se la hemos pasado. Para ello, tendrás que
 hacerlo allí donde tengas acceso a los ListItem’s). En mi ejemplo, es en
 **App.js**:
 
-    // App.js
+```js
+// App.js
 
-    // ...
+// ...
 
-    this.state.pokemons.map(({ id, sprite }) =>
-      <ListItem key={id} sprite={sprite}
-     />
-    )
+this.state.pokemons.map(({ id, sprite }) => <ListItem key={id} sprite={sprite} />);
+```
 
 ### Implementación de la función callback
 
@@ -263,10 +267,12 @@ de IntersectionObserver. En esta función deberemos:
 
 Según la documentación, el callback debe tener la siguiente forma:
 
-    function
-     {
-      // ...
-    }
+```js
+function
+{
+  // ...
+}
+```
 
 El primer argumento — **entries **— , contiene una lista de elementos observados
 de tipo
@@ -293,16 +299,18 @@ proporciona el método **.unobserve()**.
 
 La implementación de mi función de _callback_ quedaría de la siguiente forma:
 
-    // lazyLoad.js
+```js
+// lazyLoad.js
 
-    export default function lazyLoadImage(entries, observer) {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          observer.unobserve(entry.target)
-          entry.target.src = entry.target.dataset.src
-        }
-      })
+export default function lazyLoadImage(entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      observer.unobserve(entry.target);
+      entry.target.src = entry.target.dataset.src;
     }
+  });
+}
+```
 
 Si te fijas, el truco para que las imágenes no carguen el sprite es más viejo
 que Internet: **no establecer el atributo src del tag <img>**. En su lugar, lo
@@ -310,12 +318,17 @@ almaceno en un atributo **data-src** y lo asigno al src en el momento en que la
 condición del observer es **true**. Para que este cambio sea efectivo, tenemos
 que hacer un pequeño cambio en el **ListItem.js**:
 
-    // ListItem.js
+```js
+// ListItem.js
 
-    // ...
+// ...
 
-    <img
-     ref={node => { this.image = node }} />
+<img
+  ref={(node) => {
+    this.image = node;
+  }}
+/>
+```
 
 Otro detalle importante es **establecer las dimensiones **de las imágenes. De lo
 contrario, al eliminar el src, entrarán muchas más en el viewport de las que
@@ -323,12 +336,18 @@ deberían. Pero si le damos un alto mínimo, obtendremos el comportamiento que
 queremos. Los sprites de Pokémon hacen 96 x 96px. Podemos asignar las
 dimensiones por CSS o directamente en el tag **<img>**:
 
-    // ListItem.js
+```js
+// ListItem.js
 
-    // ...
+// ...
 
-    <img data-src={this.props.sprite} ref={node => { this.image = node }}
-     />
+<img
+  data-src={this.props.sprite}
+  ref={(node) => {
+    this.image = node;
+  }}
+/>
+```
 
 ¡Y ya está! Podemos ejecutar la aplicación para ver el efecto de nuestros
 cambios en el tiempo de carga de la página:

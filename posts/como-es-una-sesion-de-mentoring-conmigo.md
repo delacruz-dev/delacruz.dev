@@ -4,21 +4,15 @@ date: "2019-09-01"
 draft: false
 frontImageSrcSet: '/images/blog-images/como-es-una-sesion-de-mentoring-conmigo/como-es-una-sesion-de-mentoring-conmigo_byipdf_c_scale,w_200.jpg 200w,
 /images/blog-images/como-es-una-sesion-de-mentoring-conmigo/como-es-una-sesion-de-mentoring-conmigo_byipdf_c_scale,w_444.jpg 444w,
-/images/blog-images/como-es-una-sesion-de-mentoring-conmigo/como-es-una-sesion-de-mentoring-conmigo_byipdf_c_scale,w_636.jpg 636w,
-/images/blog-images/como-es-una-sesion-de-mentoring-conmigo/como-es-una-sesion-de-mentoring-conmigo_byipdf_c_scale,w_802.jpg 802w,
-/images/blog-images/como-es-una-sesion-de-mentoring-conmigo/como-es-una-sesion-de-mentoring-conmigo_byipdf_c_scale,w_947.jpg 947w,
-/images/blog-images/como-es-una-sesion-de-mentoring-conmigo/como-es-una-sesion-de-mentoring-conmigo_byipdf_c_scale,w_1081.jpg 1081w,
-/images/blog-images/como-es-una-sesion-de-mentoring-conmigo/como-es-una-sesion-de-mentoring-conmigo_byipdf_c_scale,w_1216.jpg 1216w,
-/images/blog-images/como-es-una-sesion-de-mentoring-conmigo/como-es-una-sesion-de-mentoring-conmigo_byipdf_c_scale,w_1346.jpg 1346w,
-/images/blog-images/como-es-una-sesion-de-mentoring-conmigo/como-es-una-sesion-de-mentoring-conmigo_byipdf_c_scale,w_1400.jpg 1400w'
-frontImageSrc: '/images/blog-images/como-es-una-sesion-de-mentoring-conmigo/como-es-una-sesion-de-mentoring-conmigo_byipdf_c_scale,w_1400.jpg'
+/images/blog-images/como-es-una-sesion-de-mentoring-conmigo/como-es-una-sesion-de-mentoring-conmigo_byipdf_c_scale,w_636.jpg 636w'
+frontListImageSrc: '/images/blog-images/como-es-una-sesion-de-mentoring-conmigo/como-es-una-sesion-de-mentoring-conmigo_byipdf_c_scale,w_200.jpg'
+frontImageSrc: '/images/blog-images/como-es-una-sesion-de-mentoring-conmigo/como-es-una-sesion-de-mentoring-conmigo_byipdf_c_scale,w_636.jpg'
+summary: 'Si te gustaría saber cómo es una sesión de mentoring conmigo y qué puedes esperar si decides que trabajemos juntos, este artículo tiene algunas respuestas a preguntas frecuentes.'
 ---
 
 ¡Hola! 👋 Soy Dani de la Cruz y si estás leyendo esto, es que tienes interés en saber cómo es una sesión de mentoring conmigo y qué puedes esperar si decides que trabajemos juntos.
 
-He escrito este artículo con **preguntas frecuentes** cue puede hacerse alguien como tú antes de dar el paso.
-
-<!--more-->
+He escrito este artículo con **preguntas frecuentes** que puede hacerse alguien como tú antes de dar el paso.
 
 ## Cómo establecemos objetivos
 

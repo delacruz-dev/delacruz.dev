@@ -2,19 +2,12 @@
 title: "Cómo he organizado mi plan de aprendizaje para 2019"
 date: "2019-01-20"
 draft: false
-frontImageSrcSet: '/images/blog-images/learning-plah-header/learning-plah-header_iotvbi_c_scale,w_200.jpg 200w,
-/images/blog-images/learning-plah-header/learning-plah-header_iotvbi_c_scale,w_434.jpg 434w,
-/images/blog-images/learning-plah-header/learning-plah-header_iotvbi_c_scale,w_606.jpg 606w,
-/images/blog-images/learning-plah-header/learning-plah-header_iotvbi_c_scale,w_750.jpg 750w,
-/images/blog-images/learning-plah-header/learning-plah-header_iotvbi_c_scale,w_873.jpg 873w,
-/images/blog-images/learning-plah-header/learning-plah-header_iotvbi_c_scale,w_973.jpg 973w,
-/images/blog-images/learning-plah-header/learning-plah-header_iotvbi_c_scale,w_1072.jpg 1072w,
-/images/blog-images/learning-plah-header/learning-plah-header_iotvbi_c_scale,w_1165.jpg 1165w,
-/images/blog-images/learning-plah-header/learning-plah-header_iotvbi_c_scale,w_1244.jpg 1244w,
-/images/blog-images/learning-plah-header/learning-plah-header_iotvbi_c_scale,w_1312.jpg 1312w,
-/images/blog-images/learning-plah-header/learning-plah-header_iotvbi_c_scale,w_1391.jpg 1391w,
-/images/blog-images/learning-plah-header/learning-plah-header_iotvbi_c_scale,w_1400.jpg 1400w'
-frontImageSrc: '/images/blog-images/learning-plah-header/learning-plah-header_iotvbi_c_scale,w_1400.jpg'
+frontImageSrcSet: '/images/blog-images/learning-plan-header/learning-plan-header_iotvbi_c_scale,w_200.jpg 200w,
+/images/blog-images/learning-plan-header/learning-plan-header_iotvbi_c_scale,w_434.jpg 434w,
+/images/blog-images/learning-plan-header/learning-plan-header_iotvbi_c_scale,w_606.jpg 606w'
+frontListImageSrc: '/images/blog-images/learning-plan-header/learning-plan-header_iotvbi_c_scale,w_200.jpg'
+frontImageSrc: '/images/blog-images/learning-plan-header/learning-plan-header_iotvbi_c_scale,w_606.jpg'
+summary: '¿Quieres saber cómo organizar un plan de aprendizaje? En este artículo te hablo de cómo elaboro mi propio plan, cómo identificar objetivos y adoptar una mentalidad de crecimiento.'
 ---
 
 En el momento de escribir estas líneas [ya ha transcurrido el 5% del año
@@ -29,9 +22,7 @@ Weber-Fechner](https://es.wikipedia.org/wiki/Ley_de_Weber-Fechner), sino para
 compartir las acciones que he decidido tomar este año para organizar mi plan de
 aprendizaje.
 
-<!--more-->
-
-### ¿Por qué necesitas un plan de aprendizaje?
+## ¿Por qué necesitas un plan de aprendizaje?
 
 A finales del año pasado me di cuenta de que había dejado un poco apartado mi
 aprendizaje personal. Trabajo como ingeniero de software y creo firmemente en la
@@ -41,7 +32,7 @@ actualizando tus conocimientos y habilidades constantemente. Cada año aparecen
 varias innovaciones o técnicas que te permiten ser más competente y es fácil
 quedarse atrás respecto a lo que demanda el mercado.
 
-### Primer paso: Analizar cuánto tiempo tengo
+## Primer paso: Analizar cuánto tiempo tengo
 
 **Saber cuánto tiempo voy a poder dedicar a mi aprendizaje es fundamental para
 poder marcarme objetivos realistas**. De lo contrario, me sentiría muy frustrado
@@ -72,7 +63,7 @@ bien, comer bien y divertirse.
 
 Mi opción será dedicar ese tiempo al aprendizaje los fines de semana.
 
-### Segundo paso: Establecer objetivos alcanzables y realistas
+## Segundo paso: Establecer objetivos alcanzables y realistas
 
 Sabiendo el tiempo de que dispongo, ya puedo considerar objetivos realistas.
 Para ello, necesito recopilar información para conocer cómo estoy, de dónde
@@ -126,7 +117,7 @@ Cada pequeño rato que le dedique a ver vídeos, hacer cursos y practicar con
 aprender y me voy a sentir satisfecho. Voy a crecer en conocimiento y disfrutar
 del camino.
 
-### Tercer paso: Márcate una fecha límite
+## Tercer paso: Márcate una fecha límite
 
 Este es el paso con el que puede que no estés tan de acuerdo, pero estoy muy
 orgulloso de haber tomado esta decisión.
@@ -167,7 +158,7 @@ tienes razón, pero la idea es ser honesto contigo mismo y hacerlo solo cuando e
 para continuar un esfuerzo que has hecho, no para darte más tiempo para empezar
 algo que en realidad no te ha apetecido.
 
-### Conclusiones
+## Conclusiones
 
 He elaborado este plan después de lo que he aprendido el año anterior sobre
 marcarme objetivos personales y haber hecho de mentor para varios compañeros en
