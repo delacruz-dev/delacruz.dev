@@ -4,7 +4,7 @@ import { useEffect } from "react";
 function Layout({ children, title = "Mentoring para programadores - Dani de la Cruz" }) {
   useEffect(() => {
     window.dataLayer = window.dataLayer || [];
-    function gtag() {
+    window.gtag = function () {
       window.dataLayer.push(arguments);
     }
     gtag("js", new Date());

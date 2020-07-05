@@ -1,4 +1,4 @@
-const callToActions = window.document.querySelectorAll("[data-tracking]");
+var callToActions = window.document.querySelectorAll("[data-tracking]");
 
 if (callToActions && callToActions.length) {
   callToActions.forEach(function(trackedElement) {
