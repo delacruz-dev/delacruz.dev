@@ -54,10 +54,12 @@ const styles = css`
 
     .container {
       margin-left: 30vw;
+      margin-top: 90px;
       width: 70vw;
     }
 
     .frontImage {
+      margin-top: 2em;
       width: 40vw;
     }
   }

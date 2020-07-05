@@ -31,6 +31,7 @@ const styles = css`
     flex-grow: 1;
     padding-right: 2rem;
     padding-left: 1rem;
+    pargin-top: ;
   }
 
   .title {
@@ -45,22 +46,29 @@ const styles = css`
   }
 
   .article > img {
-    margin-right: 2em;
-    width: 200px;
+    margin: 0 auto 1em;
+    width: 100%;
     object-fit: scale-down;
   }
 
   @media (min-width: 768px) {
     .container {
-      margin-left: 30vw;
-      width: 70vw;
       flex-grow: none;
+      margin-left: 30vw;
+      margin-top: 90px;
       padding-left: 0;
       padding-right: 4rem;
+      width: 70vw;
     }
 
     .article {
       flex-direction: row;
+    }
+
+    .article > img {
+      margin-right: 2em;
+      width: 200px;
+      object-fit: scale-down;
     }
   }
 `;
