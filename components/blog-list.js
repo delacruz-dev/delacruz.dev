@@ -54,6 +54,7 @@ const styles = css`
   article {
     transition: transform 0.6s ease;
     transform: translateX(0px);
+    animation: floating 2.5s infinite;
   }
 
   article:hover {

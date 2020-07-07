@@ -1,58 +1,57 @@
 import css from "styled-jsx/css";
+import colors from "./colors";
 
-function Button({ children, href, title, ...props }) {
+function Button({ children, href, title, withAnimation = true, ...props }) {
   return (
     <>
       <a href={href} title={title} {...props}>
         {children}
-        <svg
-          width="8"
-          height="12"
-          viewBox="0 0 8 12"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          data-swup-page="about"
-        >
-          <path
-            d="M1.51351 0.000244141L0 1.32543L4.97297 5.6796L0 10.0338L1.51351 11.3589L8 5.6796L1.51351 0.000244141Z"
-          ></path>
-        </svg>
+        {withAnimation && (
+          <svg
+            width="8"
+            height="12"
+            viewBox="0 0 8 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            data-swup-page="about"
+          >
+            <path d="M1.51351 0.000244141L0 1.32543L4.97297 5.6796L0 10.0338L1.51351 11.3589L8 5.6796L1.51351 0.000244141Z"></path>
+          </svg>
+        )}
       </a>
       <style jsx>{styles}</style>
     </>
   );
 }
 
-const primary = "#ec008c";
-
 const styles = css`
   a {
+    border: 1px solid ${colors.primary};
+    color: ${colors.primary};
+    display: block;
+    font-size: 0.625rem;
     font-style: normal;
     font-weight: 600;
-    font-size: 0.625rem;
-    line-height: 223.4%;
-    display: block;
-    padding: 5px 15px;
-    text-transform: uppercase;
     letter-spacing: 0.01em;
-    transition: all 0.3s ease-out;
-    border: 1px solid #ec008c;
+    line-height: 223.4%;
+    padding: 5px 15px;
     position: relative;
-    color: #ec008c;
+    text-transform: uppercase;
+    transition: all 0.3s ease-out;
   }
 
   a:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
+    background: ${colors.primary};
     bottom: 0;
-    background: #ec008c;
-    transform: scaleY(0);
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
     transform-origin: 50% 100%;
+    transform: scaleY(0);
     transition: transform 0.4s ease-out;
+    z-index: -1;
   }
 
   a:hover:before {
@@ -67,21 +66,21 @@ const styles = css`
   }
 
   a:hover {
+    color: ${colors.textPrimary};
     opacity: 1;
-    color: #ffffff;
   }
 
   a svg {
-    width: 0.5rem;
-    margin-left: 0.9375rem;
-    display: inline-block;
-    vertical-align: middle;
-    fill: #ec008c;
     animation: arrow 2.5s infinite;
+    display: inline-block;
+    fill: ${colors.primary};
+    margin-left: 0.9375rem;
+    vertical-align: middle;
+    width: 0.5rem;
   }
 
   a:hover svg {
-    fill: #ffffff;
+    fill: ${colors.textPrimary};
   }
 
   @keyframes arrow {

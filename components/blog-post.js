@@ -1,6 +1,7 @@
 import ReactMarkdown from "react-markdown";
 import css from "styled-jsx/css";
 import BlogDate from "./blog-date";
+import CodeBlock from "./code-block";
 
 const BlogPost = ({ frontmatter, markdownBody, siteTitle }) => {
   if (!frontmatter) return null;
@@ -17,7 +18,7 @@ const BlogPost = ({ frontmatter, markdownBody, siteTitle }) => {
       <div className="content">
         <BlogDate date={frontmatter.date} />
         <h1 className="title">{frontmatter.title}</h1>
-        <ReactMarkdown source={markdownBody} skipHtml={true} />
+        <ReactMarkdown source={markdownBody} skipHtml={true} renderers={{ code: CodeBlock }} />
       </div>
       <style jsx>{styles}</style>
     </article>

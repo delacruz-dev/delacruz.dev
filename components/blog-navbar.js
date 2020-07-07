@@ -4,7 +4,7 @@ import Button from "./button";
 function BlogNavbar() {
   return (
     <>
-      <nav className="navbar">
+      <nav className="navbar" role="navigation" aria-label="main navigation">
         <div>
           <a href="/" title="Dani de la Cruz">
             <img src="/danidev.svg" alt="Dani de la Cruz" width="30" height="30" />
