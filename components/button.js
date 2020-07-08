@@ -66,7 +66,7 @@ const styles = css`
   }
 
   a:hover {
-    color: ${colors.textPrimary};
+    color: ${colors.white};
     opacity: 1;
   }
 
@@ -80,7 +80,7 @@ const styles = css`
   }
 
   a:hover svg {
-    fill: ${colors.textPrimary};
+    fill: ${colors.white};
   }
 
   @keyframes arrow {

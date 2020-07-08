@@ -1,17 +1,17 @@
 import matter from "gray-matter";
 import * as React from "react";
 import BlogHeader from "../../components/blog-header";
-import BlogNavbar from "../../components/blog-navbar";
 import BlogPost from "../../components/blog-post";
 import Layout from "../../components/layout";
 import Meta from "../../components/meta";
+import NavBar from "../../components/navbar";
 const glob = require("glob");
 
 export default function Post(props) {
   return (
     <Layout>
       <Meta />
-      <BlogNavbar />
+      <NavBar />
       <BlogHeader />
       <BlogPost {...props} />
     </Layout>

@@ -1,15 +1,15 @@
 import matter from "gray-matter";
-import BlogList from "../../components/blog-list";
-import BlogLayout from "../../components/blog-layout";
 import BlogHeader from "../../components/blog-header";
+import BlogLayout from "../../components/blog-layout";
+import BlogList from "../../components/blog-list";
 import Meta from "../../components/meta";
-import BlogNavbar from "../../components/blog-navbar";
+import NavBar from "../../components/navbar";
 
 const Index = ({ posts }) => {
   return (
     <BlogLayout>
       <Meta />
-      <BlogNavbar />
+      <NavBar />
       <BlogHeader />
       <BlogList allBlogs={posts} />
       {/* <Footer /> */}

@@ -31,14 +31,10 @@ export default function Meta(props) {
           a {
             text-decoration: none;
             color: inherit;
-            transition: opacity 0.2s ease;
           }
           a:hover {
-            transition: opacity 0.2s ease;
-            opacity: 0.5;
             text-decoration-color: inherit;
           }
-
 
           article a {
             text-decoration: underline;
