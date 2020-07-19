@@ -29,6 +29,7 @@ function NavBar() {
             title="Mentoring a medida para programadores de Front-End"
             href="/contactar"
             data-tracking="navbar-cta"
+            withAnimation
           >
             Contactar
           </Button>

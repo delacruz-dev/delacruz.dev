@@ -1,20 +1,15 @@
-import Hero from "../components/hero";
-import Layout from "../components/layout";
+import BlogLayout from "../components/blog-layout";
+import Meta from "../components/meta";
 import NavBar from "../components/navbar";
-import Skills from "../components/skills";
-import Experience from "../components/experience";
-import Testimonials from "../components/testimonials";
-import Footer from "../components/footer";
+import SobreMiHero from "../components/sobre-mi-hero";
 
 function Home() {
   return (
-    <Layout>
+    <BlogLayout>
+      <Meta />
       <NavBar />
-      <Skills />
-      <Experience />
-      <Testimonials />
-      <Footer />
-    </Layout>
+      <SobreMiHero />
+    </BlogLayout>
   );
 }
 

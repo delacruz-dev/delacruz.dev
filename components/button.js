@@ -1,10 +1,11 @@
+import cx from "classnames";
 import css from "styled-jsx/css";
 import colors from "./colors";
 
-function Button({ children, href, title, withAnimation = true, ...props }) {
+function Button({ children, className, href, title, withAnimation = false, big = false, ...props }) {
   return (
     <>
-      <a href={href} title={title} {...props}>
+      <a href={href} title={title} {...props} className={cx(className, { big })}>
         {children}
         {withAnimation && (
           <svg
@@ -37,11 +38,14 @@ const styles = css`
     padding: 5px 15px;
     position: relative;
     transition: all 0.3s ease-out;
+    word-break: keep-all;
+    white-space: nowrap;
   }
 
   a:hover,
   a:active {
     background: ${colors.primaryHover};
+    cursor: pointer;
   }
 
   a svg {
@@ -51,6 +55,10 @@ const styles = css`
     margin-left: 0.3rem;
     vertical-align: middle;
     width: 0.5rem;
+  }
+
+  .big {
+    font-size: 1.2rem;
   }
 
   @media (min-width: 768px) {

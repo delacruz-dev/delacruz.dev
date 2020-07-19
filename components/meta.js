@@ -198,12 +198,19 @@ export default function Meta(props) {
             font-weight: normal;
           }
 
-          p, li {
+          p,
+          li {
             font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
             font-size: 1.2rem;
             letter-spacing: -0.5px;
             line-height: 1.5;
             color: #464646;
+          }
+
+          section {
+            max-width: 1280px;
+            margin-left: auto;
+            margin-right: auto;
           }
 
           @media (min-width: 1280px) {
