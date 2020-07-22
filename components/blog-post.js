@@ -28,6 +28,7 @@ const BlogPost = ({ frontmatter, markdownBody, siteTitle }) => {
 const styles = css`
   .container {
     flex-grow: 1;
+    min-height: 100vh;
   }
 
   .content {

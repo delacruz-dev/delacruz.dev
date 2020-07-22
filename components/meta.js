@@ -1,4 +1,5 @@
 import Head from "next/head";
+import colors from "./colors";
 
 export default function Meta(props) {
   return (
@@ -20,13 +21,14 @@ export default function Meta(props) {
             overflow-y: scroll;
           }
           body {
-            margin: 0;
-            font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-            overflow-x: hidden;
-            color: #0e1e25cc;
-            font-size: 16px;
-            -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            background-color: ${colors.background};
+            color: #0e1e25cc;
+            font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 16px;
+            margin: 0;
+            overflow-x: hidden;
           }
           a {
             text-decoration: none;
@@ -175,13 +177,14 @@ export default function Meta(props) {
 
           h1,
           h2 {
+            font-family: "Open Sans", sans-serif;
             font-weight: 500;
           }
 
           h1 {
-            font-size: 2rem;
             letter-spacing: -1px;
             line-height: 1.1875;
+            font-weight: 600;
           }
 
           h2 {
@@ -207,7 +210,7 @@ export default function Meta(props) {
             color: #464646;
           }
 
-          section {
+          .container {
             max-width: 1280px;
             margin-left: auto;
             margin-right: auto;
@@ -215,7 +218,7 @@ export default function Meta(props) {
 
           @media (min-width: 1280px) {
             h1 {
-              font-size: 2rem;
+              font-size: 3rem;
               letter-spacing: -1px;
               line-height: 1.1875;
             }

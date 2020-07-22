@@ -1,4 +1,5 @@
 import css from "styled-jsx/css";
+import { unit } from "./spacing";
 
 function Footer() {
   return (
@@ -39,7 +40,7 @@ function Footer() {
             </a>
             <a
               title="GitHub"
-              href="https://github.com/d4nidev"
+              href="https://github.com/delacruz-dev"
               target="_blank"
               rel="noopener nofollow"
               aria-label="Mis contribuciones de código abierto en GitHub"
@@ -86,6 +87,8 @@ const styles = css`
   .footer {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 200px;
   }
 
   .footer p {
@@ -93,7 +96,7 @@ const styles = css`
   }
 
   .footer-icon {
-    margin: 3px;
+    margin-left: ${2 * unit}px;
     vertical-align: middle;
     transition: opacity 0.2s ease;
   }

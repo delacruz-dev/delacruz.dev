@@ -2,10 +2,21 @@ import cx from "classnames";
 import css from "styled-jsx/css";
 import colors from "./colors";
 
-function Button({ children, className, href, title, withAnimation = false, big = false, ...props }) {
+function Button({
+  big = false,
+  children,
+  className,
+  darkbg = false,
+  href,
+  huge = false,
+  outlined = false,
+  title,
+  withAnimation = false,
+  ...props
+}) {
   return (
     <>
-      <a href={href} title={title} {...props} className={cx(className, { big })}>
+      <a href={href} title={title} {...props} className={cx(className, { big, huge, outlined, darkbg })}>
         {children}
         {withAnimation && (
           <svg
@@ -35,7 +46,7 @@ const styles = css`
     font-size: 0.9rem;
     font-style: normal;
     font-weight: 600;
-    padding: 5px 15px;
+    padding: 5px 15px 6px;
     position: relative;
     transition: all 0.3s ease-out;
     word-break: keep-all;
@@ -59,6 +70,35 @@ const styles = css`
 
   .big {
     font-size: 1.2rem;
+  }
+
+  .huge {
+    font-size: 1.5rem;
+  }
+
+  .outlined {
+    background-color: transparent;
+    color: ${colors.primary};
+    transition: all 0.2s ease-out;
+  }
+
+  .darkbg.outlined {
+    background-color: transparent;
+    color: ${colors.white};
+    transition: all 0.2s ease-out;
+    border: 1px solid ${colors.white};
+  }
+
+  .outlined:hover,
+  .outlined:active {
+    color: ${colors.white};
+    background-color: ${colors.primary};
+  }
+
+  .darkbg.outlined:hover,
+  .darkbg.outlined:active {
+    color: ${colors.primaryText};
+    background-color: ${colors.white};
   }
 
   @media (min-width: 768px) {
