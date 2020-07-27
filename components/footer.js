@@ -85,10 +85,10 @@ function Footer() {
 
 const styles = css`
   .footer {
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
     height: 200px;
+    justify-content: center;
   }
 
   .footer p {
@@ -115,6 +115,10 @@ const styles = css`
     width: 15px;
     margin: 0 5px;
     vertical-align: middle;
+  }
+
+  .content {
+    max-width: 80%;
   }
 `;
 
