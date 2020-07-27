@@ -13,7 +13,7 @@ function ConsultancyService() {
           </h2>
 
           <div className="cta">
-            <Button outlined huge>
+            <Button href="/consultancy" outlined huge>
               Contratar
             </Button>
           </div>

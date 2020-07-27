@@ -6,9 +6,7 @@ import Contact from "../components/contact";
 function Home() {
   return (
     <Layout>
-      <NavBar />
       <Contact />
-      <Footer />
     </Layout>
   );
 }

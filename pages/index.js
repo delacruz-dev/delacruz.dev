@@ -1,16 +1,16 @@
-import Footer from "../components/footer";
+import ConsultancyService from "../components/consultancy-service";
+import Hero from "../components/hero";
 import Layout from "../components/layout";
-import NavBar from "../components/navbar";
-import Hero from "../components/sobre-mi-hero";
+import MentoringService from "../components/mentoring-service";
 import Testimonials from "../components/testimonials";
 
 function Home() {
   return (
     <Layout>
-      <NavBar />
       <Hero />
+      <MentoringService />
+      <ConsultancyService />
       <Testimonials />
-      <Footer />
     </Layout>
   );
 }

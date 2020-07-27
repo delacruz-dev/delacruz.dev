@@ -1,4 +1,5 @@
 import cx from "classnames";
+import Link from "next/link";
 import css from "styled-jsx/css";
 import colors from "./colors";
 
@@ -16,21 +17,23 @@ function Button({
 }) {
   return (
     <>
-      <a href={href} title={title} {...props} className={cx(className, { big, huge, outlined, darkbg })}>
-        {children}
-        {withAnimation && (
-          <svg
-            width="8"
-            height="12"
-            viewBox="0 0 8 12"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            data-swup-page="about"
-          >
-            <path d="M1.51351 0.000244141L0 1.32543L4.97297 5.6796L0 10.0338L1.51351 11.3589L8 5.6796L1.51351 0.000244141Z"></path>
-          </svg>
-        )}
-      </a>
+      <Link href={href}>
+        <a href={href} title={title} {...props} className={cx(className, { big, huge, outlined, darkbg })}>
+          {children}
+          {withAnimation && (
+            <svg
+              width="8"
+              height="12"
+              viewBox="0 0 8 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              data-swup-page="about"
+            >
+              <path d="M1.51351 0.000244141L0 1.32543L4.97297 5.6796L0 10.0338L1.51351 11.3589L8 5.6796L1.51351 0.000244141Z"></path>
+            </svg>
+          )}
+        </a>
+      </Link>
       <style jsx>{styles}</style>
     </>
   );

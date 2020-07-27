@@ -1,20 +1,14 @@
 import matter from "gray-matter";
 import BlogHeader from "../../components/blog-header";
-import BlogLayout from "../../components/blog-layout";
 import BlogList from "../../components/blog-list";
-import Meta from "../../components/meta";
-import NavBar from "../../components/navbar";
-import Footer from "../../components/footer";
+import Layout from "../../components/layout";
 
 const Index = ({ posts }) => {
   return (
-    <BlogLayout>
-      <Meta />
-      <NavBar />
+    <Layout>
       <BlogHeader />
       <BlogList allBlogs={posts} />
-      <Footer />
-    </BlogLayout>
+    </Layout>
   );
 };
 

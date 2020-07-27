@@ -1,55 +1,42 @@
 import css from "styled-jsx/css";
+import Button from "./button";
 import colors from "./colors";
 
 function Hero() {
   return (
     <>
-      <section className="hero has-background-light is-fullheight-with-navbar">
-        <div className="hero-image">
-          <img
-            sizes="(max-width: 1400px) 100vw, 1400px"
-            srcSet="images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_200.jpg 200w,
+      <section id="home" className="hero">
+        <div className="container">
+          <div className="hero-image">
+            <img
+              sizes="(max-width: 732px) 100vw, 732px"
+              srcSet="images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_200.jpg 200w,
 images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_416.jpg 416w,
 images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_585.jpg 585w,
-images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_732.jpg 732w,
-images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_866.jpg 866w,
-images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_986.jpg 986w,
-images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_1094.jpg 1094w,
-images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_1200.jpg 1200w,
-images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_1319.jpg 1319w,
-images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_1400.jpg 1400w"
-            src="images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_1400.jpg"
-            alt="Daniel de la Cruz"
-          />
-        </div>
-        <div className="hero-body home">
-          <div className="container">
-            <p className="subtitle is-size-3 is-size-4-mobile">
-              ¡Hola! <span className="wave">👋</span>
-            </p>
-            <h1 className="title is-size-1 is-size-3-mobile">Soy Dani.</h1>
-            <h2 className="subtitle is-size-3 is-size-4-mobile has-text-grey">
-              He trabajado como <strong>ingeniero de software</strong> durante más de una década y quiero ser tu{" "}
-              <strong className="is-text-primary">mentor</strong> para ayudarte a dar un{" "}
-              <strong>salto en tu carrera</strong>.
-            </h2>
-            <div className="buttons">
-              <a
-                className="button is-large is-medium-mobile is-primary is-outlined"
-                alt="Mentoring a medida para programadores de Front-End"
-                href="/#skills"
-                data-tracking="about-me-hero-cta"
-              >
-                Sobre mí
-              </a>
-              <a
-                className="button is-large is-medium-mobile is-primary"
-                alt="Mentoring a medida para programadores de Front-End"
-                href="/mentoring"
-                data-tracking="hero-cta"
-              >
-                Mentoring
-              </a>
+images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_732.jpg 732w"
+              src="images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_732.jpg"
+              alt="Daniel de la Cruz"
+            />
+          </div>
+          <div className="hero-body">
+            <div className="hero-content">
+              <p className="subtitle">
+                ¡Hola! <span className="wave">👋</span>
+              </p>
+              <h1 className="title">Soy Dani.</h1>
+              <h2 className="subtitle">
+                He trabajado como <strong>ingeniero de software</strong> durante más de una década y quiero ser tu{" "}
+                <strong className="is-text-primary">mentor</strong> para ayudarte a dar un{" "}
+                <strong>salto en tu carrera</strong>.
+              </h2>
+              <div className="buttons">
+                <Button href="/about-me" className="button" big outlined>
+                  Sobre mí
+                </Button>
+                <Button href="/mentoring" className="button" big>
+                  Mentoring
+                </Button>
+              </div>
             </div>
           </div>
         </div>
@@ -60,31 +47,38 @@ images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_1400.jpg 1400
 }
 
 const styles = css`
+  .container {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 70vh;
+    justify-content: center;
+  }
+
+  .hero-body {
+    width: 50vw;
+    padding: 0 100px 0 0;
+    display: block;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hero-image {
+    width: 30vw;
+  }
+
   .is-text-primary {
     color: ${colors.primary};
   }
 
-  .is-primary {
-    color: ${colors.white};
-    background: ${colors.primary};
-    border: 1px solid ${colors.primary};
-  }
-
-  .is-primary:hover,
-  .is-primary:active {
-    background: ${colors.primaryHover};
-  }
-
-  .is-primary.is-outlined {
-    border: 1px solid ${colors.primary};
-    color: ${colors.primary};
-    background: ${colors.transparent};
-  }
-
-  .is-primary.is-outlined:hover {
-    border: 1px solid ${colors.primary};
-    color: ${colors.white};
-    background: ${colors.primary};
+  .buttons {
+    display: grid;
+    grid-template-columns: 115px 127px;
+    grid-column-gap: 10px;
+    margin: 20px 0;
   }
 
   @keyframes wave {
@@ -110,12 +104,73 @@ const styles = css`
       transform: rotate(0deg);
     }
   }
+
   .wave {
     animation-duration: 1.8s;
     animation-iteration-count: infinite;
     animation-name: wave;
     display: inline-block;
     transform-origin: 70% 70%;
+    font-size: 1.3em;
+    margin-left: 5px;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      margin-top: 50px;
+      height: auto;
+    }
+
+    .hero-body,
+    .hero-image {
+      width: 100%;
+    }
+
+    .hero-body {
+      padding: 20px;
+    }
+
+    .hero-image,
+    .hero-image img {
+      height: 40vh;
+    }
+    .hero-image img {
+      object-fit: cover;
+      display: block;
+      width: 100vw;
+    }
+
+    .title,
+    .subtitle {
+      margin-bottom: 15px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .title {
+      font-size: 1.9em;
+    }
+
+    .subtitle {
+      font-size: 1.2em;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .subtitle {
+      font-size: 1.3em;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .title {
+      font-size: 1.5em;
+    }
+
+    .subtitle {
+      font-size: 1em;
+    }
   }
 `;
 
