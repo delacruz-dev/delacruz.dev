@@ -1,17 +1,21 @@
 import matter from "gray-matter";
-import * as React from "react";
+import Head from "next/head";
+import React from "react";
 import BlogHeader from "../../components/blog-header";
 import BlogPost from "../../components/blog-post";
+import Footer from "../../components/footer";
 import Layout from "../../components/layout";
 import Meta from "../../components/meta";
 import NavBar from "../../components/navbar";
-import Footer from "../../components/footer";
 
 const glob = require("glob");
 
 export default function Post(props) {
   return (
     <Layout>
+      <Head>
+        <script async={true} src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </Head>
       <Meta />
       <NavBar />
       <BlogHeader />

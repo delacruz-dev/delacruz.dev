@@ -4,24 +4,31 @@ import css from "styled-jsx/css";
 import BlogDate from "./blog-date";
 import colors from "./colors";
 
-const BlogList = ({ allBlogs }) => {
+const BlogList = ({ posts }) => {
   return (
     <div className="container">
-      {allBlogs.length > 1 &&
-        allBlogs.map((post) => (
-          <Link key={post.slug} href={{ pathname: `/blog/${post.slug}` }}>
-            <a>
-              <article className="article">
-                <img src={post.frontmatter.frontListImageSrc} loading="lazy" width="200" />
-                <div>
-                  <BlogDate date={post.frontmatter.date} />
-                  <h1 className="title">{post.frontmatter.title}</h1>
-                  <ReactMarkdown source={post.frontmatter.summary} />
-                </div>
-              </article>
-            </a>
-          </Link>
-        ))}
+      {posts.length > 1 &&
+        posts
+          .sort((a, b) => a.frontmatter.date < b.frontmatter.date)
+          .map((post) => (
+            <Link key={post.slug} href={{ pathname: `/blog/${post.slug}` }}>
+              <a>
+                <article className="article">
+                  <img
+                    src={post.frontmatter.frontListImageSrc}
+                    alt={post.frontmatter.title}
+                    loading="lazy"
+                    width="200"
+                  />
+                  <div>
+                    <BlogDate date={post.frontmatter.date} />
+                    <h1 className="title">{post.frontmatter.title}</h1>
+                    <ReactMarkdown source={post.frontmatter.summary} />
+                  </div>
+                </article>
+              </a>
+            </Link>
+          ))}
       <style jsx>{styles}</style>
     </div>
   );

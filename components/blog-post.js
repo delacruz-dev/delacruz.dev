@@ -18,7 +18,12 @@ const BlogPost = ({ frontmatter, markdownBody, siteTitle }) => {
       <div className="content">
         <BlogDate date={frontmatter.date} />
         <h1 className="title">{frontmatter.title}</h1>
-        <ReactMarkdown source={markdownBody} skipHtml={true} renderers={{ code: CodeBlock }} />
+        <ReactMarkdown
+          source={markdownBody}
+          escapeHtml={false}
+          skipHtml={false}
+          renderers={{ code: CodeBlock }}
+        />
       </div>
       <style jsx>{styles}</style>
     </article>

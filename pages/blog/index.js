@@ -12,7 +12,7 @@ const Index = ({ posts }) => {
       <Meta />
       <NavBar />
       <BlogHeader />
-      <BlogList allBlogs={posts} />
+      <BlogList posts={posts} />
       <Footer />
     </BlogLayout>
   );
@@ -21,7 +21,7 @@ const Index = ({ posts }) => {
 export default Index;
 
 export async function getStaticProps() {
-  //get posts & context from folder
+  // Get posts & context from folder
   const posts = ((context) => {
     const keys = context.keys();
     const values = keys.map(context);

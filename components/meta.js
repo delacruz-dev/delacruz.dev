@@ -1,13 +1,16 @@
 import Head from "next/head";
 
-export default function Meta(props) {
+export default function Meta({
+  description = "Mentoring, tutoría y coaching a medida para programadores y programadoras que buscan dar un salto en su carrera profesional.",
+  siteTitle = "Mentoring para programadores - Dani de la Cruz",
+}) {
   return (
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
-        <title>{props.siteTitle}</title>
-        <meta name="Description" content={props.description}></meta>
+        <title>{siteTitle}</title>
+        <meta name="Description" content={description}></meta>
       </Head>
       <style jsx global>
         {`
@@ -198,14 +201,48 @@ export default function Meta(props) {
             font-weight: normal;
           }
 
-          p, li {
+          p,
+          li {
             font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
             font-size: 1.2rem;
             letter-spacing: -0.5px;
             line-height: 1.5;
             color: #464646;
           }
+          
+          blockquote.twitter-tweet {
+            display: inline-block;
+            font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 16px;
+            border-color: #eee #ddd #bbb;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 1px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+            margin: 10px 5px;
+            padding: 0 16px 16px 16px;
+            max-width: 468px;
+          }
 
+          blockquote.twitter-tweet p {
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 20px;
+          }
+
+          blockquote.twitter-tweet a {
+            color: inherit;
+            font-weight: normal;
+            text-decoration: none;
+            outline: 0 none;
+          }
+
+          blockquote.twitter-tweet a:hover,
+          blockquote.twitter-tweet a:focus {
+            text-decoration: underline;
+          }
           @media (min-width: 1280px) {
             h1 {
               font-size: 2rem;
