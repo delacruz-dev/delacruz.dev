@@ -273,6 +273,7 @@ export default function Meta({ title = "Mentoring para programadores - Dani de l
             max-width: 1280px;
             margin-left: auto;
             margin-right: auto;
+            padding: 50px;
           }
 
           .centered {
