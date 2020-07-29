@@ -1,8 +1,9 @@
+import css from "styled-jsx/css";
+import ProudGuy from "./assets/proud-guy";
 import Box from "./box";
 import Button from "./button";
 import Section from "./section";
-import css from "styled-jsx/css";
-import Collaboration from "./assets/collaboration";
+import spacing from "./spacing";
 
 function MentoringBenefits() {
   return (
@@ -20,7 +21,7 @@ function MentoringBenefits() {
                       hacer el mejor uso de ese conocimiento compartiéndolo contigo.
                     </p>
                     <p>
-                      Si me dejas ser tu mentor, puedo ayudarte a <strong>mejorar tus habilidades técnicas</strong>,{" "}
+                      Si me dejas ser tu mentor, puedo ayudarte a <strong>mejorar tus habilidades técnicas</strong>,
                       <strong>acompañarte en tu búsqueda de empleo</strong> o{" "}
                       <string>decidir cuál debería ser el próximo paso en tu carrera.</string>
                     </p>
@@ -38,7 +39,7 @@ function MentoringBenefits() {
               </div>
               <div className="column">
                 <div className="picture">
-                  <Collaboration width="90%" />
+                  <ProudGuy width="90%" height="100%" />
                 </div>
               </div>
             </div>
@@ -88,6 +89,20 @@ const styles = css`
     position: relative;
     vertical-align: top;
     width: 50%;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .row {
+      flex-direction: column;
+    }
+
+    .column {
+      width: 100%;
+    }
+
+    .column:last-child {
+      margin-top: ${10 * spacing.unit}px;
+    }
   }
 `;
 

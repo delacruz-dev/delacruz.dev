@@ -33,16 +33,20 @@ export default function Meta({ title = "Mentoring para programadores - Dani de l
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@d4nidev" />
         <meta name="twitter:domain" content="delacruz.dev" />
-        <meta name="twitter:image" content="https://delacruz.dev/favicon/apple-touch-icon.png" />
+        <meta name="twitter:image" content="https://delacruz.dev/apple-touch-icon.png" />
         <meta name="twitter:site" content="@d4nidev" />
         <meta name="og:locale" content="es-ES" />
         <meta name="og:title" content="Mentoring para programadores - Dani de la Cruz" />
-        <meta name="og:image" content="https://delacruz.dev/favicon/apple-touch-icon.png" />
+        <meta name="og:image" content="https://delacruz.dev/apple-touch-icon.png" />
         <meta
           name="og:description"
           content="Mentoring, tutoría y coaching a medida para programadores y programadoras que buscan dar un salto en su carrera profesional."
         />
         <meta name="og:site_name" content="delacruz.dev" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest"></link>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141784503-1"></script>
       </Head>
       <style jsx global>
@@ -286,6 +290,10 @@ export default function Meta({ title = "Mentoring para programadores - Dani de l
             display: flex;
             align-items: center;
             flex-direction: column;
+          }
+
+          .has-text-primary {
+            color: ${colors.primary};
           }
 
           main {
