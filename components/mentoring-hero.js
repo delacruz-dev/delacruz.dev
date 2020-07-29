@@ -1,6 +1,8 @@
-function MentoringIntro() {
+import Section from './section';
+
+function MentoringHero() {
   return (
-    <section className="hero is-medium is-dark is-bold">
+    <Section>
       <div className="hero-body mentoring">
         <div className="container has-text-centered">
           <h1 className="title is-size-1-desktop">Mentoring profesional</h1>
@@ -12,8 +14,8 @@ function MentoringIntro() {
           </figure>
         </div>
       </div>
-    </section>
+    </Section>
   );
 }
 
-export default MentoringIntro;
+export default MentoringHero;

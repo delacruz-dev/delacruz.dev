@@ -1,6 +1,7 @@
 import css from "styled-jsx/css";
 import colors from "./colors";
 import Button from "./button";
+import Collaboration from "./assets/collaboration";
 
 function MentoringService() {
   return (
@@ -13,7 +14,7 @@ function MentoringService() {
           </h2>
 
           <div className="cta">
-            <Button href="/mentoring" outlined huge darkbg>
+            <Button href="/mentoring" outlined huge>
               Saber más
             </Button>
           </div>
@@ -29,13 +30,7 @@ const styles = css`
     background-color: ${colors.backgroundMentoring};
     padding-bottom: 9rem;
     padding-top: 9rem;
-    color: ${colors.white};
-  }
-
-  .has-text-centered {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    color: ${colors.textPrimary};
   }
 
   .cta {

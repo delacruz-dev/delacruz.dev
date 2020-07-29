@@ -2,6 +2,7 @@ import Link from "next/link";
 import css from "styled-jsx/css";
 import Button from "./button";
 import colors from "./colors";
+import Logo from "./assets/logo";
 
 function NavBar() {
   return (
@@ -10,7 +11,7 @@ function NavBar() {
         <div className="navbar-left">
           <Link href="/">
             <a className="logo" title="Dani de la Cruz">
-              <img src="/danidev.svg" alt="Dani de la Cruz" width="30" height="30" />
+              <Logo />
             </a>
           </Link>
 
@@ -47,8 +48,8 @@ const styles = css`
   }
 
   .navbar {
-    background-color: ${colors.white};
-    border-bottom: 1px solid #edf2f7;
+    background-color: ${colors.backgroundNavbar};
+    border-bottom: 1px solid ${colors.borderNavbar};
     display: flex;
     height: 50px;
     justify-content: space-between;
@@ -72,7 +73,7 @@ const styles = css`
 
   .navbar-sections a {
     display: block;
-    color: ${colors.primaryText};
+    color: ${colors.textPrimary};
     margin: auto 10px;
     white-space: nowrap;
   }
@@ -84,17 +85,14 @@ const styles = css`
   .logo {
     opacity: 1;
     transition: opacity 0.2s ease;
-    min-width: 20px;
+    min-width: 30px;
+    display: flex;
+    flex-direction: column;
   }
 
   .logo:hover {
     opacity: 0.5;
     cursor: pointer;
-  }
-
-  img {
-    margin-bottom: 0;
-    vertical-align: text-top;
   }
 
   a {

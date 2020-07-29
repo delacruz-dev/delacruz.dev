@@ -124,9 +124,9 @@ function Testimonials() {
 
 const styles = css`
   .box {
-    background-color: ${colors.white};
+    background-color: ${colors.backgroundBox};
     border-radius: 4px;
-    border: 1px solid ${colors.boxBorder};
+    border: 1px solid ${colors.borderBox};
     display: flex;
     flex-direction: column;
     padding: ${boxPadding}px;

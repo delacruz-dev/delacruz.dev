@@ -61,7 +61,7 @@ export default function Meta({ title = "Mentoring para programadores - Dani de l
             -moz-osx-font-smoothing: grayscale;
             -webkit-font-smoothing: antialiased;
             background-color: ${colors.background};
-            color: ${colors.typography};
+            color: ${colors.textPrimary};
             font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
             font-size: 16px;
             overflow-x: hidden;
@@ -279,6 +279,12 @@ export default function Meta({ title = "Mentoring para programadores - Dani de l
           .centered {
             align-items: center;
             justify-content: center;
+          }
+
+          .has-text-centered {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
           }
 
           @media (max-width: 414px) {

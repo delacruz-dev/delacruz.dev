@@ -56,11 +56,11 @@ const styles = css`
   input,
   textarea {
     align-items: center;
-    background-color: ${colors.white};
+    background-color: ${colors.backgroundInput};
     border-radius: 4px;
-    border: 1px solid ${colors.boxBorder};
+    border: 1px solid ${colors.borderInput};
     box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
-    color: ${colors.primaryText};
+    color: ${colors.textPrimary};
     display: inline-flex;
     font-family: inherit;
     font-size: 1.25rem;
@@ -83,7 +83,7 @@ const styles = css`
   }
 
   label {
-    color: ${colors.primaryText};
+    color: ${colors.textPrimary};
     display: block;
     font-size: 1.25rem;
     font-weight: 700;
@@ -102,7 +102,7 @@ const styles = css`
     border-radius: 4px;
     border: 1px solid ${colors.primary};
     background: ${colors.primary};
-    color: ${colors.white};
+    color: ${colors.textSecondary};
     display: block;
     font-size: 1.5rem;
     font-style: normal;

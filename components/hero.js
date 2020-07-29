@@ -71,7 +71,7 @@ const styles = css`
   }
 
   .is-text-primary {
-    color: ${colors.primary};
+    color: ${colors.textPrimary};
   }
 
   .buttons {

@@ -29,7 +29,7 @@ const styles = css`
     background-color: ${colors.backgroundConsultancy};
     padding-bottom: 9rem;
     padding-top: 9rem;
-    color: ${colors.primaryText};
+    color: ${colors.textPrimary};
   }
 
   .has-text-centered {

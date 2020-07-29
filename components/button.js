@@ -44,7 +44,7 @@ const styles = css`
     border-radius: 4px;
     border: 1px solid ${colors.primary};
     background: ${colors.primary};
-    color: ${colors.white};
+    color: ${colors.textSecondary};
     display: block;
     font-size: 0.9rem;
     font-style: normal;
@@ -65,7 +65,7 @@ const styles = css`
   a svg {
     animation: arrow 2.5s infinite;
     display: inline-block;
-    fill: ${colors.white};
+    fill: ${colors.textSecondary};
     margin-left: 0.3rem;
     vertical-align: middle;
     width: 0.5rem;
@@ -87,21 +87,21 @@ const styles = css`
 
   .darkbg.outlined {
     background-color: transparent;
-    color: ${colors.white};
+    color: ${colors.secondary};
     transition: all 0.2s ease-out;
-    border: 1px solid ${colors.white};
+    border: 1px solid ${colors.secondary};
   }
 
   .outlined:hover,
   .outlined:active {
-    color: ${colors.white};
+    color: ${colors.textSecondary};
     background-color: ${colors.primary};
   }
 
   .darkbg.outlined:hover,
   .darkbg.outlined:active {
-    color: ${colors.primaryText};
-    background-color: ${colors.white};
+    color: ${colors.textPrimary};
+    background-color: ${colors.secondary};
   }
 
   @media (min-width: 768px) {
