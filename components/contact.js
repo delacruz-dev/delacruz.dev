@@ -14,12 +14,11 @@ function Contact() {
         <form id="form" acceptCharset="utf-8" action="https://www.usebasin.com/f/2e7223846893" method="post">
           <div className="field">
             <div className="control">
-              <label htmlFor="name">Tu nombre</label>
+              <label htmlFor="name">Tus datos</label>
               <input id="name" name="name" type="text" placeholder="Nombre" required />
             </div>
 
             <div className="control">
-              <label htmlFor="name">Tu e-mail</label>
               <input id="email" type="email" name="email" placeholder="Email" />
             </div>
           </div>
@@ -99,19 +98,27 @@ const styles = css`
   }
 
   button {
+    align-items: center;
+    background: ${colors.primary};
     border-radius: 4px;
     border: 1px solid ${colors.primary};
-    background: ${colors.primary};
     color: ${colors.textSecondary};
-    display: block;
-    font-size: 1.5rem;
+    display: inline-flex;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 600;
-    padding: 5px 15px 6px;
+    height: 3rem;
+    justify-content: center;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    min-width: 3rem;
+    padding: 0 1.5rem;
     position: relative;
     transition: all 0.3s ease-out;
-    word-break: keep-all;
+    vertical-align: middle;
     white-space: nowrap;
+    word-break: keep-all;
   }
 
   button:hover,

@@ -1,7 +1,7 @@
 const colors = {
   background: "#edf2f4",
-  backgroundConsultancy: "#457b9d",
-  backgroundMentoring: "#a8dadc",
+  backgroundConsultancy: "#edf2f4",
+  backgroundMentoring: "#edf2f4",
   backgroundBox: "#ffffff",
   backgroundNavbar: "#ffffff",
   backgroundInput: "#ffffff",

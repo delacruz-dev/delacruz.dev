@@ -1,6 +1,6 @@
 function Collaboration(props) {
   return (
-    <svg data-name="Layer 1" width={759.523} height={640.549} viewBox="0 0 759.523 640.549" {...props}>
+    <svg data-name="Layer 1" width={759.523} height={640.549} viewBox="0 100 759.523 640.549" {...props}>
       <path fill="#e6e6e6" d="M11.619.396H710.96v447.889H11.619z" />
       <path fill="#fff" d="M31.616 56.573h659.346v365.215H31.616z" />
       <path fill="#f9a826" d="M11.32 0h699.341v29.711H11.32z" />

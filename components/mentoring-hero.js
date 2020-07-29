@@ -1,21 +1,29 @@
-import Section from './section';
+import css from "styled-jsx/css";
+import Section from "./section";
 
 function MentoringHero() {
   return (
-    <Section>
-      <div className="hero-body mentoring">
+    <>
+      <Section>
         <div className="container has-text-centered">
-          <h1 className="title is-size-1-desktop">Mentoring profesional</h1>
-          <h2 className="subtitle is-size-4-desktop">
-            Para programadores y programadoras que quieran dar un salto en su carrera desarrollando software.
-          </h2>
-          <figure className="image is-128x128 avatar">
+          <figure>
             <img className="is-rounded" src="/images/mypic/badge.jpg" alt="dani de la cruz" />
           </figure>
+          <h1 className="title">Mentoring profesional</h1>
+          <h2 className="subtitle">
+            Para programadores y programadoras que quieran dar un salto en su carrera desarrollando software.
+          </h2>
         </div>
-      </div>
-    </Section>
+      </Section>
+      <style jsx>{styles}</style>
+    </>
   );
 }
+
+const styles = css`
+  img {
+    border-radius: 290486px;
+  }
+`;
 
 export default MentoringHero;

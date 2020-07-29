@@ -14,7 +14,7 @@ function MentoringService() {
           </h2>
 
           <div className="cta">
-            <Button href="/mentoring" outlined huge>
+            <Button href="/mentoring" outlined>
               Saber más
             </Button>
           </div>

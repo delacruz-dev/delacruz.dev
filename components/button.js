@@ -4,21 +4,26 @@ import css from "styled-jsx/css";
 import colors from "./colors";
 
 function Button({
-  big = false,
   children,
   className,
   darkbg = false,
   href,
-  huge = false,
   outlined = false,
   title,
+  size,
   withAnimation = false,
   ...props
 }) {
   return (
     <>
       <Link href={href}>
-        <a href={href} title={title} {...props} className={cx(className, { big, huge, outlined, darkbg })}>
+        <a
+          type="button"
+          href={href}
+          title={title}
+          {...props}
+          className={cx(className, { [size]: !!size, outlined, darkbg })}
+        >
           {children}
           {withAnimation && (
             <svg
@@ -41,19 +46,28 @@ function Button({
 
 const styles = css`
   a {
+    align-items: center;
+    background: ${colors.primary};
     border-radius: 4px;
     border: 1px solid ${colors.primary};
-    background: ${colors.primary};
     color: ${colors.textSecondary};
-    display: block;
-    font-size: 0.9rem;
+    display: inline-flex;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 600;
-    padding: 5px 15px 6px;
+    height: 3rem;
+    justify-content: center;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    min-width: 3rem;
+    padding: 0 1.5rem;
     position: relative;
+    text-decoration: none;
     transition: all 0.3s ease-out;
-    word-break: keep-all;
+    vertical-align: middle;
     white-space: nowrap;
+    word-break: keep-all;
   }
 
   a:hover,
@@ -69,6 +83,14 @@ const styles = css`
     margin-left: 0.3rem;
     vertical-align: middle;
     width: 0.5rem;
+  }
+
+  .small {
+    font-size: 0.875rem;
+    padding: 0 1rem;
+    height: 2.5rem;
+    min-width: 2.5rem;
+    margin-bottom: 0;
   }
 
   .big {

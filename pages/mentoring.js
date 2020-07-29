@@ -8,9 +8,9 @@ function Mentoring() {
   return (
     <Layout>
       <MentoringHero />
-      <Pricing />
-      <MentoringStyle />
       <MentoringBenefits />
+      {/* <MentoringStyle />
+      <Pricing /> */}
     </Layout>
   );
 }

@@ -31,6 +31,7 @@ function NavBar() {
             href="/contactar"
             data-tracking="navbar-cta"
             withAnimation
+            size='small'
           >
             Contactar
           </Button>
@@ -51,7 +52,7 @@ const styles = css`
     background-color: ${colors.backgroundNavbar};
     border-bottom: 1px solid ${colors.borderNavbar};
     display: flex;
-    height: 50px;
+    height: 55px;
     justify-content: space-between;
     left: 0;
     position: fixed;

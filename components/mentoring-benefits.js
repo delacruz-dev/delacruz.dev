@@ -1,66 +1,94 @@
+import Box from "./box";
+import Button from "./button";
+import Section from "./section";
+import css from "styled-jsx/css";
+import Collaboration from "./assets/collaboration";
+
 function MentoringBenefits() {
   return (
-    <div id="mentoring-benefits" className="section is-medium has-background-light">
-      <div className="columns is-centered">
-        <div className="column is-three-fifths has-text-centered">
-          <h1 className="title is-spaced is-size-3-desktop is-size-4-mobile">Beneficios de un plan de Mentoring</h1>
-          <h2 className="subtitle is-size-5-desktop">
-            He aprendido un par de cosas durante mi carrera como programador, y me comprometo a ayudarte a hacer el
-            mejor uso de ese conocimiento compartiéndolo contigo.
-          </h2>
-        </div>
-      </div>
-      <div className="benefits-grid">
-        <div className="container is-narrow">
-          <div className="columns is-multiline has-text-centered">
-            <div className="column is-12-mobile is-one-third-tablet is-one-fifth-desktop">
-              <span className="icon has-text-info is-size-1 is-spaced">🛠</span>
-              <h1 className="title is-size-4 is-spaced">Técnicas</h1>
-              <p>
-                Dominarás técnicas, metodologías y herramientas que te permitirán entregar tu trabajo con calidad y
-                eficiencia.
-              </p>
-            </div>
-            <div className="column is-12-mobile is-one-third-tablet is-one-fifth-desktop">
-              <span className="icon has-text-info is-size-1 is-spaced">📚</span>
-              <h1 className="title is-size-4 is-spaced">Aprendizaje</h1>
-              <p>Entrarás en una dinámica de aprendizaje continuo, a tu ritmo y a tu medida.</p>
-            </div>
-            <div className="column is-12-mobile is-one-third-tablet is-one-fifth-desktop">
-              <span className="icon has-text-info is-size-1 is-spaced">👥</span>
-              <h1 className="title is-size-4 is-spaced" style={{ wordBreak: "inherit" }}>
-                Acompañamiento
-              </h1>
-              <p>Te acompañaré durante tu proceso de toma de decisiones y te asesoraré sobre cómo definir objetivos.</p>
-            </div>
-            <div className="column is-12-mobile is-one-third-tablet is-one-fifth-desktop">
-              <span className="icon has-text-info is-size-1 is-spaced">👩🏻‍💻</span>
-              <h1 className="title is-size-4 is-spaced">Oportunidades</h1>
-              <p>Encontraremos las mejores oportunidades laborales para ti y te acompañaré durante todo el proceso.</p>
-            </div>
-            <div className="column is-12-mobile is-one-third-tablet is-one-fifth-desktop">
-              <span className="icon has-text-info is-size-1 is-spaced">🌱</span>
-              <h1 className="title is-size-4 is-spaced">Crecimiento</h1>
-              <p>
-                Definiremos un plan de carrera basado en el crecimiento personal que puedas medir para crear conciencia
-                de tu progresión.
-              </p>
+    <>
+      <Section diagonal id="mentoring-benefits">
+        <div className="container">
+          <div className="stackable">
+            <div className="row">
+              <div className="column">
+                <Box>
+                  <div className="box-content">
+                    <h1 className="box-title">¿Cómo puede ayudarte tener un mentor?</h1>
+                    <p>
+                      He aprendido un par de cosas durante mi carrera como programador, y me comprometo a ayudarte a
+                      hacer el mejor uso de ese conocimiento compartiéndolo contigo.
+                    </p>
+                    <p>
+                      Si me dejas ser tu mentor, puedo ayudarte a <strong>mejorar tus habilidades técnicas</strong>,{" "}
+                      <strong>acompañarte en tu búsqueda de empleo</strong> o{" "}
+                      <string>decidir cuál debería ser el próximo paso en tu carrera.</string>
+                    </p>
+                    <div className="has-text-centered">
+                      <Button
+                        alt="Mentoring a medida para programadores de Front-End"
+                        href="/contactar"
+                        data-tracking="benefits-cta"
+                      >
+                        Hablemos
+                      </Button>
+                    </div>
+                  </div>
+                </Box>
+              </div>
+              <div className="column">
+                <div className="picture">
+                  <Collaboration width="90%" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="has-text-centered">
-        <a
-          className="button is-large is-medium-mobile is-dark"
-          alt="Mentoring a medida para programadores de Front-End"
-          href="/contactar"
-          data-tracking="benefits-cta"
-        >
-          Hablemos
-        </a>
-      </div>
-    </div>
+      </Section>
+      <style jsx>{styles}</style>
+    </>
   );
 }
+
+const styles = css`
+  .box-title {
+    font-size: 1.5rem;
+  }
+
+  .box-content {
+    margin: 20px 40px;
+  }
+
+  .stackable {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding: 0;
+    margin: -1rem;
+  }
+
+  .row {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: inherit;
+    align-items: stretch;
+    width: 100% !important;
+    padding: 1rem 0;
+  }
+
+  .column {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
+    vertical-align: top;
+    width: 50%;
+  }
+`;
 
 export default MentoringBenefits;
