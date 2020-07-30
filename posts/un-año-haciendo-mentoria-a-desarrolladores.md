@@ -24,7 +24,7 @@ Al principio pensé en enfocar el servicio a ayudar a personas a mejorar sus hab
 
 No le faltaba razón. La gente ya tiene muchas opciones para empezar a programar y conseguir un trabajo. Pero una vez están ahí, ¿qué es lo siguiente?
 
-Decidí cambiar el enfoque e incluso el _público objetivo_ a quien dirigirme. No iba a buscar gente que necesitase aprender a programar. Iba a ayudar a personas que ya tienen un trabajo, pero no han tenido exposición a entornos de mejora continua, aplicaciones con elevados volúmenes de tráfico, dinámicas de trabajo [Lean y Agile](https://amzn.to/3jOggSO)... Yo he tenido el privilegio de estar en empresas donde he podido aprender todas esas cosas. Decidí que era lo que iba a aportar.
+Decidí cambiar el enfoque e incluso el _público objetivo_ a quién dirigirme. No iba a buscar gente que necesitase aprender a programar. Iba a ayudar a personas que ya tienen un trabajo, pero no han tenido exposición a entornos de mejora continua, aplicaciones con elevados volúmenes de tráfico, dinámicas de trabajo [Lean y Agile](https://amzn.to/3jOggSO)... Yo he tenido el privilegio de estar en empresas donde he podido aprender todas esas cosas. Decidí que era lo que iba a aportar.
 
 ## Validando la idea
 
@@ -36,7 +36,7 @@ Empecé hablando con amigos y ex-compañeros. No es la mejor forma de formarte u
 
 ¿Pagarían por alguien que les ayude a ser mejores programadores?
 
-Decidí tratar de llegar a una audiencia más amplia haciendo una pequeña encuesta en Twitter, que llegó a bastante gente gracias a la difusión de mi amigo [Migue Ángel](https://midu.dev/):
+Decidí tratar de llegar a una audiencia más amplia haciendo una pequeña encuesta en Twitter, que llegó a bastante gente gracias a la difusión de mi amigo [Miguel Ángel](https://midu.dev/):
 
 <blockquote class="twitter-tweet" tw-align-center><p lang="es" dir="ltr">Si conocieses a alguien profesional que pudiese hacerte mentoring y te ayudase a mejorar en tu carrera profesional para conseguir tus objetivos, ¿te parecería bien pagar por ese servicio?</p>&mdash; Dani de la Cruz (@d4nidev) <a href="https://twitter.com/d4nidev/status/1138916111037194240?ref_src=twsrc%5Etfw">June 12, 2019</a></blockquote>
 
@@ -46,7 +46,7 @@ En el mismo hilo preguntaba sobre el rango de precios que alguien estaría dispu
 
 Un 85% de los votos fueron favorables. La palmada en la espalda que necesitaba para lanzar un MVP. Además, tuve muy buen feedback constructivo de algunas personas que consideraban que no pagarían por este servicio, como este de Ignacio:
 
-<blockquote class="twitter-tweet"><p lang="es" dir="ltr">No tiene porque pero para mi el mentoring lo es, si no llámalo clase o consultoría... totalmente legítimo.</p>&mdash; Ignacio Villanueva 🏳️‍🌈 (en casa 🏡) (@IgnaciodeNuevo) <a href="https://twitter.com/IgnaciodeNuevo/status/1138937247456256000?ref_src=twsrc%5Etfw">June 12, 2019</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="es" dir="ltr">No tiene porque pero para mí el mentoring lo es, si no llámalo clase o consultoría... totalmente legítimo.</p>&mdash; Ignacio Villanueva 🏳️‍🌈 (en casa 🏡) (@IgnaciodeNuevo) <a href="https://twitter.com/IgnaciodeNuevo/status/1138937247456256000?ref_src=twsrc%5Etfw">June 12, 2019</a></blockquote>
 
 O este otro, de Víctor:
 
@@ -59,7 +59,7 @@ Como parte del proceso de validación de mi idea hice una investigación de serv
 En cambio, en otras disciplinas es bastante habitual encontrar profesionales del mentoring. Encontré diseñadores, marketing o perfiles de gestión y dirección ofreciendo este servicio, así que eso me ayudó a reafirmarme. Finalmente, decidí seguir mi instinto y comprometerme con el concepto de **mentoring profesional**.
 
 ## El primer MVP
-Ya tenía suficiente información para lanzarme a validar mis hipótesis. Hay que recordar que una hipótesis no está validada hasta que no obtienes un resultado esperado tangible. Lo que tenía hasta entonces era bastante feedback y opiniones. Recuerda que quería comprobar si alguien estaría dispuesto a pagar por mi servicio. Así que mi siguiente objetivo era conseguir a **mi primer cliente**.
+Ya tenía suficiente información para lanzarme a validar mis hipótesis. Hay que recordar que una hipótesis no está validada hasta que no obtienes un resultado esperado tangible. Lo que tenía hasta entonces era bastante feedback y opiniones. Recuerda que quería comprobar si alguien estaría dispuesto a pagar por mi servicio. Así que el siguiente objetivo que me marqué fue el de conseguir a **mi primer cliente**.
 
 La primera versión del _producto_ o servicio que publiqué es la web que estáis viendo. Decidí no utilizar ninguna plantilla, ya que me parecía incongruente que alguien que se venda como experto en tecnologías Frontend no haga su propio diseño. Pero tampoco quería picarme todo el marcado y los estilos desde cero, así que me apoyé en [Bulma](https://bulma.io/) como framework CSS. 
 
@@ -67,7 +67,7 @@ Para mi sorpresa, la idea se validó sola.
 
 Estaba trabajando en la web y puse una versión muy rudimentaria online, aún sin todo el contenido decidido. Ni siquiera había pensado en cómo promocionarla en redes sociales, AdWords... etc. Y entonces un día contactó conmigo mi primer cliente.
 
-Había encontrado la página antes de que la hiciese oficial, había visto lo que ofrecía y ya tenía claro que quería contratarme. Después de una primera conversación telefónica y otra sesión gratuita, comencé con él y tuvo el valor de pagarme por adelantado. Nunca podré agradecerle lo suficiente que confiase en mi de ese modo. Era justo lo que necesitaba para hacerlo público.
+Había encontrado la página antes de que la hiciese oficial, había visto lo que ofrecía y ya tenía claro que quería contratarme. Después de una primera conversación telefónica y otra sesión gratuita, comencé con él y tuvo el valor de pagarme por adelantado. Nunca podré agradecerle lo suficiente que confiase en mí de ese modo. Era justo lo que necesitaba para hacerlo público.
 
 Varias semanas después, anuncié el servicio en mis redes sociales. No estaba perfecto, pero nunca lo iba a estar. Tan solo me aseguré de que tuviese Google Analytics, para identificar fuentes de tráfico y cómo rendían las páginas en buscadores.
 
@@ -78,11 +78,11 @@ Me reservo para otro artículo lo que he aprendido personalmente como mentor tra
 
 Los primeros meses recibí una avalancha de solicitudes. Tantas que me vi obligado a rechazar a la mayoría, ya que no quería comprometerme sin estar seguro de poder dar un servicio de mala calidad. Empecé dando servicio a tres personas. A medida que ya no necesitaban tanta disponibilidad, me atreví a aceptar hasta cinco. Pero un año después veo claro el primer problema: que **este servicio escala tanto como da de sí mi tiempo libre**. La buena noticia es que he probado que hay demanda, así que o consigo más tiempo libre o encuentro la manera de optimizar mejor el tiempo del que dispongo.
 
-Otro de mis aprendizajes es que no solo hay programadores particulares dispuestos a invertir en su crecimiento profesional. **También han acudido a mí empresas**. Si no hubiese lanzado una primera versión del servicio, jamás habría descubierto esto. Este conocimiento me abre nuevas posibilidades para el futuro que expero poder explorar en breve.
+Otro de mis aprendizajes es que no solo hay programadores particulares dispuestos a invertir en su crecimiento profesional. **También han acudido a mí empresas**. Si no hubiese lanzado una primera versión del servicio, jamás habría descubierto esto. Este conocimiento me abre nuevas posibilidades para el futuro que espero poder explorar en breve.
 
-Por último, he aprendido a **ser flexible con el precio**. Al principio pensé en "empaquetar" tres servicios distintos con diferentes rangos de precio, pero mis primeras experiencias como mentor me hicieron darme cuenta de que eso era imposible. Cada persona es distinta y no puedes ofrecer un servicio único que sirva para todo el mundo. También es habitual que las personas que acuden a mi **no tengan muy claro qué es lo que necesitan** y descubrirlo forma parte del proceso de mentoría. Hay gente que me ha escrito buscando mejorar técnicamente sus conocimientos de programación. Pero hemos terminado trabajando sus habilidades de comunicación y liderazgo. **Tienes que adaptarte a lo que la persona necesita**. Así que decidí simplificar el plan de precios y ofreces dos opciones: pagar por diez sesiones o hacerlo por cada sesión.
+Por último, he aprendido a **simplificar la oferta**. Al principio pensé en ofrecer tres "paquetes" de servicios distintos con diferentes rangos de precio. Pero tras mis primeras experiencias como mentor me di cuenta de que me estaba equivocando. Cada persona es distinta y no puedes estandarizar un servicio y esperar encontrar gente que encaje. Es habitual que las personas que acuden a mí **no tengan muy claro qué es lo que necesitan** y descubrirlo forma parte del proceso de mentoría. Por ejemplo: hay gente que me ha escrito buscando mejorar técnicamente sus conocimientos de programación. Pero hemos terminado trabajando sus habilidades de comunicación y liderazgo. **He aprendido a adaptarme a lo que la persona necesita**. Así que decidí simplificar el plan de precios ofreciendo dos opciones: contratar diez sesiones o ir con más calma y evaluar después de cada sesión si vale la pena seguir o no.
 
 ## Conclusiones
-Sigo aprendiendo de la experiencia, pero estoy muy orgulloso de cómo he dado forma a la idea y la he llevado a cabo. He querido escribir este artículo porque esta mentalidad orientada a experimentar y concentrarse en el aprendizaje es precisamente la que quiero inculcarte si decides trabajar conmigo.
+Sigo aprendiendo de la experiencia, pero estoy muy orgulloso de cómo he dado forma a la idea y la he llevado a cabo. He querido escribir este artículo porque esta mentalidad orientada a experimentar y concentrarse en el aprendizaje es precisamente la que pretendo inculcar si decides trabajar conmigo.
 
 Si te pica la curiosidad y quieres saber cómo puedo ayudarte, [escríbeme](/contactar) y hablamos. Sin compromiso.
