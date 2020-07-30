@@ -1,13 +1,17 @@
 import matter from "gray-matter";
 import BlogHeader from "../../components/blog-header";
 import BlogList from "../../components/blog-list";
+import Footer from "../../components/footer";
+import GlobalStyles from "../../components/global-styles";
 import Layout from "../../components/layout";
+import NavBar from "../../components/navbar";
 
 const Index = ({ posts }) => {
   return (
     <Layout>
       <BlogHeader />
-      <BlogList allBlogs={posts} />
+      <BlogList posts={posts} />
+      <Footer />
     </Layout>
   );
 };
@@ -15,7 +19,7 @@ const Index = ({ posts }) => {
 export default Index;
 
 export async function getStaticProps() {
-  //get posts & context from folder
+  // Get posts & context from folder
   const posts = ((context) => {
     const keys = context.keys();
     const values = keys.map(context);
@@ -36,7 +40,7 @@ export async function getStaticProps() {
         slug,
       };
     });
-    return data;
+    return data.sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
   })(require.context("../../posts", true, /\.md$/));
 
   return {

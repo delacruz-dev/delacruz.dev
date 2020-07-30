@@ -9,7 +9,9 @@ export default function BlogDate(props) {
   if (!props) return null;
   return (
     <>
-      <span className="date">{reformatDate(props.date)}</span>
+      <time dateTime={new Date(props.date).toISOString()} className="date">
+        {reformatDate(props.date)}
+      </time>
       <style jsx>{styles}</style>
     </>
   );

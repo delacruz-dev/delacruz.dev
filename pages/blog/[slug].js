@@ -1,14 +1,27 @@
 import matter from "gray-matter";
-import * as React from "react";
+import Head from "next/head";
+import React from "react";
 import BlogHeader from "../../components/blog-header";
-import Layout from "../../components/layout";
 import BlogPost from "../../components/blog-post";
+import GlobalStyles from "../../components/global-styles";
+import Layout from "../../components/layout";
+import NavBar from "../../components/navbar";
 
 const glob = require("glob");
 
 export default function Post(props) {
   return (
-    <Layout>
+    <Layout
+      title={props.frontmatter?.title}
+      description={props.frontmatter?.summary}
+      url={props.slug}
+      image={props.frontmatter?.frontImageSrc}
+    >
+      <Head>
+        {props.frontmatter?.hasTweets && (
+          <script async={true} src="//platform.twitter.com/widgets.js" charSet="utf-8"></script>
+        )}
+      </Head>
       <BlogHeader />
       <BlogPost {...props} />
     </Layout>
@@ -24,6 +37,7 @@ export async function getStaticProps({ params }) {
     props: {
       frontmatter: data.data,
       markdownBody: data.content,
+      slug,
     },
   };
 }

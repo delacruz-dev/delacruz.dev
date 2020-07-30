@@ -1,57 +1,10 @@
-import Head from "next/head";
-import { useEffect } from "react";
 import colors from "./colors";
 
-export default function Meta({ title = "Mentoring para programadores - Dani de la Cruz" }) {
-  useEffect(() => {
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = function () {
-      window.dataLayer.push(arguments);
-    };
-    gtag("js", new Date());
-    gtag("config", "UA-141784503-1");
-  });
-
+export default function GlobalStyles() {
   return (
-    <>
-      <Head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          name="description"
-          content="Mentoring, tutoría y coaching a medida para programadores y programadoras que buscan dar un salto en su carrera profesional."
-        />
-        <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <meta name="google-site-verification" content="EjvTftuJDIpIilQKH0ZPmH5_HmVA4dZMdUS8n6-V7hw" />
-        <title>{title}</title>
-
-        <link rel="preconnect dns-prefetch" href="https://www.googletagmanager.com" />
-        <link rel="preconnect dns-prefetch" href="https://www.google-analytics.com" />
-        <link rel="preconnect dns-prefetch" href="https://cdnjs.cloudflare.com" />
-
-        <link rel="canonical" href="{{ .Permalink }}" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:creator" content="@d4nidev" />
-        <meta name="twitter:domain" content="delacruz.dev" />
-        <meta name="twitter:image" content="https://delacruz.dev/apple-touch-icon.png" />
-        <meta name="twitter:site" content="@d4nidev" />
-        <meta name="og:locale" content="es-ES" />
-        <meta name="og:title" content="Mentoring para programadores - Dani de la Cruz" />
-        <meta name="og:image" content="https://delacruz.dev/apple-touch-icon.png" />
-        <meta
-          name="og:description"
-          content="Mentoring, tutoría y coaching a medida para programadores y programadoras que buscan dar un salto en su carrera profesional."
-        />
-        <meta name="og:site_name" content="delacruz.dev" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="manifest" href="/site.webmanifest"></link>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141784503-1"></script>
-      </Head>
-      <style jsx global>
-        {`
-          @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Serif&display=swap");
+    <style jsx global>
+      {`
+        @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Serif&display=swap");
           * {
             box-sizing: inherit;
           }
@@ -332,8 +285,47 @@ export default function Meta({ title = "Mentoring para programadores - Dani de l
               line-height: 1.4375;
             }
           }
-        `}
-      </style>
-    </>
+
+          blockquote.twitter-tweet {
+            display: inline-block;
+            font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 16px;
+            border-color: #eee #ddd #bbb;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 1px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+            margin: 10px 5px;
+            padding: 0 16px 16px 16px;
+            max-width: 468px;
+          }
+
+        blockquote.twitter-tweet p {
+          font-size: 16px;
+          font-weight: normal;
+          line-height: 20px;
+        }
+
+        blockquote.twitter-tweet a {
+          color: inherit;
+          font-weight: normal;
+          text-decoration: none;
+          outline: 0 none;
+        }
+
+        blockquote.twitter-tweet a:hover,
+        blockquote.twitter-tweet a:focus {
+          text-decoration: underline;
+        }
+        .twitter-tweet,
+        .twitter-tweet-rendered {
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+      `}
+    </style>
   );
 }
