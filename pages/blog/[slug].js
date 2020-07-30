@@ -14,7 +14,9 @@ export default function Post(props) {
   return (
     <Layout>
       <Head>
-        <script async={true} src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        {props.frontmatter?.hasTweets && (
+          <script async={true} src="//platform.twitter.com/widgets.js" charSet="utf-8"></script>
+        )}
       </Head>
       <Meta />
       <NavBar />

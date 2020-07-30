@@ -209,7 +209,7 @@ export default function Meta({
             line-height: 1.5;
             color: #464646;
           }
-          
+
           blockquote.twitter-tweet {
             display: inline-block;
             font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
@@ -243,6 +243,12 @@ export default function Meta({
           blockquote.twitter-tweet a:focus {
             text-decoration: underline;
           }
+          .twitter-tweet,
+          .twitter-tweet-rendered {
+            margin-left: auto;
+            margin-right: auto;
+          }
+
           @media (min-width: 1280px) {
             h1 {
               font-size: 2rem;
