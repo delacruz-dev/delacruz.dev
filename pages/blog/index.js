@@ -42,7 +42,7 @@ export async function getStaticProps() {
         slug,
       };
     });
-    return data;
+    return data.sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
   })(require.context("../../posts", true, /\.md$/));
 
   return {
