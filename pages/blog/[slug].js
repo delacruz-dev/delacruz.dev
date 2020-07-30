@@ -14,7 +14,7 @@ export default function Post(props) {
   return (
     <Layout
       title={props.frontmatter?.title}
-      description={props.frontmatter?.description}
+      description={props.frontmatter?.summary}
       url={props.slug}
       image={props.frontmatter?.frontImageSrc}
     >
