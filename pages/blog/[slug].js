@@ -5,20 +5,25 @@ import BlogHeader from "../../components/blog-header";
 import BlogPost from "../../components/blog-post";
 import Footer from "../../components/footer";
 import Layout from "../../components/layout";
-import Meta from "../../components/meta";
+import GlobalStyles from "../../components/global-styles";
 import NavBar from "../../components/navbar";
 
 const glob = require("glob");
 
 export default function Post(props) {
   return (
-    <Layout>
+    <Layout
+      title={props.frontmatter?.title}
+      description={props.frontmatter?.description}
+      url={props.slug}
+      image={props.frontmatter?.frontImageSrc}
+    >
       <Head>
         {props.frontmatter?.hasTweets && (
           <script async={true} src="//platform.twitter.com/widgets.js" charSet="utf-8"></script>
         )}
       </Head>
-      <Meta />
+      <GlobalStyles />
       <NavBar />
       <BlogHeader />
       <BlogPost {...props} />

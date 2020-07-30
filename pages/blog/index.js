@@ -1,20 +1,20 @@
 import matter from "gray-matter";
 import BlogHeader from "../../components/blog-header";
-import BlogLayout from "../../components/blog-layout";
 import BlogList from "../../components/blog-list";
-import Meta from "../../components/meta";
-import NavBar from "../../components/navbar";
 import Footer from "../../components/footer";
+import GlobalStyles from "../../components/global-styles";
+import Layout from "../../components/layout";
+import NavBar from "../../components/navbar";
 
 const Index = ({ posts }) => {
   return (
-    <BlogLayout>
-      <Meta />
+    <Layout>
+      <GlobalStyles />
       <NavBar />
       <BlogHeader />
       <BlogList posts={posts} />
       <Footer />
-    </BlogLayout>
+    </Layout>
   );
 };
 

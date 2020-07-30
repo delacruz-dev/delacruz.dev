@@ -3,7 +3,7 @@ import css from "styled-jsx/css";
 import BlogDate from "./blog-date";
 import CodeBlock from "./code-block";
 
-const BlogPost = ({ frontmatter, markdownBody, siteTitle }) => {
+const BlogPost = ({ frontmatter, markdownBody }) => {
   if (!frontmatter) return null;
 
   return (
