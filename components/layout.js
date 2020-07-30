@@ -5,7 +5,7 @@ function Layout({
   children,
   title = "Mentoring para programadores",
   description = "Mentoring, tutoría y coaching a medida para programadores y programadoras que buscan dar un salto en su carrera profesional",
-  image = "https://delacruz.dev/favicon/apple-touch-icon.png",
+  image = "/favicon/apple-touch-icon.png",
   url,
 }) {
   useEffect(() => {
@@ -34,12 +34,12 @@ function Layout({
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@d4nidev" />
         <meta name="twitter:domain" content="delacruz.dev" />
-        <meta name="twitter:image" content={image} />
+        <meta name="twitter:image" content={`https://delacruz.dev${image}`} />
         <meta name="twitter:site" content="@d4nidev" />
         <meta property="og:url" content={url ? `https://delacruz.dev/blog/${url}` : "https://delacruz.dev"} />
         <meta name="og:locale" content="es-ES" />
         <meta name="og:title" content={`${title} - Dani de la Cruz`} />
-        <meta name="og:image" content={image} />
+        <meta name="og:image" content={`https://delacruz.dev${image}`} />
         <meta name="og:description" content={description} />
         <meta name="og:site_name" content="delacruz.dev" />
         <link rel="stylesheet" href="/css/main.css" />
