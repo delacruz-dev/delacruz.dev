@@ -10,7 +10,7 @@ hasTweets: true
 
 Hace aproximadamente un año comencé a trabajar en dar a luz este proyecto del que hoy estoy orgulloso. Aunque la idea de ofrecer un servicio de mentoring profesional para programadores comenzó a dar vueltas en mi cabeza meses atrás. Un amigo y ex-compañero de una de las empresas en las que he trabajado contactó conmigo. Me comentó que estaba buscando un mentor que le ayudase a subir de nivel en su nuevo puesto como desarrollador senior. Su empresa le facilitaba un presupuesto anual para invertir en formación y estaba dispuesto a llegar a un acuerdo económico conmigo por dedicarle mi tiempo.
 
-Aunque me sentí halagado y agradecido por su propuesta, mi primera respuesta fue negativa: no estaba preparado. Tenía demasiadas preguntas y no me sentía cómodo cobrándole por algo a lo que aún no sabía cómo dar forma. Pero empecé a pensar en ello, haciéndome muchas preguntas al respecto. ¿En qué consiste exactamente eso de **“subir de nivel”**? ¿Qué debería incluir un servicio de **mentoring profesional**? ¿Qué tendría que quedarse fuera de ese servicio? ¿Existe gente interesada en pagar por un servicio así? Si la hay, ¿cuánto estarían dispuestos a invertir en ello? ¿Estaría social y moralmente aceptado cobrar por una mentoría?
+Aunque me sentí halagado y agradecido por su propuesta, mi primera respuesta fue negativa: no estaba preparado. Tenía demasiadas preguntas y no me sentía cómodo cobrándole por algo a lo que aún no sabía cómo dar forma. Pero empecé a pensar en ello, haciéndome muchas preguntas al respecto. ¿En qué consiste exactamente eso de **subir de nivel**? ¿Qué debería incluir un servicio de **mentoring profesional**? ¿Qué tendría que quedarse fuera de ese servicio? ¿Existe gente interesada en pagar por un servicio así? Si la hay, ¿cuánto estarían dispuestos a invertir en ello? ¿Estaría social y moralmente aceptado cobrar por una mentoría?
 
 En este artículo me gustaría compartir contigo cómo fui dándole forma a esta idea y encontrando la respuesta a estas preguntas.
 
@@ -24,7 +24,7 @@ Al principio pensé en enfocar el servicio a ayudar a personas a mejorar sus hab
 
 No le faltaba razón. La gente ya tiene muchas opciones para empezar a programar y conseguir un trabajo. Pero una vez están ahí, ¿qué es lo siguiente?
 
-Decidí cambiar el enfoque e incluso el _público objetivo_ a quien dirigirme. No iba a buscar gente que necesitase aprender a programar. Iba a ayudar a personas que ya tienen un trabajo, pero no han tenido exposición a entornos de mejora continua, aplicaciones con elevados volúmenes de tráfico, dinámicas de trabajo Lean y Agile... Yo he tenido el privilegio de estar en empresas donde he podido aprender todas esas cosas. Decidí que era lo que iba a aportar.
+Decidí cambiar el enfoque e incluso el _público objetivo_ a quien dirigirme. No iba a buscar gente que necesitase aprender a programar. Iba a ayudar a personas que ya tienen un trabajo, pero no han tenido exposición a entornos de mejora continua, aplicaciones con elevados volúmenes de tráfico, dinámicas de trabajo [Lean y Agile](https://amzn.to/3jOggSO)... Yo he tenido el privilegio de estar en empresas donde he podido aprender todas esas cosas. Decidí que era lo que iba a aportar.
 
 ## Validando la idea
 
