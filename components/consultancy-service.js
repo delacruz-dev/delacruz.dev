@@ -1,11 +1,11 @@
 import css from "styled-jsx/css";
-import colors from "./colors";
 import Button from "./button";
+import Section from "./section";
 
 function ConsultancyService() {
   return (
     <>
-      <section id="consultancy" className="consultancy">
+      <Section id="consultancy">
         <div className="container has-text-centered">
           <h1 className="title">Consultoría para empresas</h1>
           <h2 className="subtitle">
@@ -18,26 +18,13 @@ function ConsultancyService() {
             </Button>
           </div>
         </div>
-      </section>
+      </Section>
       <style jsx>{styles}</style>
     </>
   );
 }
 
 const styles = css`
-  .consultancy {
-    background-color: ${colors.backgroundConsultancy};
-    padding-bottom: 9rem;
-    padding-top: 9rem;
-    color: ${colors.textPrimary};
-  }
-
-  .has-text-centered {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-
   .cta {
     margin-top: 2rem;
   }

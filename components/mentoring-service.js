@@ -1,12 +1,11 @@
 import css from "styled-jsx/css";
-import colors from "./colors";
 import Button from "./button";
-import Collaboration from "./assets/collaboration";
+import Section from './section';
 
 function MentoringService() {
   return (
     <>
-      <section id="mentoring" className="mentoring">
+      <Section id="mentoring">
         <div className="container has-text-centered">
           <h1 className="title">Mentoring profesional</h1>
           <h2 className="subtitle">
@@ -19,20 +18,13 @@ function MentoringService() {
             </Button>
           </div>
         </div>
-      </section>
+      </Section>
       <style jsx>{styles}</style>
     </>
   );
 }
 
 const styles = css`
-  .mentoring {
-    background-color: ${colors.backgroundMentoring};
-    padding-bottom: 9rem;
-    padding-top: 9rem;
-    color: ${colors.textPrimary};
-  }
-
   .cta {
     margin-top: 2rem;
   }

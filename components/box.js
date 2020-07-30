@@ -6,7 +6,7 @@ function Box({ media, children }) {
   return (
     <>
       <article className="box">
-        <figure className="box-media">{media}</figure>
+        {media && <figure className="box-media">{media}</figure>}
         <div className="box-content">
           <div className="content">{children}</div>
         </div>
