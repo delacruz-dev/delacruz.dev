@@ -8,7 +8,7 @@ import spacing from "./spacing";
 function MentoringBenefits() {
   return (
     <>
-      <Section diagonal id="mentoring-benefits">
+      <Section diagonal gradient='blue' id="mentoring-benefits">
         <div className="container">
           <div className="stackable">
             <div className="row">
@@ -27,7 +27,7 @@ function MentoringBenefits() {
                     </p>
                     <div className="has-text-centered">
                       <Button
-                        alt="Mentoring a medida para programadores de Front-End"
+                        title="Mentoring a medida para programadores de Front-End"
                         href="/contactar"
                         data-tracking="benefits-cta"
                       >

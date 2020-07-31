@@ -9,7 +9,7 @@ function Home() {
     <Layout>
       <Hero />
       <MentoringService />
-      <ConsultancyService />
+      {/* <ConsultancyService /> */}
       <Testimonials />
     </Layout>
   );

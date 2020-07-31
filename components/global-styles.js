@@ -192,7 +192,8 @@ export default function GlobalStyles() {
         }
 
         h1,
-        h2 {
+        h2,
+        h3 {
           font-family: "Open Sans", sans-serif;
           font-weight: 500;
         }
@@ -214,8 +215,7 @@ export default function GlobalStyles() {
           font-size: 1.2rem;
           letter-spacing: -0.5px;
           line-height: 1.1875;
-          color: #a0a0a0;
-          font-weight: normal;
+          font-weight: 600;
         }
 
         p,
@@ -277,8 +277,6 @@ export default function GlobalStyles() {
             font-size: 1rem;
             letter-spacing: -0.5px;
             line-height: 1.1875;
-            color: #a0a0a0;
-            font-weight: normal;
           }
 
           p {

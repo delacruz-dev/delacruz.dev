@@ -26,6 +26,7 @@ function Footer() {
               aria-label="Sigue a @d4nidev en Twitter"
             >
               <svg
+                alt="Twitter"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 273.5 222.3"
                 className="d-block"
@@ -63,6 +64,7 @@ function Footer() {
               className="footer-icon"
             >
               <svg
+                alt="LinkedIn"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 19 18"
                 className="d-block"

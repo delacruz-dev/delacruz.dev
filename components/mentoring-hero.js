@@ -7,7 +7,7 @@ function MentoringHero() {
       <Section>
         <div className="container has-text-centered">
           <figure>
-            <img className="is-rounded" src="/images/mypic/badge.jpg" alt="dani de la cruz" />
+            <img className="is-rounded" src="/images/mypic/badge.jpg" alt="Dani de la cruz" />
           </figure>
           <h1 className="title">Mentoring profesional</h1>
           <h2 className="subtitle">
