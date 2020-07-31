@@ -6,15 +6,16 @@ function MentoringStyle() {
   return (
     <>
       <Section>
-        <div className='container has-text-centered'>
+        <div className="container has-text-centered">
           <h1 className="title">Mi estilo de mentoría</h1>
 
           <h2 className="subtitle">
-            Me siento muy identificado con el término japonés <strong className="has-text-primary">先輩 (Senpai)</strong>. Un Senpai es un compañero igual a ti, con más
+            Me siento muy identificado con el término japonés{" "}
+            <strong className="has-text-primary">先輩 (Senpai)</strong>. Un Senpai es un compañero igual a ti, con más
             experiencia en un ámbito concreto. Como mentor, me comprometo a guiarte y aconsejarte lo mejor que pueda.
           </h2>
 
-          <div className='grid'>
+          <div className="grid">
             <div className="column">
               <div className="has-text-centered icon">💬</div>
               <h3>Honestidad</h3>
@@ -37,8 +38,8 @@ function MentoringStyle() {
               <div className="has-text-centered icon">🤝</div>
               <h3>Igualdad</h3>
               <p>
-                Para mí, eres mucho más que una o un aprendiz. Somos colegas de la industria de desarrollo de
-                software. Yo no soy el único que enseña ni tampoco el único que aprende.
+                Para mí, eres mucho más que una o un aprendiz. Somos colegas de la industria de desarrollo de software.
+                Yo no soy el único que enseña ni tampoco el único que aprende.
               </p>
             </div>
 
@@ -62,7 +63,7 @@ function MentoringStyle() {
             Contacta Conmigo
           </Button>
         </div>
-      </Section >
+      </Section>
       <style jsx>{styles}</style>
     </>
   );

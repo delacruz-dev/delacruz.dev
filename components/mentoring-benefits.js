@@ -8,7 +8,7 @@ import spacing from "./spacing";
 function MentoringBenefits() {
   return (
     <>
-      <Section diagonal gradient='blue' id="mentoring-benefits">
+      <Section diagonal gradient="blue" id="mentoring-benefits">
         <div className="container">
           <div className="stackable">
             <div className="row">
