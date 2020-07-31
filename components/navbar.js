@@ -31,7 +31,7 @@ function NavBar() {
             href="/contactar"
             data-tracking="navbar-cta"
             withAnimation
-            size='small'
+            size="small"
           >
             Contactar
           </Button>

@@ -15,7 +15,7 @@
 }
 
 .hero-image img {
-  object-fit: contain
+  object-fit: contain;
 }
 
 .mentoring-style .column {

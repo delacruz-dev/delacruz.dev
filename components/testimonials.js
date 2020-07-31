@@ -2,7 +2,7 @@ import css from "styled-jsx/css";
 import Box from "./box";
 import colors from "./colors";
 import Section from "./section";
-import { boxPadding, unit } from "./spacing";
+import spacing from "./spacing";
 
 function Testimonials() {
   return (
@@ -15,7 +15,6 @@ function Testimonials() {
           </h2>
 
           <div className="grid">
-
             <Box media={<img src="/images/jesus.jpg" alt="Jesús Olazagoitia" loading="lazy" width="96" height="96" />}>
               <div className="name">
                 <strong>Jesús Olazagoitia</strong>
@@ -26,9 +25,9 @@ function Testimonials() {
                 </small>
               </div>
               <p>
-                Empecé la mentoría para mejorar mis habilidades como desarrollador y Dani supo orientarme en temas
-                de testing, algoritmia, mantenibilidad del código, etc. Pero eso solo fue la punta del iceberg, Dani
-                me ayudó a superar entrevistas de trabajo, motivación personal incluso mejorar mis habilidades de
+                Empecé la mentoría para mejorar mis habilidades como desarrollador y Dani supo orientarme en temas de
+                testing, algoritmia, mantenibilidad del código, etc. Pero eso solo fue la punta del iceberg, Dani me
+                ayudó a superar entrevistas de trabajo, motivación personal incluso mejorar mis habilidades de
                 comunicación y liderazgo, con su ayuda he podido dar un salto de calidad como profesional.
               </p>
             </Box>
@@ -43,14 +42,16 @@ function Testimonials() {
                 </small>
               </div>
               <p>
-                Cuando empecé a trabajar en Adevinta, mi perfil estaba más orientado a la maquetación de interficies
-                y a modificar el DOM con jQuery. En dos años trabajando juntos Dani supo transmitirme los
-                fundamentos del desarrollo de software, técnicas y patrones de diseño avanzados que hoy son
-                imprescindibles en mi trabajo actual.
+                Cuando empecé a trabajar en Adevinta, mi perfil estaba más orientado a la maquetación de interficies y a
+                modificar el DOM con jQuery. En dos años trabajando juntos Dani supo transmitirme los fundamentos del
+                desarrollo de software, técnicas y patrones de diseño avanzados que hoy son imprescindibles en mi
+                trabajo actual.
               </p>
             </Box>
 
-            <Box media={<img src="/images/miguel.jfif" alt="Miguel Ángel Durán" loading="lazy" width="96" height="96" />}>
+            <Box
+              media={<img src="/images/miguel.jfif" alt="Miguel Ángel Durán" loading="lazy" width="96" height="96" />}
+            >
               <div className="name">
                 <strong>Miguel Ángel Durán</strong>
                 <small>
@@ -60,13 +61,15 @@ function Testimonials() {
                 </small>
               </div>
               <p>
-                Dani cuenta con muchos años de experiencia a sus espaldas como desarrollador y se nota en cada
-                proyecto que afronta. Entre sus grandes virtudes se cuentan la máxima optimización de sus soluciones
-                y un extremo cuidado por hacer sus proyectos mantenibles por él y todo el equipo.
+                Dani cuenta con muchos años de experiencia a sus espaldas como desarrollador y se nota en cada proyecto
+                que afronta. Entre sus grandes virtudes se cuentan la máxima optimización de sus soluciones y un extremo
+                cuidado por hacer sus proyectos mantenibles por él y todo el equipo.
               </p>
             </Box>
 
-            <Box media={<img src="/images/ruben.jfif" alt="Rubén Sáez Beltrán" loading="lazy" width="96" height="96" />}>
+            <Box
+              media={<img src="/images/ruben.jfif" alt="Rubén Sáez Beltrán" loading="lazy" width="96" height="96" />}
+            >
               <div className="name">
                 <strong>Rubén Sáez</strong>
                 <small>
@@ -104,13 +107,13 @@ const styles = css`
   .name {
     display: block;
     font-size: 1.2rem;
-    margin-bottom: ${unit * 2}px;
+    margin-bottom: ${spacing.unit * 2}px;
     text-align: center;
     width: 100%;
   }
 
   .name small {
-    margin-left: ${unit * 2}px;
+    margin-left: ${spacing.unit * 2}px;
   }
 
   img {

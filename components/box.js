@@ -20,7 +20,7 @@ const styles = css`
   .box {
     background-color: ${colors.backgroundBox};
     border-radius: 4px;
-    box-shadow: 0 3px 21px 0 rgba(0,0,0,.12);
+    box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.12);
     display: flex;
     flex-direction: column;
     padding: ${spacing.boxPadding}px;

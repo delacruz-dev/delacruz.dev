@@ -7,8 +7,8 @@ In this example we will be deploying a simple "Hello World" example with Next.js
 - Create a `pages` folder with an `index.js` file with the following code:
 
 ```jsx
-import Link from 'next/link'
-import Header from '../components/header'
+import Link from "next/link";
+import Header from "../components/header";
 
 export default () => (
   <main>
@@ -19,15 +19,15 @@ export default () => (
       </Link>
     </section>
   </main>
-)
+);
 ```
 
 - Now lets create an `about.js` file inside the `pages` folder with the following code:
 
 ```jsx
-import { Component } from 'react'
-import Link from 'next/link'
-import Header from '../components/header'
+import { Component } from "react";
+import Link from "next/link";
+import Header from "../components/header";
 
 class AboutPage extends Component {
   render() {
@@ -40,11 +40,11 @@ class AboutPage extends Component {
           </Link>
         </section>
       </main>
-    )
+    );
   }
 }
 
-export default AboutPage
+export default AboutPage;
 ```
 
 - As you might noticed we have a component that is share by both `index.js` and `about.js` files, lets create that one now. Create a folder named `components` with a file named `header.js` on it and add the following code:
@@ -54,13 +54,13 @@ export default () => (
   <header>
     <h1>Next.js Example</h1>
   </header>
-)
+);
 ```
 
 - Finally in order for Next.js to be deployed we could either have a `next.config.js` or a `package.json`, for this example we are just going to create a `next.config.js` with the following code:
 
 ```js
-module.exports = {}
+module.exports = {};
 ```
 
 ### Deploy a Static version to Now
@@ -77,11 +77,9 @@ In this case we are going to use `@now/static-build` to build and deploy our Nex
 
 ```json
 {
-    "version": 2,
-    "name": "nextjs",
-    "builds": [
-        { "src": "package.json", "use": "@now/static-build" }
-    ]
+  "version": 2,
+  "name": "nextjs",
+  "builds": [{ "src": "package.json", "use": "@now/static-build" }]
 }
 ```
 

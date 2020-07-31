@@ -1,6 +1,6 @@
 import css from "styled-jsx/css";
 import Button from "./button";
-import Section from './section';
+import Section from "./section";
 
 function MentoringService() {
   return (

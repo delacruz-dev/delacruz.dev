@@ -3,9 +3,9 @@ title: "The change is in you"
 date: "2016-12-27"
 draft: false
 hide: true
-frontImageSrc: 'https://cdn-images-1.medium.com/max/600/1*rc1DGx9OQ1ZCmQXJ6shVLw.jpeg'
-frontListImageSrc: 'https://cdn-images-1.medium.com/max/200/1*rc1DGx9OQ1ZCmQXJ6shVLw.jpeg'
-summary: 'I wrote this article some years ago to share my experience working with legacy products and inspire developers to overcome their frustrations to become a change agent.'
+frontImageSrc: "https://cdn-images-1.medium.com/max/600/1*rc1DGx9OQ1ZCmQXJ6shVLw.jpeg"
+frontListImageSrc: "https://cdn-images-1.medium.com/max/200/1*rc1DGx9OQ1ZCmQXJ6shVLw.jpeg"
+summary: "I wrote this article some years ago to share my experience working with legacy products and inspire developers to overcome their frustrations to become a change agent."
 ---
 
 I’ve been working for years at different companies with legacy

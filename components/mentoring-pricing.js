@@ -17,7 +17,7 @@ function MentoringPricing() {
           <p>
             <em>*Sesiones de 1 hora, a distribuir según nuestra mutua disponibilidad.</em>
           </p>
-          <div className="buttons is-centered">
+          <div className="is-centered">
             <Button title="Solicita una sesión gratuita" data-tracking="free-session-cta" outlined href="/contactar">
               Prueba gratuita
             </Button>

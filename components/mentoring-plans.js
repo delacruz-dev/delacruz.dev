@@ -1,7 +1,9 @@
-function Pricing() {
+import Section from "./section";
+
+function MentoringPlans() {
   return (
     <>
-      <section className="section has-text-centered pricing has-background-light">
+      <Section className="section has-text-centered pricing has-background-light">
         <div className="container">
           <div className="pricing-grid">
             <div className="columns is-centered">
@@ -43,9 +45,7 @@ function Pricing() {
               </div>
               <div className="column">
                 <div className="box">
-                  <span className="icon is-large has-text-info is-spaced is-size-1">
-                    👩🏻‍💻
-                  </span>
+                  <span className="icon is-large has-text-info is-spaced is-size-1">👩🏻‍💻</span>
                   <h1 className="title is-size-4 is-spaced">Consigue el trabajo</h1>
                   <p className="is-spaced">
                     ¿Estás en uno o varios procesos de selección y necesitas ayuda para prepararlos? Déjame acompañarte
@@ -62,44 +62,12 @@ function Pricing() {
             </div>
           </div>
         </div>
-      </section>
-
-      <section className="section has-text-centered is-spaced">
-        <div className="container is-narrow">
-          <h1 className="title is-spaced">
-            Contrata 10 sesiones* por <span className="has-text-primary">300€</span>
-          </h1>
-          <h3 className="subtitle is-size-5-desktop">
-            O si lo prefieres, escríbeme para hacer una{" "}
-            <u>
-              <strong>primera consultoría gratuita</strong>
-            </u>{" "}
-            para hacerme preguntas, discutir detalles y decidir si soy la persona que estás buscando.
-          </h3>
-          <p className="is-spaced">
-            <em>*Sesiones de 1 hora, a distribuir según nuestra mútua disponibilidad.</em>
-          </p>
-          <div className="buttons is-centered">
-            <a
-              title="Solicita una sesión gratuita"
-              data-tracking="free-session-cta"
-              className="button is-dark is-large is-medium-mobile is-outlined"
-              href="/contactar"
-            >
-              Prueba gratuita
-            </a>
-            <a
-              title="Contratar"
-              data-tracking="hire-cta"
-              className="button is-dark is-large is-medium-mobile"
-              href="/contactar"
-            >
-              Contratar
-            </a>
-          </div>
-        </div>
-      </section>
+      </Section>
+      <style jsx>{styles}</style>
     </>
   );
 }
-export default Pricing;
+
+const styles = ``;
+
+export default MentoringPlans;
