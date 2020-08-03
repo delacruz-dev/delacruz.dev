@@ -88,4 +88,4 @@ Por último, he aprendido a **simplificar la oferta**. Al principio pensé en of
 
 Sigo aprendiendo de la experiencia, pero estoy muy orgulloso de cómo he dado forma a la idea y la he llevado a cabo. He querido escribir este artículo porque esta mentalidad orientada a experimentar y concentrarse en el aprendizaje es precisamente la que pretendo inculcar si decides trabajar conmigo.
 
-Si te pica la curiosidad y quieres saber cómo puedo ayudarte, [escríbeme](/contactar) y hablamos. Sin compromiso.
+Si te pica la curiosidad y quieres saber cómo puedo ayudarte, [escríbeme](/contact) y hablamos. Sin compromiso.

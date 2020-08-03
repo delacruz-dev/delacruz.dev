@@ -11,7 +11,6 @@ const Index = ({ posts }) => {
     <Layout>
       <BlogHeader />
       <BlogList posts={posts} />
-      <Footer />
     </Layout>
   );
 };

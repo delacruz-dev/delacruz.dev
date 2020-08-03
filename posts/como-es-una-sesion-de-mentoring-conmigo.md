@@ -38,6 +38,6 @@ La comunicación conmigo entre sesiones será tan fluida como necesites. Si vas 
 
 ## ¿Tienes más dudas? ¡Escríbeme!
 
-He intentado resolver algunas de las dudas que podrías tener antes de ponerte en contacto conmigo, pero si aún no lo tienes claro, [escríbeme](/contactar) y hablamos. Sin compromiso. Incluso podemos hacer una **primera sesión de prueba completamente gratuita** para que te hagas una idea de lo que puedes esperar.
+He intentado resolver algunas de las dudas que podrías tener antes de ponerte en contacto conmigo, pero si aún no lo tienes claro, [escríbeme](/contact) y hablamos. Sin compromiso. Incluso podemos hacer una **primera sesión de prueba completamente gratuita** para que te hagas una idea de lo que puedes esperar.
 
 ¡Espero haberte ayudado y que hablemos pronto!

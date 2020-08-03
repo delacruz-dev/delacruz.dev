@@ -57,7 +57,7 @@ function MentoringStyle() {
         <div className="has-text-centered">
           <Button
             title="Mentoring a medida para programadores de Front-End"
-            href="/contactar"
+            href="/contact"
             data-tracking="mentoring-style-cta"
           >
             Contacta Conmigo

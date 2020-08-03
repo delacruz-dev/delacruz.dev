@@ -1,7 +1,5 @@
-import Footer from "../components/footer";
-import Layout from "../components/layout";
-import NavBar from "../components/navbar";
 import Contact from "../components/contact";
+import Layout from "../components/layout";
 
 function Home() {
   return (

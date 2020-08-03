@@ -14,7 +14,7 @@ export default () => (
   <main>
     <Header />
     <section>
-      <Link href="/about">
+      <Link href="/me">
         <a>Go to About Me</a>
       </Link>
     </section>

@@ -28,7 +28,7 @@ function MentoringBenefits() {
                     <div className="has-text-centered">
                       <Button
                         title="Mentoring a medida para programadores de Front-End"
-                        href="/contactar"
+                        href="/contact"
                         data-tracking="benefits-cta"
                       >
                         Hablemos

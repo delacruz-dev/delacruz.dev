@@ -19,7 +19,7 @@ function NavBar() {
             <Link href="/blog">
               <a data-tracking="navbar-blog">Blog</a>
             </Link>
-            <Link href="/#skills">
+            <Link href="/me">
               <a data-tracking="navbar-skills">Sobre mí</a>
             </Link>
           </div>
@@ -28,7 +28,7 @@ function NavBar() {
         <div className="navbar-right">
           <Button
             title="Mentoring a medida para programadores de Front-End"
-            href="/contactar"
+            href="/contact"
             data-tracking="navbar-cta"
             withAnimation
             size="small"
