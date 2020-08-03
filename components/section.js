@@ -1,6 +1,6 @@
 import css from "styled-jsx/css";
 
-function Section({ bgColor = 'transparent', children, className, diagonal = false }) {
+function Section({ bgColor = "transparent", children, className, diagonal = false }) {
   return (
     <>
       <section className={className} style={{ backgroundColor: bgColor }}>
