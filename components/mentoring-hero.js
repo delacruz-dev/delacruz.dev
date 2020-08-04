@@ -9,7 +9,7 @@ function MentoringHero() {
         <h1 className="title">Mentoring profesional</h1>
         <h2 className="subtitle">
           Para programadores y programadoras que quieran dar un salto en su carrera desarrollando software.
-          </h2>
+        </h2>
       </div>
     </Section>
   );

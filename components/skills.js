@@ -8,8 +8,8 @@ function Skills() {
   return (
     <>
       <Section>
-        <h1 className='title'>Mis habilidades</h1>
-        <h2 className='subtitle'>Las cosas que se me dan mejor</h2>
+        <h1 className="title">Mis habilidades</h1>
+        <h2 className="subtitle">Las cosas que se me dan mejor</h2>
         <Box>
           <h3>⚛️ Front end development</h3>
           <p>
@@ -51,20 +51,21 @@ function Skills() {
             <span>Public Speaking</span>
             <span>Coaching</span>
           </p>
-        </Box >
-      </Section >
+        </Box>
+      </Section>
       <style jsx>{styles}</style>
     </>
   );
 }
 
 const styles = css`
-span {
-  background: ${colors.backgroundMentoring};
-  border-radius: 4px;
-  margin: ${spacing.unit}px;
-  padding: ${spacing.unit}px ${2 * spacing.unit}px;
-  font-size: .8rem;
-}`;
+  span {
+    background: ${colors.backgroundMentoring};
+    border-radius: 4px;
+    margin: ${spacing.unit}px;
+    padding: ${spacing.unit}px ${2 * spacing.unit}px;
+    font-size: 0.8rem;
+  }
+`;
 
 export default Skills;
