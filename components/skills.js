@@ -7,7 +7,7 @@ import spacing from "./spacing";
 function Skills() {
   return (
     <>
-      <Section centered={false}>
+      <aside>
         <h1 className="is-medium">Mis habilidades</h1>
         <h2 className="is-medium">Las cosas que se me dan mejor</h2>
         <Box>
@@ -26,15 +26,15 @@ function Skills() {
             <span>NodeJS</span>
             <span>NestJS</span>
             <span>SQL</span>
-            <span>MongoDB</span>
+            <span>Google Cloud Platform (GCP)</span>
           </p>
           <h3>⟲ Agile mindset</h3>
           <p>
             <span>XP</span>
             <span>Scrum</span>
             <span>Kanban</span>
-            <span>Lean</span>
-            <span>TDD</span>
+            <span>Lean Software Development</span>
+            <span>Test-Driven Development (TDD)</span>
           </p>
           <h3>🤖 Testing Automation</h3>
           <p>
@@ -52,19 +52,25 @@ function Skills() {
             <span>Coaching</span>
           </p>
         </Box>
-      </Section>
+      </aside>
       <style jsx>{styles}</style>
     </>
   );
 }
 
 const styles = css`
+  aside {
+    min-width: 25vw;
+  }
+
   span {
     background: ${colors.backgroundMentoring};
     border-radius: 4px;
+    display: inline-block;
     margin: ${spacing.unit}px;
     padding: ${spacing.unit}px ${2 * spacing.unit}px;
     font-size: 0.8rem;
+    white-space: nowrap;
   }
 `;
 

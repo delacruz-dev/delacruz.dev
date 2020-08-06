@@ -22,7 +22,8 @@ function Experience() {
                   </a>
                 }
               >
-                <h3>Senior Full Stack Engineer at Tempus</h3>
+                <p className="heading">Desde octubre 2019</p>
+                <h3>Senior Full Stack Engineer en Tempus</h3>
                 <ul>
                   <li>
                     Desarrollo de aplicaciones web con{" "}
@@ -40,16 +41,14 @@ function Experience() {
                     Desarrollo de servicios y microservicios con{" "}
                     <a title="NestJS" rel="nofollow noopener" href="https://nestjs.com/" target="_blank">
                       NestJS
-                    </a>
-                    ,{" "}
+                    </a>{" "}
+                    y{" "}
                     <a title="PostgreSQL" rel="nofollow noopener" href="https://www.postgresql.org/" target="_blank">
                       PostgreSQL
                     </a>
-                    ,{" "}
-                    <a title="Terraform" rel="nofollow noopener" href="https://www.terraform.io/" target="_blank">
-                      Terraform
-                    </a>{" "}
-                    y{" "}
+                  </li>
+                  <li>
+                    Despliegue de infraestructura en{" "}
                     <a
                       title="Google Cloud Platform"
                       rel="nofollow noopener"
@@ -57,6 +56,10 @@ function Experience() {
                       target="_blank"
                     >
                       Google Cloud Platform
+                    </a>{" "}
+                    con{" "}
+                    <a title="Terraform" rel="nofollow noopener" href="https://www.terraform.io/" target="_blank">
+                      Terraform
                     </a>
                   </li>
                 </ul>
@@ -71,6 +74,7 @@ function Experience() {
                   </a>
                 }
               >
+                <p className="heading">De marzo 2018 a julio 2019</p>
                 <h3>Senior Software Engineer at King</h3>
                 <ul>
                   <li>
@@ -114,6 +118,7 @@ function Experience() {
                   </a>
                 }
               >
+                <p className="heading">De marzo 2018 a julio 2019</p>
                 <h3>Senior Software Engineer at King</h3>
                 <ul>
                   <li>
@@ -134,7 +139,8 @@ function Experience() {
                   </a>
                 }
               >
-                <h3>Senior Software Engineer at King</h3>
+                <p className="heading">De abril 2017 a octubre 2018</p>
+                <h3>Tech Lead en Typeform</h3>
                 <ul>
                   <li>
                     <strong>Mentoring</strong> a compañeros de equipo en desarrollo de software guiado por tests (
@@ -173,6 +179,7 @@ function Experience() {
                 </ul>
               </Box>
             </article>
+
             <article className="timeline-item">
               <Box
                 media={
@@ -181,6 +188,7 @@ function Experience() {
                   </a>
                 }
               >
+                <p className="heading">De 2013 a 2016</p>
                 <h3>Tech Lead en Adevinta</h3>
                 <ul>
                   <li>Liderazgo tecnológico de uno de los equipos de producto del portal Inmobiliario Fotocasa.</li>
@@ -216,6 +224,7 @@ function Experience() {
                   </a>
                 }
               >
+                <p className="heading">De marzo 2010 a julio 2013</p>
                 <h3>Software Engineer en Adevinta</h3>
                 <ul>
                   <li>
@@ -259,6 +268,7 @@ function Experience() {
                   </a>
                 }
               >
+                <p className="heading">De 2006 a 2009</p>
                 <h3>Consultor especializado en .NET Framework</h3>
                 <p>
                   Trabajé en consultorías como{" "}
@@ -285,6 +295,14 @@ function Experience() {
 const styles = css`
   .wrapper {
     padding-right: ${8 * spacing.unit}px;
+  }
+
+  .heading {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
   }
 
   .timeline-wrapper {
@@ -340,7 +358,7 @@ const styles = css`
     font-size: 1rem;
   }
 
-  @media (max-width: 930px) {
+  @media (max-width: 1024px) {
     .wrapper {
       padding: 0;
     }
