@@ -130,6 +130,10 @@ const styles = css`
     .row {
       flex-direction: column;
     }
+
+    .column:last-child {
+      margin-top: ${10 * spacing.unit}px;
+    }
   }
 `;
 
