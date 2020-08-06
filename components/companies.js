@@ -12,7 +12,7 @@ function Companies() {
   return (
     <Section>
       <div className="container has-text-centered">
-        <h1 className="title">Mi experiencia</h1>
+        <h1 className="title">He trabajado para</h1>
         <div className="logos">
           <Tempus {...logoProps} />
           <Adevinta {...logoProps} />

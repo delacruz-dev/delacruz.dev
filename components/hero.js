@@ -26,7 +26,7 @@ images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_732.jpg 732w"
               <h1 className="title">Soy Dani.</h1>
               <h2 className="subtitle">
                 He trabajado como <strong>ingeniero de software</strong> durante más de una década y quiero ser tu{" "}
-                <strong className="is-text-primary">mentor</strong> para ayudarte a dar un{" "}
+                <strong className="has-text-primary">mentor</strong> para ayudarte a dar un{" "}
                 <strong>salto en tu carrera</strong>.
               </h2>
               <div className="buttons">
