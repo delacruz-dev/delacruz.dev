@@ -22,8 +22,8 @@ function MentoringBenefits() {
                     </p>
                     <p>
                       Si me dejas ser tu mentor, puedo ayudarte a <strong>mejorar tus habilidades técnicas</strong>,
-                      <strong>acompañarte en tu búsqueda de empleo</strong> o{" "}
-                      <string>decidir cuál debería ser el próximo paso en tu carrera.</string>
+                      {" "}<strong>acompañarte en tu búsqueda de empleo</strong> o{" "}
+                      <strong>decidir cuál debería ser el próximo paso en tu carrera.</strong>
                     </p>
                     <div className="has-text-centered">
                       <Button

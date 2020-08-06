@@ -19,7 +19,7 @@ function MentoringService() {
           </div>
 
           <div className="picture">
-            <CodeReview width="30vw" height="auto" />
+            <CodeReview width="30vw" height="30vw" />
           </div>
         </div>
       </Section>
