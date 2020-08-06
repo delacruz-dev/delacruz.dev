@@ -3,16 +3,16 @@ import Adevinta from "./assets/logos/adevinta";
 import King from "./assets/logos/king";
 import Tempus from "./assets/logos/tempus";
 import Typeform from "./assets/logos/typeform";
-import { aliceBlue, spaceCadet } from "./colors";
+import { spaceCadet } from "./colors";
 import Section from "./section";
 
-const logoProps = { fill: aliceBlue, style: { margin: "0 8px" }, width: "150px" };
+const logoProps = { fill: spaceCadet, style: { margin: "0 8px" }, width: "150px" };
 
 function Companies() {
   return (
-    <Section bgColor={spaceCadet}>
+    <Section>
       <div className="container has-text-centered">
-        <h1 className="title has-dark-background">Mi experiencia</h1>
+        <h1 className="title">Mi experiencia</h1>
         <div className="logos">
           <Tempus {...logoProps} />
           <Adevinta {...logoProps} />

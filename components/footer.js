@@ -1,6 +1,6 @@
 import css from "styled-jsx/css";
 import { aliceBlue, imperialRed, spaceCadet } from "./colors";
-import { unit } from "./spacing";
+import spacing, { unit } from "./spacing";
 
 function Footer() {
   return (
@@ -91,6 +91,7 @@ const styles = css`
     align-items: center;
     display: flex;
     height: 200px;
+    margin-top: ${10 * spacing.unit}px;
     justify-content: center;
     background-color: ${spaceCadet};
   }
