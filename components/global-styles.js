@@ -4,7 +4,7 @@ export default function GlobalStyles() {
   return (
     <style jsx global>
       {`
-        @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Serif&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
         * {
           box-sizing: inherit;
         }
@@ -179,7 +179,6 @@ export default function GlobalStyles() {
         h5,
         h6,
         p {
-          font-family: "PT Serif", serif;
           margin-left: 0;
           margin-right: 0;
           margin-top: 0;
