@@ -1,14 +1,14 @@
 import css from "styled-jsx/css";
 import CodeReview from "./assets/code-review";
 import Button from "./button";
-import { vividSkyBlue } from "./colors";
+import { spaceCadet } from "./colors";
 import Section from "./section";
 
 function MentoringService() {
   return (
     <>
-      <Section id="mentoring" bgColor={vividSkyBlue}>
-        <div className="container has-text-centered">
+      <Section id="mentoring" bgColor={spaceCadet}>
+        <div className="container has-text-centered has-dark-background">
           <h1 className="title">Mentoring profesional</h1>
           <h2 className="subtitle">
             Para programadores y programadoras que quieran dar un salto en su carrera desarrollando software.

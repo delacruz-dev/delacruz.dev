@@ -4,5 +4,4 @@ export const imperialRed = "#EF233C";
 export const manatee = "#8D99AE";
 export const platinum = "#e5e5e5";
 export const spaceCadet = "#2B2D42";
-export const vividSkyBlue = "#48BFE3";
 export const white = "#FFFFFF";

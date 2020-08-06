@@ -1,29 +1,13 @@
 import cx from "classnames";
 import Link from "next/link";
 import css from "styled-jsx/css";
-import { aliceBlue, amaranthRed, imperialRed } from "./colors";
+import { aliceBlue, amaranthRed, imperialRed, white } from "./colors";
 
-function Button({
-  children,
-  className,
-  darkbg = false,
-  href,
-  outlined = false,
-  title,
-  size,
-  withAnimation = false,
-  ...props
-}) {
+function Button({ children, className, href, outlined = false, title, size, withAnimation = false, ...props }) {
   return (
     <>
       <Link href={href}>
-        <a
-          type="button"
-          href={href}
-          title={title}
-          {...props}
-          className={cx(className, { [size]: !!size, outlined, darkbg })}
-        >
+        <a type="button" href={href} title={title} {...props} className={cx(className, { [size]: !!size, outlined })}>
           {children}
           {withAnimation && (
             <svg
@@ -50,7 +34,7 @@ const styles = css`
     background: ${imperialRed};
     border-radius: 4px;
     border: 1px solid ${amaranthRed};
-    color: ${aliceBlue};
+    color: ${white};
     display: inline-flex;
     font-size: 1rem;
     font-style: normal;
@@ -79,7 +63,7 @@ const styles = css`
   a svg {
     animation: arrow 2.5s infinite;
     display: inline-block;
-    fill: ${aliceBlue};
+    fill: ${white};
     margin-left: 0.3rem;
     vertical-align: middle;
     width: 0.5rem;
@@ -107,23 +91,10 @@ const styles = css`
     transition: all 0.2s ease-out;
   }
 
-  .darkbg.outlined {
-    background-color: transparent;
-    color: ${aliceBlue};
-    transition: all 0.2s ease-out;
-    border: 1px solid ${aliceBlue};
-  }
-
   .outlined:hover,
   .outlined:active {
-    color: ${aliceBlue};
+    color: ${white};
     background-color: ${imperialRed};
-  }
-
-  .darkbg.outlined:hover,
-  .darkbg.outlined:active {
-    color: ${imperialRed};
-    background-color: ${aliceBlue};
   }
 
   @media (min-width: 768px) {
