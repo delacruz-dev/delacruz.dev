@@ -14,6 +14,7 @@ const colors = {
   secondaryHover: "#edf2f4",
   textPrimary: "#2b2d42",
   textSecondary: "#edf2f4",
+  white: "#ffffff",
 };
 
 export default colors;

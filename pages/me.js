@@ -3,10 +3,11 @@ import Layout from "../components/layout";
 import Section from "../components/section";
 import Skills from "../components/skills";
 import Experience from "../components/experience";
+import css from "styled-jsx/css";
 
 function Home() {
   return (
-    <Layout title='Sobre mi'>
+    <Layout title="Sobre mi">
       <Section>
         <div className="container has-text-centered ">
           <Picture />
@@ -14,14 +15,33 @@ function Home() {
           <h2>Ingeniero de Software y mentor profesional</h2>
         </div>
       </Section>
-      <Section>
-        <Experience />
-      </Section>
-      <Section>
-        <Skills />
-      </Section>
+
+      <div className="container">
+        <div className="row">
+          <div className="column">
+            <Experience />
+          </div>
+          <div className="column">
+            <Skills />
+          </div>
+        </div>
+      </div>
+      <style jsx>{styles}</style>
     </Layout>
   );
 }
+
+const styles = css`
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (max-width: 930px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+`;
 
 export default Home;

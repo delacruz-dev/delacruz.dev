@@ -1,9 +1,10 @@
 import css from "styled-jsx/css";
+import cn from "classnames";
 
-function Section({ bgColor = "transparent", children, className, diagonal = false }) {
+function Section({ bgColor = "transparent", centered = true, children, className, diagonal = false }) {
   return (
     <>
-      <section className={className} style={{ backgroundColor: bgColor }}>
+      <section className={cn(className, { "has-text-centered": centered })} style={{ backgroundColor: bgColor }}>
         {diagonal ? <div className="diagonal-bar"></div> : null}
         {children}
       </section>
@@ -13,7 +14,6 @@ function Section({ bgColor = "transparent", children, className, diagonal = fals
 }
 const styles = css`
   section {
-    align-items: center;
     display: flex;
     flex-direction: column;
     position: relative;

@@ -218,6 +218,14 @@ export default function GlobalStyles() {
           font-weight: 600;
         }
 
+        h1.is-medium {
+          font-size: 1.5rem;
+        }
+
+        h2.is-medium {
+          font-size: 1.2rem;
+        }
+
         p,
         li {
           font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;

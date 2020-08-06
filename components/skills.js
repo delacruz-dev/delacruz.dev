@@ -7,9 +7,9 @@ import spacing from "./spacing";
 function Skills() {
   return (
     <>
-      <Section>
-        <h1 className="title">Mis habilidades</h1>
-        <h2 className="subtitle">Las cosas que se me dan mejor</h2>
+      <Section centered={false}>
+        <h1 className="is-medium">Mis habilidades</h1>
+        <h2 className="is-medium">Las cosas que se me dan mejor</h2>
         <Box>
           <h3>⚛️ Front end development</h3>
           <p>
