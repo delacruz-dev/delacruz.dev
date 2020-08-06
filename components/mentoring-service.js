@@ -19,7 +19,7 @@ function MentoringService() {
           </div>
 
           <div className="picture">
-            <CodeReview width="30vw" height="30vw" />
+            <CodeReview height="100%" width="100%" />
           </div>
         </div>
       </Section>
@@ -35,6 +35,15 @@ const styles = css`
 
   .picture {
     margin-top: 2rem;
+    width: 30vw;
+    height: 30vw;
+  }
+
+  @media (max-width: 768px) {
+    .picture {
+      width: 70vw;
+      height: 70vw;
+    }
   }
 `;
 

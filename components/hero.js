@@ -6,7 +6,7 @@ function Hero() {
   return (
     <>
       <section id="home" className="hero">
-        <div className="container">
+        <div className="hero-container">
           <div className="hero-image">
             <img
               sizes="(max-width: 732px) 100vw, 732px"
@@ -47,7 +47,7 @@ images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_732.jpg 732w"
 }
 
 const styles = css`
-  .container {
+  .hero-container {
     align-items: center;
     display: flex;
     flex-direction: row-reverse;
@@ -113,7 +113,7 @@ const styles = css`
   }
 
   @media (max-width: 768px) {
-    .container {
+    .hero-container {
       flex-direction: column;
       margin-top: 50px;
       height: auto;

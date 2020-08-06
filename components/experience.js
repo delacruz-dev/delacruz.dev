@@ -319,7 +319,6 @@ const styles = css`
     left: 0;
   }
 
-  /* Container around content */
   .timeline-item {
     padding: 10px 40px;
     position: relative;
@@ -339,7 +338,6 @@ const styles = css`
     border-color: transparent ${white} transparent transparent;
   }
 
-  /* The circles on the timeline */
   .timeline-item::after {
     content: "";
     position: absolute;
@@ -361,6 +359,10 @@ const styles = css`
   @media (max-width: 1024px) {
     .wrapper {
       padding: 0;
+    }
+
+    .timeline-item {
+      padding-right: 0;
     }
   }
 `;

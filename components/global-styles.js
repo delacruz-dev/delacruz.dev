@@ -242,7 +242,7 @@ export default function GlobalStyles() {
           max-width: 1280px;
           margin-left: auto;
           margin-right: auto;
-          padding: 50px;
+          padding: 50px 20px;
         }
 
         .centered {

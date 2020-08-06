@@ -21,8 +21,8 @@ function MentoringBenefits() {
                       hacer el mejor uso de ese conocimiento compartiéndolo contigo.
                     </p>
                     <p>
-                      Si me dejas ser tu mentor, puedo ayudarte a <strong>mejorar tus habilidades técnicas</strong>,
-                      {" "}<strong>acompañarte en tu búsqueda de empleo</strong> o{" "}
+                      Si me dejas ser tu mentor, puedo ayudarte a <strong>mejorar tus habilidades técnicas</strong>,{" "}
+                      <strong>acompañarte en tu búsqueda de empleo</strong> o{" "}
                       <strong>decidir cuál debería ser el próximo paso en tu carrera.</strong>
                     </p>
                     <div className="has-text-centered">

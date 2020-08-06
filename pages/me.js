@@ -83,30 +83,30 @@ function Home() {
       <article className="container">
         <h1 className="is-medium">Charlas</h1>
         <div className="talks">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/QHzu4hxAhrc"
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/67D0eJ9oqfo"
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/kRI4IjWHxxw"
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+          <div className="video">
+            <iframe
+              src="https://www.youtube.com/embed/QHzu4hxAhrc"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <div className="video">
+            <iframe
+              src="https://www.youtube.com/embed/67D0eJ9oqfo"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <div className="video">
+            <iframe
+              src="https://www.youtube.com/embed/kRI4IjWHxxw"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
       </article>
       <style jsx>{styles}</style>
@@ -125,6 +125,22 @@ const styles = css`
     grid-template-columns: 1fr 1fr;
     grid-gap: ${5 * spacing.unit}px;
   }
+  .video {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+  }
+  .video iframe,
+  .video object,
+  .video embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
 
   @media (max-width: 1024px) {
     .row {
@@ -133,6 +149,11 @@ const styles = css`
 
     .column:last-child {
       margin-top: ${10 * spacing.unit}px;
+    }
+
+    .talks {
+      display: flex;
+      flex-direction: column;
     }
   }
 `;
