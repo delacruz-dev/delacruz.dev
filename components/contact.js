@@ -1,5 +1,5 @@
 import css from "styled-jsx/css";
-import colors from "./colors";
+import { amaranthRed, imperialRed, spaceCadet, white, platinum } from "./colors";
 import Section from "./section";
 import { unit } from "./spacing";
 import Title from "./title";
@@ -55,11 +55,11 @@ const styles = css`
   input,
   textarea {
     align-items: center;
-    background-color: ${colors.backgroundInput};
+    background-color: ${white};
     border-radius: 4px;
-    border: 1px solid ${colors.borderInput};
+    border: 1px solid ${platinum};
     box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
-    color: ${colors.textPrimary};
+    color: ${spaceCadet};
     display: inline-flex;
     font-family: inherit;
     font-size: 1.25rem;
@@ -82,7 +82,7 @@ const styles = css`
   }
 
   label {
-    color: ${colors.textPrimary};
+    color: ${spaceCadet};
     display: block;
     font-size: 1.25rem;
     font-weight: 700;
@@ -99,10 +99,10 @@ const styles = css`
 
   button {
     align-items: center;
-    background: ${colors.primary};
+    background: ${imperialRed};
     border-radius: 4px;
-    border: 1px solid ${colors.primary};
-    color: ${colors.textSecondary};
+    border: 1px solid ${amaranthRed};
+    color: ${white};
     display: inline-flex;
     font-size: 1rem;
     font-style: normal;
@@ -123,7 +123,7 @@ const styles = css`
 
   button:hover,
   button:active {
-    background: ${colors.primaryHover};
+    background: ${amaranthRed};
     cursor: pointer;
   }
 

@@ -1,6 +1,6 @@
 import css from "styled-jsx/css";
 import Box from "./box";
-import colors from "./colors";
+import { imperialRed, white } from "./colors";
 import Section from "./section";
 import spacing from "./spacing";
 
@@ -313,7 +313,7 @@ const styles = css`
     content: "";
     position: absolute;
     width: ${spacing.unit}px;
-    background-color: ${colors.primary};
+    background-color: ${imperialRed};
     top: 0;
     bottom: 0;
     left: 0;
@@ -334,9 +334,9 @@ const styles = css`
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid ${colors.white};
+    border: medium solid ${white};
     border-width: 10px 10px 10px 0;
-    border-color: transparent ${colors.white} transparent transparent;
+    border-color: transparent ${white} transparent transparent;
   }
 
   /* The circles on the timeline */
@@ -346,8 +346,8 @@ const styles = css`
     width: 15px;
     height: 15px;
     left: -9px;
-    background-color: ${colors.white};
-    border: 4px solid ${colors.primary};
+    background-color: ${white};
+    border: 4px solid ${imperialRed};
     top: 20px;
     border-radius: 50%;
     z-index: 1;

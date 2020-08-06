@@ -1,4 +1,5 @@
 import css from "styled-jsx/css";
+import { aliceBlue, imperialRed, spaceCadet } from "./colors";
 import { unit } from "./spacing";
 
 function Footer() {
@@ -11,7 +12,7 @@ function Footer() {
             <span className="heart-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 392 392">
                 <path
-                  fill="#d7443e"
+                  fill={imperialRed}
                   d="M285 36c59 0 107 47 107 106 0 108-196 214-196 214S0 248 0 142C0 83 48 36 107 36c36-1 69 17 89 48 20-30 53-49 89-48z"
                 />
               </svg>
@@ -91,9 +92,11 @@ const styles = css`
     display: flex;
     height: 200px;
     justify-content: center;
+    background-color: ${spaceCadet};
   }
 
   .footer p {
+    color: ${aliceBlue};
     font-size: 0.8rem;
   }
 

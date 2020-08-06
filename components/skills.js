@@ -1,7 +1,6 @@
 import css from "styled-jsx/css";
 import Box from "./box";
-import Section from "./section";
-import colors from "./colors";
+import { aliceBlue } from "./colors";
 import spacing from "./spacing";
 
 function Skills() {
@@ -64,7 +63,7 @@ const styles = css`
   }
 
   span {
-    background: ${colors.backgroundMentoring};
+    background: ${aliceBlue};
     border-radius: 4px;
     display: inline-block;
     margin: ${spacing.unit}px;

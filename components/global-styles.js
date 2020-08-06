@@ -1,4 +1,4 @@
-import colors from "./colors";
+import { aliceBlue, imperialRed, spaceCadet } from "./colors";
 
 export default function GlobalStyles() {
   return (
@@ -19,8 +19,8 @@ export default function GlobalStyles() {
         }
 
         body {
-          background-color: ${colors.background};
-          color: ${colors.textPrimary};
+          background-color: ${aliceBlue};
+          color: ${spaceCadet};
           font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
           font-size: 16px;
           overflow-x: hidden;
@@ -232,7 +232,7 @@ export default function GlobalStyles() {
           font-size: 1.2rem;
           letter-spacing: -0.5px;
           line-height: 1.5;
-          color: #464646;
+          color: ${spaceCadet};
         }
 
         .container {
@@ -254,7 +254,11 @@ export default function GlobalStyles() {
         }
 
         .has-text-primary {
-          color: ${colors.primary};
+          color: ${imperialRed};
+        }
+
+        .has-dark-background {
+          color: ${aliceBlue};
         }
 
         main {

@@ -1,6 +1,6 @@
 import css from "styled-jsx/css";
 import Button from "./button";
-import colors from "./colors";
+import { spaceCadet } from "./colors";
 
 function Hero() {
   return (
@@ -71,7 +71,7 @@ const styles = css`
   }
 
   .is-text-primary {
-    color: ${colors.textPrimary};
+    color: ${spaceCadet};
   }
 
   .buttons {

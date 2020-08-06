@@ -1,5 +1,6 @@
 import Link from "next/link";
 import css from "styled-jsx/css";
+import { platinum } from "./colors";
 
 export default function BlogHeader(props) {
   return (
@@ -26,7 +27,7 @@ const styles = css`
 
   nav {
     align-items: center;
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid ${platinum};
     display: flex;
     flex-direction: row;
     justify-content: space-between;

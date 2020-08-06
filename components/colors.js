@@ -1,20 +1,7 @@
-const colors = {
-  background: "#edf2f4",
-  backgroundConsultancy: "#edf2f4",
-  backgroundMentoring: "#edf2f4",
-  backgroundBox: "#ffffff",
-  backgroundNavbar: "#ffffff",
-  backgroundInput: "#ffffff",
-  borderBox: "#cccccc",
-  borderNavbar: "#cccccc",
-  borderInput: "#cccccc",
-  primary: "#d90429",
-  primaryHover: "#ef233c",
-  secondary: "#edf2f4",
-  secondaryHover: "#edf2f4",
-  textPrimary: "#2b2d42",
-  textSecondary: "#edf2f4",
-  white: "#ffffff",
-};
-
-export default colors;
+export const aliceBlue = "#EDF2F4";
+export const amaranthRed = "#D90429";
+export const imperialRed = "#EF233C";
+export const manatee = "#8D99AE";
+export const platinum = "#e5e5e5";
+export const spaceCadet = "#2B2D42";
+export const white = "#FFFFFF";
