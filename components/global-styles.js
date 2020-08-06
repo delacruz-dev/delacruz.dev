@@ -226,6 +226,10 @@ export default function GlobalStyles() {
           font-size: 1.2rem;
         }
 
+        p {
+          width: 100%;
+        }
+
         p,
         li {
           font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
