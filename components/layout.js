@@ -35,6 +35,8 @@ function Layout({
         <link rel="preconnect dns-prefetch" href="https://www.google.es" />
         <link rel="preconnect dns-prefetch" href="https://stats.g.doubleclick.net" />
         <link rel="preconnect dns-prefetch" href="https://www.google.com" />
+        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossOrigin />
         <link rel="canonical" href={url ? `https://delacruz.dev/blog/${url}` : "https://delacruz.dev"} />
 
         <meta name="author" content="Dani de la Cruz" />
