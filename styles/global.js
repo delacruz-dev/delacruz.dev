@@ -2,7 +2,6 @@ import css from "styled-jsx/css";
 import { theme } from "./theme";
 
 export default css.global`
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=PT+Serif:wght@400;700&display=swap');
   * {
     box-sizing: inherit;
   }
