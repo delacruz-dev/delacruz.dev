@@ -1,6 +1,6 @@
 import css from "styled-jsx/css";
+import { theme } from "../styles/theme";
 import Box from "./box";
-import { imperialRed } from "./colors";
 import Section from "./section";
 import spacing from "./spacing";
 
@@ -101,7 +101,7 @@ const styles = css`
   }
 
   a {
-    color: ${imperialRed};
+    color: ${theme.colors.primary};
   }
 
   .name {

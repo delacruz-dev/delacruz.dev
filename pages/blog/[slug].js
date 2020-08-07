@@ -3,9 +3,7 @@ import Head from "next/head";
 import React from "react";
 import BlogHeader from "../../components/blog-header";
 import BlogPost from "../../components/blog-post";
-import GlobalStyles from "../../components/global-styles";
 import Layout from "../../components/layout";
-import NavBar from "../../components/navbar";
 
 const glob = require("glob");
 

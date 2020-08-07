@@ -1,5 +1,5 @@
 import css from "styled-jsx/css";
-import { amaranthRed, imperialRed, spaceCadet, white, platinum } from "./colors";
+import { theme } from "../styles/theme";
 import Section from "./section";
 import { unit } from "./spacing";
 import Title from "./title";
@@ -55,11 +55,11 @@ const styles = css`
   input,
   textarea {
     align-items: center;
-    background-color: ${white};
+    background-color: ${theme.colors.inputBg};
     border-radius: 4px;
-    border: 1px solid ${platinum};
+    border: 1px solid ${theme.colors.border};
     box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
-    color: ${spaceCadet};
+    color: ${theme.colors.text};
     display: inline-flex;
     font-family: inherit;
     font-size: 1.25rem;
@@ -82,7 +82,7 @@ const styles = css`
   }
 
   label {
-    color: ${spaceCadet};
+    color: ${theme.colors.text};
     display: block;
     font-size: 1.25rem;
     font-weight: 700;
@@ -99,10 +99,10 @@ const styles = css`
 
   button {
     align-items: center;
-    background: ${imperialRed};
+    background: ${theme.colors.buttonPrimary};
     border-radius: 4px;
-    border: 1px solid ${amaranthRed};
-    color: ${white};
+    border: 1px solid ${theme.colors.buttonBorder};
+    color: ${theme.colors.buttonPrimaryText};
     display: inline-flex;
     font-size: 1rem;
     font-style: normal;
@@ -123,7 +123,7 @@ const styles = css`
 
   button:hover,
   button:active {
-    background: ${amaranthRed};
+    background: ${theme.colors.buttonPrimaryHover};
     cursor: pointer;
   }
 

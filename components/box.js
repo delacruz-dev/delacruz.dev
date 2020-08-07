@@ -1,6 +1,6 @@
 import css from "styled-jsx/css";
-import { white } from "./colors";
 import spacing from "./spacing";
+import { theme } from "../styles/theme";
 
 function Box({ media, children }) {
   return (
@@ -18,7 +18,7 @@ function Box({ media, children }) {
 
 const styles = css`
   .box {
-    background-color: ${white};
+    background-color: ${theme.colors.boxBg};
     border-radius: 4px;
     box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.12);
     display: flex;

@@ -1,13 +1,13 @@
 import css from "styled-jsx/css";
+import { theme } from "../styles/theme";
 import CodeReview from "./assets/code-review";
 import Button from "./button";
-import { mediumTurqouise } from "./colors";
 import Section from "./section";
 
 function MentoringService() {
   return (
     <>
-      <Section id="mentoring" bgColor={mediumTurqouise}>
+      <Section id="mentoring" bgColor={theme.colors.mentoringServiceBg}>
         <div className="container has-text-centered">
           <h1 className="title">Mentoring profesional</h1>
           <h2 className="subtitle">

@@ -1,6 +1,5 @@
-import css from "styled-jsx/css";
 import cn from "classnames";
-import { mediumTurqouise } from "./colors";
+import css from "styled-jsx/css";
 
 function Section({ bgColor = "transparent", centered = true, children, className, diagonal = false }) {
   return (
@@ -21,7 +20,7 @@ const styles = css`
   }
 
   .diagonal-bar {
-    background-image: linear-gradient(135deg, ${mediumTurqouise}, #2cbfcf 63%, #29aac0);
+    background-image: linear-gradient(135deg, #4ecdc4, #2cbfcf 63%, #29aac0);
     height: 440px;
     left: 50%;
     position: absolute;

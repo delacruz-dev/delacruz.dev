@@ -1,6 +1,5 @@
 import css from "styled-jsx/css";
 import Button from "./button";
-import { spaceCadet } from "./colors";
 
 function Hero() {
   return (
@@ -68,10 +67,6 @@ const styles = css`
 
   .hero-image {
     width: 30vw;
-  }
-
-  .is-text-primary {
-    color: ${spaceCadet};
   }
 
   .buttons {

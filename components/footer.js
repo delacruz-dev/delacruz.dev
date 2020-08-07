@@ -1,6 +1,6 @@
 import css from "styled-jsx/css";
-import { aliceBlue, imperialRed, spaceCadet } from "./colors";
 import spacing, { unit } from "./spacing";
+import { theme } from "../styles/theme";
 
 function Footer() {
   return (
@@ -12,7 +12,7 @@ function Footer() {
             <span className="heart-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 392 392">
                 <path
-                  fill={imperialRed}
+                  fill={theme.colors.primary}
                   d="M285 36c59 0 107 47 107 106 0 108-196 214-196 214S0 248 0 142C0 83 48 36 107 36c36-1 69 17 89 48 20-30 53-49 89-48z"
                 />
               </svg>
@@ -93,11 +93,11 @@ const styles = css`
     height: 200px;
     margin-top: ${10 * spacing.unit}px;
     justify-content: center;
-    background-color: ${spaceCadet};
+    background-color: ${theme.colors.footerBg};
   }
 
   .footer p {
-    color: ${aliceBlue};
+    color: ${theme.colors.footerText};
     font-size: 0.8rem;
   }
 

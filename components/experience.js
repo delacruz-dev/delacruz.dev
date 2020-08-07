@@ -1,6 +1,6 @@
 import css from "styled-jsx/css";
+import { theme } from "../styles/theme";
 import Box from "./box";
-import { imperialRed, white } from "./colors";
 import Section from "./section";
 import spacing from "./spacing";
 
@@ -313,7 +313,7 @@ const styles = css`
     content: "";
     position: absolute;
     width: ${spacing.unit}px;
-    background-color: ${imperialRed};
+    background-color: ${theme.colors.primary};
     top: 0;
     bottom: 0;
     left: 0;
@@ -333,9 +333,9 @@ const styles = css`
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid ${white};
+    border: medium solid ${theme.colors.boxBg};
     border-width: 10px 10px 10px 0;
-    border-color: transparent ${white} transparent transparent;
+    border-color: transparent ${theme.colors.boxBg} transparent transparent;
   }
 
   .timeline-item::after {
@@ -344,8 +344,8 @@ const styles = css`
     width: 15px;
     height: 15px;
     left: -9px;
-    background-color: ${white};
-    border: 4px solid ${imperialRed};
+    background-color: ${theme.colors.background};
+    border: 4px solid ${theme.colors.primary};
     top: 20px;
     border-radius: 50%;
     z-index: 1;

@@ -1,8 +1,7 @@
 import Head from "next/head";
 import { useEffect } from "react";
-import css from "styled-jsx/css";
+import globalStyles from '../styles/global';
 import Footer from "./footer";
-import GlobalStyles from "./global-styles";
 import NavBar from "./navbar";
 
 function Layout({
@@ -52,18 +51,13 @@ function Layout({
         <meta name="description" property="og:description" content={description} />
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141784503-1"></script>
       </Head>
-      <GlobalStyles />
       <NavBar />
       <main>{children}</main>
       <script type="text/javascript" src="/js/analytics.js"></script>
       <Footer />
-      <style jsx>{styles}</style>
+      <style jsx global>{globalStyles}</style>
     </>
   );
 }
-const styles = css`
-  main {
-    margin-top: 50px;
-  }
-`;
+
 export default Layout;

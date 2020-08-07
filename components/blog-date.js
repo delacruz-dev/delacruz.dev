@@ -1,5 +1,5 @@
 import css from "styled-jsx/css";
-import { platinum, spaceCadet } from "./colors";
+import { theme } from "../styles/theme";
 
 function reformatDate(fullDate) {
   const date = new Date(fullDate);
@@ -21,9 +21,9 @@ export default function BlogDate(props) {
 const styles = css`
   .date {
     align-items: center;
-    background-color: ${platinum};
+    background-color: ${theme.colors.dateBg};
     border-radius: 4px;
-    color: ${spaceCadet};
+    color: ${theme.colors.text};
     display: inline-flex;
     font-size: 0.75rem;
     height: 2em;

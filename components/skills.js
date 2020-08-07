@@ -1,6 +1,6 @@
 import css from "styled-jsx/css";
+import { theme } from "../styles/theme";
 import Box from "./box";
-import { aliceBlue } from "./colors";
 import spacing from "./spacing";
 
 function Skills() {
@@ -63,7 +63,7 @@ const styles = css`
   }
 
   span {
-    background: ${aliceBlue};
+    background: ${theme.colors.skillsBg};
     border-radius: 4px;
     display: inline-block;
     margin: ${spacing.unit}px;

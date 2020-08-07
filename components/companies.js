@@ -3,10 +3,10 @@ import Adevinta from "./assets/logos/adevinta";
 import King from "./assets/logos/king";
 import Tempus from "./assets/logos/tempus";
 import Typeform from "./assets/logos/typeform";
-import { spaceCadet } from "./colors";
 import Section from "./section";
+import { theme } from '../styles/theme'
 
-const logoProps = { fill: spaceCadet, style: { margin: "0 8px" }, width: "150px" };
+const logoProps = { fill: theme.colors.text, style: { margin: "0 8px" }, width: "150px" };
 
 function Companies() {
   return (

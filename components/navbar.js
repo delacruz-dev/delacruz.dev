@@ -2,7 +2,7 @@ import Link from "next/link";
 import css from "styled-jsx/css";
 import Logo from "./assets/logo";
 import Button from "./button";
-import { imperialRed, manatee, spaceCadet, white, aliceBlue, platinum } from "./colors";
+import { theme } from "../styles/theme";
 
 function NavBar() {
   return (
@@ -11,7 +11,7 @@ function NavBar() {
         <div className="navbar-left">
           <Link href="/">
             <a className="logo" title="Dani de la Cruz">
-              <Logo fill={imperialRed} />
+              <Logo fill={theme.colors.primary} />
             </a>
           </Link>
 
@@ -49,8 +49,8 @@ const styles = css`
   }
 
   .navbar {
-    background-color: ${white};
-    border-bottom: 1px solid ${platinum};
+    background-color: ${theme.colors.background};
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12);
     display: flex;
     height: 55px;
     justify-content: space-between;
@@ -58,7 +58,7 @@ const styles = css`
     position: fixed;
     right: 0;
     top: 0;
-    z-index: 1;
+    z-index: 2;
   }
 
   .navbar-left {
@@ -74,13 +74,13 @@ const styles = css`
 
   .navbar-sections a {
     display: block;
-    color: ${spaceCadet};
+    color: ${theme.colors.text};
     margin: auto 10px;
     white-space: nowrap;
   }
 
   .navbar-sections a:hover {
-    color: ${imperialRed};
+    color: ${theme.colors.linkHover};
   }
 
   .logo {

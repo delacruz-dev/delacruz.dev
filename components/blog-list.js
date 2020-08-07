@@ -1,8 +1,8 @@
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import css from "styled-jsx/css";
+import { theme } from "../styles/theme";
 import BlogDate from "./blog-date";
-import { imperialRed } from "./colors";
 
 const BlogList = ({ posts }) => {
   return (
@@ -66,7 +66,7 @@ const styles = css`
   }
 
   article:hover h1 {
-    color: ${imperialRed};
+    color: ${theme.colors.primary};
   }
 
   @media (min-width: 768px) {

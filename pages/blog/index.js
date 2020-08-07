@@ -1,10 +1,7 @@
 import matter from "gray-matter";
 import BlogHeader from "../../components/blog-header";
 import BlogList from "../../components/blog-list";
-import Footer from "../../components/footer";
-import GlobalStyles from "../../components/global-styles";
 import Layout from "../../components/layout";
-import NavBar from "../../components/navbar";
 
 const Index = ({ posts }) => {
   return (

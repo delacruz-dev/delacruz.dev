@@ -1,7 +1,7 @@
 import cx from "classnames";
 import Link from "next/link";
 import css from "styled-jsx/css";
-import { aliceBlue, amaranthRed, imperialRed, white } from "./colors";
+import { theme } from "../styles/theme";
 
 function Button({ children, className, href, outlined = false, title, size, withAnimation = false, ...props }) {
   return (
@@ -31,10 +31,10 @@ function Button({ children, className, href, outlined = false, title, size, with
 const styles = css`
   a {
     align-items: center;
-    background: ${imperialRed};
+    background: ${theme.colors.buttonPrimary};
     border-radius: 4px;
-    border: 1px solid ${amaranthRed};
-    color: ${white};
+    border: 1px solid ${theme.colors.buttonBorder};
+    color: ${theme.colors.buttonPrimaryText};
     display: inline-flex;
     font-size: 1rem;
     font-style: normal;
@@ -56,14 +56,14 @@ const styles = css`
 
   a:hover,
   a:active {
-    background: ${amaranthRed};
+    background: ${theme.colors.buttonPrimaryHover};
     cursor: pointer;
   }
 
   a svg {
     animation: arrow 2.5s infinite;
     display: inline-block;
-    fill: ${white};
+    fill: ${theme.colors.buttonPrimaryText};
     margin-left: 0.3rem;
     vertical-align: middle;
     width: 0.5rem;
@@ -87,14 +87,14 @@ const styles = css`
 
   .outlined {
     background-color: transparent;
-    color: ${imperialRed};
+    color: ${theme.colors.buttonOutlinedText};
     transition: all 0.2s ease-out;
   }
 
   .outlined:hover,
   .outlined:active {
-    color: ${white};
-    background-color: ${imperialRed};
+    color: ${theme.colors.buttonOutlinedTextHover};
+    background-color: ${theme.colors.buttonOutlinedHover};
   }
 
   @media (min-width: 768px) {
