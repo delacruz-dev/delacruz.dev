@@ -9,8 +9,8 @@ export const white = "#FFFFFF";
 
 export const theme = {
   fontFamily: {
-    sansSerif: '-apple-system, "Helvetica Neue", Arial, sans-serif',
-    serif: '',
+    sansSerif: '"Open Sans", "Helvetica Neue", Helvetica, sans-serif',
+    serif: '"PT Serif", serif',
     mono: 'Menlo, Monaco, monospace'
   },
   colors: {

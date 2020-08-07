@@ -19,7 +19,7 @@ images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_732.jpg 732w"
           </div>
           <div className="hero-body">
             <div className="hero-content">
-              <p className="subtitle">
+              <p className="greet">
                 ¡Hola! <span className="wave">👋</span>
               </p>
               <h1 className="title">Soy Dani.</h1>
@@ -71,6 +71,10 @@ const styles = css`
 
   .buttons {
     margin: 20px 0;
+  }
+
+  .greet {
+    margin-bottom: 0;
   }
 
   @keyframes wave {

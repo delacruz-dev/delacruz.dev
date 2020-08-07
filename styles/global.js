@@ -2,7 +2,7 @@ import css from "styled-jsx/css";
 import { theme } from "./theme";
 
 export default css.global`
-  @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=PT+Serif:wght@400;700&display=swap');
   * {
     box-sizing: inherit;
   }
@@ -19,7 +19,7 @@ export default css.global`
   body {
     background-color: ${theme.colors.background};
     color: ${theme.colors.text};
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+    font-family: ${theme.fontFamily.sansSerif};
     font-size: 16px;
     overflow-x: hidden;
   }
@@ -188,14 +188,14 @@ export default css.global`
     color: inherit;
   }
 
-  h1,
   h2,
   h3 {
-    font-family: "Open Sans", sans-serif;
+    font-family: ${theme.fontFamily.sansSerif};
     font-weight: 500;
   }
 
   h1 {
+    font-family: ${theme.fontFamily.serif};
     letter-spacing: -1px;
     line-height: 1.1875;
     font-size: 3rem;
@@ -229,7 +229,7 @@ export default css.global`
 
   p,
   li {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+    font-family: ${theme.fontFamily.sansSerif};
     font-size: 1.2rem;
     letter-spacing: -0.5px;
     line-height: 1.5;
