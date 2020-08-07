@@ -242,6 +242,10 @@ export default css.global`
     padding: 50px 20px;
   }
 
+  .container.is-narrow {
+     max-width: 1024px;
+  }
+
   .centered {
     align-items: center;
     justify-content: center;

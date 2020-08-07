@@ -9,9 +9,6 @@ function Experience() {
     <Section>
       <div className="wrapper">
         <h1 className="is-medium">Mi experiencia</h1>
-        <h2 className="is-medium">
-          He estado trabajando en la industria de software durante más de una década. Echa un vistazo a mi experiencia.
-        </h2>
         <div className="timeline-wrapper">
           <div className="timeline">
             <article className="timeline-item">

@@ -8,7 +8,6 @@ function Skills() {
     <>
       <aside>
         <h1 className="is-medium">Mis habilidades</h1>
-        <h2 className="is-medium">Las cosas que se me dan mejor</h2>
         <Box>
           <h3>⚛️ Front end development</h3>
           <p>

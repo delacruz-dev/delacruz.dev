@@ -17,7 +17,7 @@ function Home() {
         </div>
       </Section>
 
-      <article className="container">
+      <article className="container is-narrow">
         <h1 className="is-medium">Sobre mí</h1>
         <p>
           He estado desarrollando productos con tecnologías web desde 2006. Cuando finalicé mis estudios de Ingeniería
@@ -69,7 +69,7 @@ function Home() {
         </p>
       </article>
 
-      <div className="container">
+      <div className="container is-narrow">
         <div className="row">
           <div className="column">
             <Experience />
