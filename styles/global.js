@@ -267,7 +267,7 @@ export default css.global`
 
   main {
     min-height: 100vh;
-    margin-top: 50px;
+    margin-top: 55px;
   }
 
   @media (max-width: 414px) {

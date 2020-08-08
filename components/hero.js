@@ -47,13 +47,13 @@ const styles = css`
     align-items: center;
     display: flex;
     flex-direction: row-reverse;
-    height: 70vh;
+    height: auto;
     justify-content: center;
   }
 
   .hero-body {
     width: 50vw;
-    padding: 0 100px 0 0;
+    padding: 1rem 100px 1rem 0;
     display: block;
   }
 
@@ -146,21 +146,21 @@ const styles = css`
     .hero-image img {
       object-fit: cover;
     }
-  }
 
-  @media (max-width: 375px) {
     .title {
       font-size: 1.9em;
     }
 
-    .subtitle {
+    .subtitle,
+    .greet {
       font-size: 1.2em;
     }
   }
 
   @media (max-width: 360px) {
-    .subtitle {
-      font-size: 1.3em;
+    .subtitle,
+    .greet {
+      font-size: 1.1em;
     }
   }
 
@@ -169,7 +169,8 @@ const styles = css`
       font-size: 1.5em;
     }
 
-    .subtitle {
+    .subtitle,
+    .greet {
       font-size: 1em;
     }
   }
