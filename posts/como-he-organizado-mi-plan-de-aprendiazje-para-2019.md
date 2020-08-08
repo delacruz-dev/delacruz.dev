@@ -177,4 +177,4 @@ funcionado y qué debo cambiar para el año siguiente.
 ---
 
 Si has leído esto y **quieres que te ayude a elaborar tu propio plan de
-aprendizaje**, no dudes en ponerte en [contacto conmigo](/contacto). O si lo prefieres, échale un vistazo a mis planes de [mentoring](/mentoring).
+aprendizaje**, no dudes en ponerte en [contacto conmigo](/contact). O si lo prefieres, échale un vistazo a mis planes de [mentoring](/mentoring).
