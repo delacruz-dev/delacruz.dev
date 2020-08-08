@@ -49,6 +49,7 @@ const styles = css`
     flex-direction: row-reverse;
     height: auto;
     justify-content: center;
+    min-height: 70vh;
   }
 
   .hero-body {
