@@ -24,6 +24,7 @@ const styles = css`
     display: flex;
     flex-direction: column;
     padding: ${spacing.boxPadding}px;
+    position: relative;
   }
 
   .box-media {

@@ -3,12 +3,13 @@ import { theme } from "../styles/theme";
 import Box from "./box";
 import Section from "./section";
 import spacing from "./spacing";
+import QuotationMark from './assets/quotation-mark';
 
 function Testimonials() {
   return (
     <>
       <Section id="testimonials">
-        <div className="container has-text-centered ">
+        <div className="container has-text-centered is-narrow">
           <h1 className="title">Referencias</h1>
           <h2 className="subtitle">
             Lo que dicen de mí algunos de los profesionales con los que he tenido el privilegio de trabajar.
@@ -24,12 +25,13 @@ function Testimonials() {
                   </a>
                 </small>
               </div>
-              <p>
-                Empecé la mentoría para mejorar mis habilidades como desarrollador y Dani supo orientarme en temas de
+              <blockquote>
+                "Empecé la mentoría para mejorar mis habilidades como desarrollador y Dani supo orientarme en temas de
                 testing, algoritmia, mantenibilidad del código, etc. Pero eso solo fue la punta del iceberg, Dani me
                 ayudó a superar entrevistas de trabajo, motivación personal incluso mejorar mis habilidades de
-                comunicación y liderazgo, con su ayuda he podido dar un salto de calidad como profesional.
-              </p>
+                comunicación y liderazgo, con su ayuda he podido dar un salto de calidad como profesional."
+              </blockquote>
+              <QuotationMark style={{ position: 'absolute', right: 4 * spacing.unit, bottom: 4 * spacing.unit }} fill={theme.colors.dateBg} />
             </Box>
 
             <Box media={<img src="/images/david.jfif" alt="David García" loading="lazy" width="96" height="96" />}>
@@ -41,12 +43,13 @@ function Testimonials() {
                   </a>
                 </small>
               </div>
-              <p>
-                Cuando empecé a trabajar en Adevinta, mi perfil estaba más orientado a la maquetación de interficies y a
+              <blockquote>
+                "Cuando empecé a trabajar en Adevinta, mi perfil estaba más orientado a la maquetación de interficies y a
                 modificar el DOM con jQuery. En dos años trabajando juntos Dani supo transmitirme los fundamentos del
                 desarrollo de software, técnicas y patrones de diseño avanzados que hoy son imprescindibles en mi
-                trabajo actual.
-              </p>
+                trabajo actual."
+              </blockquote>
+              <QuotationMark style={{ position: 'absolute', right: 4 * spacing.unit, bottom: 4 * spacing.unit }} fill={theme.colors.dateBg} />
             </Box>
 
             <Box
@@ -60,11 +63,12 @@ function Testimonials() {
                   </a>
                 </small>
               </div>
-              <p>
-                Dani cuenta con muchos años de experiencia a sus espaldas como desarrollador y se nota en cada proyecto
+              <blockquote>
+                "Dani cuenta con muchos años de experiencia a sus espaldas como desarrollador y se nota en cada proyecto
                 que afronta. Entre sus grandes virtudes se cuentan la máxima optimización de sus soluciones y un extremo
-                cuidado por hacer sus proyectos mantenibles por él y todo el equipo.
-              </p>
+                cuidado por hacer sus proyectos mantenibles por él y todo el equipo."
+              </blockquote>
+              <QuotationMark style={{ position: 'absolute', right: 4 * spacing.unit, bottom: 4 * spacing.unit }} fill={theme.colors.dateBg} />
             </Box>
 
             <Box
@@ -78,11 +82,12 @@ function Testimonials() {
                   </a>
                 </small>
               </div>
-              <p>
-                Dani es un gran profesional, tiene una gran experiencia en el desarrollo de software y una capacidad
+              <blockquote>
+                "Dani es un gran profesional, tiene una gran experiencia en el desarrollo de software y una capacidad
                 innata para aprender nuevas tecnologías y/o metodologías poniéndolas en práctica con resultados
-                excelentes.
-              </p>
+                excelentes."
+              </blockquote>
+              <QuotationMark style={{ position: 'absolute', right: 4 * spacing.unit, bottom: 4 * spacing.unit }} fill={theme.colors.dateBg} />
             </Box>
           </div>
         </div>
@@ -102,6 +107,13 @@ const styles = css`
 
   a {
     color: ${theme.colors.primary};
+  }
+
+  blockquote {
+    position: relative;
+    font-family: ${theme.fontFamily.serif};
+    line-height: 1.5rem;
+    z-index: 0;
   }
 
   .name {
