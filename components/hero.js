@@ -7,15 +7,12 @@ function Hero() {
       <section id="home" className="hero">
         <div className="hero-container">
           <div className="hero-image">
-            <img
-              sizes="(max-width: 732px) 100vw, 732px"
-              srcSet="images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_200.jpg 200w,
-images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_416.jpg 416w,
-images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_585.jpg 585w,
-images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_732.jpg 732w"
-              src="images/mypic/4a8fb4e3-1196-4672-b574-70e8e9dddebf_m8jdid_c_scale,w_732.jpg"
-              alt="Daniel de la Cruz"
-            />
+            <picture>
+              <source type="image/webp" media="(min-width: 440px)" srcset="images/profile/dani-desktop.webp" />
+              <source type="image/jpg" media="(min-width: 440px)" srcset="images/profile/dani-desktop.jpg" />
+              <source type="image/webp" srcset="images/profile/dani-mobile.webp" />
+              <img src="images/profile/dani-mobile.jpg" alt="Daniel de la Cruz" />
+            </picture>
           </div>
           <div className="hero-body">
             <div className="hero-content">
@@ -111,7 +108,8 @@ const styles = css`
     margin-left: 5px;
   }
 
-  @media (max-width: 768px) {
+
+  @media (max-width: 767px) {
     .hero-container {
       flex-direction: column;
       margin-top: 50px;
@@ -129,10 +127,11 @@ const styles = css`
 
     .hero-image,
     .hero-image img {
-      height: 40vh;
+      height: 47vh;
+
     }
     .hero-image img {
-      object-fit: cover;
+      object-fit: contain;
       display: block;
       width: 100vw;
     }
@@ -140,6 +139,12 @@ const styles = css`
     .title,
     .subtitle {
       margin-bottom: 15px;
+    }
+  }
+
+  @media (max-width: 414px) {
+    .hero-image img {
+      object-fit: cover;
     }
   }
 
