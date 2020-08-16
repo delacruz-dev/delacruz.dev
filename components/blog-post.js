@@ -7,7 +7,7 @@ const BlogPost = ({ frontmatter, markdownBody }) => {
   if (!frontmatter) return null;
 
   return (
-    <article className="container">
+    <article className="post">
       <img
         className="frontImage"
         sizes="(max-width: 1400px) 100vw, 1400px"
@@ -26,7 +26,7 @@ const BlogPost = ({ frontmatter, markdownBody }) => {
 };
 
 const styles = css`
-  .container {
+  .post {
     flex-grow: 1;
     min-height: 100vh;
   }
@@ -54,7 +54,7 @@ const styles = css`
       padding-right: 4rem;
     }
 
-    .container {
+    .post {
       margin-left: 30vw;
       margin-top: 90px;
       width: 70vw;

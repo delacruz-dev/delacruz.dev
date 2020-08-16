@@ -4,9 +4,11 @@ import { coy } from "react-syntax-highlighter/dist/cjs/styles/prism/coy";
 
 function CodeBlock({ language, value }) {
   return (
-    <SyntaxHighlighter language={language} style={coy}>
-      {value}
-    </SyntaxHighlighter>
+    <p>
+      <SyntaxHighlighter language={language} style={coy}>
+        {value}
+      </SyntaxHighlighter>
+    </p>
   );
 }
 

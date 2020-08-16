@@ -1,5 +1,6 @@
 import css from "styled-jsx/css";
 import { theme } from "./theme";
+import spacing from "../components/spacing";
 
 export default css.global`
   /* cyrillic-ext */
@@ -532,8 +533,11 @@ export default css.global`
   }
 
   code {
-    font-size: 0.85rem;
+    background-color: ${theme.colors.codeBg};
+    display: inline-block;
+    font-size: inherit;
     line-height: 1.45rem;
+    padding: 0 ${spacing.unit}px;
   }
 
   h1,
@@ -566,6 +570,19 @@ export default css.global`
     line-height: 1.1875;
     font-size: 3rem;
     font-weight: 600;
+  }
+
+  .post h2,
+  .post h3 {
+    font-family: ${theme.fontFamily.serif};
+  }
+
+  .post h2 {
+    font-size: 1.8rem;
+  }
+
+  .post h3 {
+    font-size: 1.5rem;
   }
 
   h2 {
