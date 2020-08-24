@@ -1,5 +1,5 @@
 ---
-title: "Practica este ejercicio antes de tu próxima entrevista para un puesto de especialista en Frontend"
+title: "Si tienes una entrevista para un puesto de programador Frontend, antes practica este ejercicio"
 date: "2020-08-15"
 draft: false
 summary: "Cuando hago una entrevista a alguien que aplica a un puesto de desarrollo en Frontend, suelo ver una serie de errores comunes en la mayoría de candidatos. En este artículo te explico un ejercicio que puede servirte para practicar y aprender cómo evitarlos."
@@ -8,7 +8,7 @@ frontImageSrc: /images/blog-images/entrevista-frontend/thao-le-hoang-Xl-ilWBKJNk
 frontListImageSrc: /images/blog-images/entrevista-frontend/thao-le-hoang-Xl-ilWBKJNk-unsplash.jpg
 ---
 
-¿Tienes una entrevista para un puesto de Frontend? Entonces, es muy probable que te hagan hacer una prueba para comprobar tus habilidades. Esa prueba técnica puede ser en vivo (con alguien mirando mientras programas o haciendo pair programming) o te la enviarán para hacer en casa. Pero por lo general, prepárate para que te hagan realizar alguna llamada a una API.
+¿Tienes una entrevista para un puesto de Frontend? Entonces, es muy probable que te hagan hacer una prueba para comprobar tus habilidades. Esa prueba técnica puede ser en vivo (con alguien acompañándote mientras programas) o te la enviarán para hacer en casa. Pero por lo general, prepárate para que te hagan realizar alguna llamada a una API.
 
 Cuando me involucro en procesos de selección, una de las cosas que más me interesa saber es cómo programa la persona que tengo delante. Del mismo modo, cuando comienzo con una nueva [mentoría](/mentoring), es habitual que te pida que programemos algo en la primera o la segunda sesión.
 
@@ -28,15 +28,15 @@ En este artículo te propongo un ejercicio para que practiques tu próxima entre
 
 El objetivo del ejercicio es utilizar una API de tu elección para mostrar un listado de elementos.
 
-Ya está 😅
+Ya está, ese es el enunciado. 😅
 
-No, no te estoy tomando el pelo. Ese es el ejercicio. ¿Qué te parece? ¿Fácil, normal o difícil?
+No, no te estoy tomando el pelo. Ese es el ejercicio. ¿Qué te parece? ¿Fácil, normal o difícil? Luego me lo cuentas.
 
 Por cierto, tengo un par de reglas. Espero que no te importe:
 
 - Puedes consultar lo que necesites en cualquier web, como MDN o Stack Overflow.
 - No puedes copiar código de otro proyecto, ya sea tuyo o de otra persona.
-- Puedes utilizar las librerías que quieras. Aunque también está la opción de no utilizar ninguna. Solo te pido que justifiques tus decisiones de forma consciente mientras haces el ejercicio.
+- Puedes utilizar las librerías que quieras. Aunque también está la opción de no utilizar ninguna. Solo te pido que justifiques tus decisiones de forma consciente mientras haces el ejercicio. Yo haré lo mismo a medida que desarrollo mi propia solución.
 
 🚨🚨🚨 **Spoiler alert!** 🚨🚨🚨
 
@@ -44,9 +44,9 @@ A partir de aquí comienzo con la solución del ejercicio. Si quieres intentarlo
 
 ## Elige y configura un entorno de desarrollo
 
-Empecemos seleccionando el entorno de desarrollo con el que hacer la prueba. Voy a utilizar [create-react-app](https://github.com/facebook/create-react-app) porque es el entorno con el que más cómodo me siento y mi objetivo es pintar un listado de elementos de una API. No me interesa demostrar que sé configurar herramientas o que soy capaz de aprender a utilizar una librería en el tiempo que dura un proceso de selección. O una entrevista técnica. Tampoco quiero complicarme la vida haciéndolo en JavaScript puro, ya que nadie me lo ha pedido.
+Empecemos seleccionando el entorno de desarrollo con el que hacer la prueba. Voy a utilizar [create-react-app](https://github.com/facebook/create-react-app) porque es el entorno con el que más cómodo me siento y mi objetivo es pintar un listado de elementos de una API. No me interesa demostrar que sé configurar herramientas o que soy capaz de aprender a utilizar una librería en el tiempo que dura un proceso de selección. Tampoco quiero complicarme la vida haciéndolo en JavaScript puro, ya que nadie me lo ha pedido.
 
-Si en tu caso estás habituado a utilizar otra librería, no te preocupes. Creo en este artículo es más interesante la explicación que la implementación.
+Si en tu caso estás habituado a utilizar otra librería, no te preocupes. Creo que en este artículo es más interesante la explicación que la implementación.
 
 ## Elige una API
 
@@ -60,7 +60,7 @@ Tienes muchísimos ejemplos de APIs que puedes utilizar en el repositorio de [Pu
 
 Voy a dar una cifra arbitraria, pero alrededor del 90% de entrevistas que he hecho a lo largo de mi carrera a candidatos no han escrito ningún test. En mi humilde opinión, si estás aplicando para un puesto de rango medio o senior, finalizar tu prueba técnica sin hacer ni un solo test **no es aceptable**.
 
-Empezar escribiendo un test no solo te hará ganar puntos con tus entrevistadores, sino que te ayudará a enfocar tu desarrollo, centrándote en lo esencial.
+Empezar escribiendo un test no solo te hará ganar puntos con las personas que te entrevisten, sino que te ayudará a enfocar tu desarrollo, centrándote en lo esencial.
 
 Escribe la primera especificación. No hace falta que sea perfecta, ya que parte del proceso de Test-Driven Development es el refactor. Ya tendrás ocasión de mejorar tu código y tus pruebas. Pero empieza por algo, aunque sea sencillo.
 
@@ -332,9 +332,143 @@ export default function App() {
 }
 ```
 
-## Estructura de archivos
-
 ## No olvides la gestión de errores
+
+La llamada a una API puede fallar por un problema de red o por errores HTTP devueltos por el servidor.
+
+Al igual que hice con la estructura de carpetas, no me gusta exponer a la vista qué implementación de infraestructura estoy utilizando para obtener los datos. Eso hace que la vista sea resistente a futuros cambios. Por este motivo, el lugar para gestionar los posibles errores _de la API_ será el servicio, no la vista.
+
+Empecemos escribiendo un test para un fallo de red:
+
+```js
+it("shows an error message when there's a network error", async () => {
+  // Modificamos el comportamiento de la función fetch para que devuelva un error de conexión
+  window.fetch.mockRejectedValueOnce(new TypeError("Network connection lost"));
+
+  render(<App />);
+
+  // Comprobamos que se muestra un error controlado
+  expect(await screen.findByText("There was a network error. Please try again in a few seconds.")).toBeInTheDocument();
+});
+```
+
+A continuación tenemos que gestionar los errores a nivel de servicio. Por ejemplo: podemos crear un error personalizado para el tipo de errores de red:
+
+```js
+export class NetworkError extends Error {
+  constructor() {
+    super("There was a network error. Please try again in a few seconds.");
+  }
+}
+```
+
+Y luego hacer que el método devuelva ese tipo concreto cuando la llamada a `fetch` falle:
+
+```js
+export async function getPokemons() {
+  try {
+    const response = await fetch("https://pokeapi.co/api/v2/pokemon");
+
+    const { results } = await response.json();
+
+    return results;
+  } catch (err) {
+    throw new NetworkError();
+  }
+}
+```
+
+En el componente, añadimos la gestión de errores:
+
+```js
+export default function App() {
+  const [pokemons, setPokemons] = React.useState([]);
+  // Almacenamos los errores en una estructura de datos que
+  // se guarda en el estado del componente
+  const [errorState, setErrorState] = React.useState({ hasErrors: false });
+
+  React.useEffect(() => {
+    getPokemons().then(setPokemons).catch(handleError); // Este catch llama a la funcion handleError
+  }, []);
+
+  // Función para gestionar el error de forma muy simple: solo guardamos
+  // el mensaje de error
+  function handleError(err) {
+    setErrorState({ hasErrors: true, message: err.message });
+  }
+
+  return (
+    <section>
+      {/* Mostramos el error por pantalla al usuario */}
+      {errorState.hasErrors && <div>{errorState.message}</div>}
+      {pokemons.map((item) => (
+        <PokemonListItem key={item.name} name={item.name} />
+      ))}
+    </section>
+  );
+}
+```
+
+Con esto cubrimos el caso de errores de red, pero nos quedaría por controlar el de llamadas que llegan al servidor y devuelven algún tipo de error HTTP (4xx o 5xx). Por ejemplo, para probar un posible error 500, escribiríamos un nuevo test:
+
+```js
+it("shows an error message when there's a server error", async () => {
+  // Modificamos el comportamiento de la función fetch para que devuelva un error HTTP 500
+  window.fetch.mockResolvedValueOnce({
+    ok: false,
+    status: 500,
+  });
+
+  render(<App />);
+
+  // Comprobamos que se muestra un error controlado
+  expect(await screen.findByText("There was a server error.")).toBeInTheDocument();
+});
+```
+
+Y modificamos una vez más el servicio para devolver una excepción personalizada:
+
+```js
+export async function getPokemons() {
+  try {
+    const response = await fetch("https://pokeapi.co/api/v2/pokemon");
+
+    // Si la llamada a fetch devuelve cualquier código de HTTP que no esté entre
+    // el 200 y el 299, la propiedad ok vale false
+    if (!response.ok) {
+      // Llamamos a la función que gestiona errores HTTP
+      return handleError(response.status);
+    }
+
+    const { results } = await response.json();
+
+    return results;
+  } catch (err) {
+    if (err instanceof ServerError || err instanceof NotFoundError) {
+      throw err;
+    }
+    throw new NetworkError();
+  }
+}
+
+// En esta función gestionaremos cualquier error de HTTP
+function handleError(status) {
+  if (status === 500) {
+    throw new ServerError();
+  }
+}
+
+// Creamos un error personalizado para el tipo de error de servidor
+export class ServerError extends Error {
+  constructor() {
+    super("There was a server error.");
+  }
+}
+```
+
+**¡Y ya estaría!**. Creo que ya es suficiente para dar por finalizado el ejercicio, según lo que nos han pedido. ¿Cómo te ha ido?
+
+Puedes pasar a leer los errores más comunes que me he encontrado en entrevistas haciendo ejercicios parecidos o saltar directamente a las conclusiones.
 
 ## Algunos errores comunes que he visto en muchos procesos de selección
 
@@ -345,6 +479,8 @@ Quiero detenerme a explicarte algunos de los errores más frecuentes que he vist
 Si ya estás trabajando con una aplicación y te acostumbras a _copiar y pegar_ el código de otro componente al crear uno nuevo, puede que sea un mal hábito. También es frecuente utilizar _snippets_ que te autocompletan código en tu editor favorito, como [este](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets). Eso está bien si vas a la entrevista con tu equipo portátil. Pero ¿y si te hacen programar en uno de los suyos o en una herramienta online?.
 
 Asegúrate de repasar cómo funciona el código que utilizas a diario. Si copias o utilizas alguna herramienta como la citada anteriormente, hazlo de forma consciente sin olvidar qué trabajo te están ahorrando hacer. O al menos, acuérdate dónde buscar esa información si te quedas en blanco.
+
+De todos modos, si te quedas en blanco no pasa nada: dilo. Todo el mundo consulta algo de vez en cuando. Solo asegúrate de saber dónde hacerlo y de explicar qué es lo que vas a buscar en concreto.
 
 ### Hacer sobreingeniería
 
@@ -384,6 +520,10 @@ Vigila esto, antes de dar por finalizado el ejercicio. Causa muy mala impresión
 
 ## Conclusiones
 
-Bla bla bla
+He querido escribir este artículo para explicar algunos de los errores que he visto con más frecuencia haciendo entrevistas para puestos de especialistas de Frontend. El ejercicio propuesto puede servirte como kata de programación para practicar y no quedarte en blanco en una entrevista. Te recomiendo encarecidamente que lo hagas varias veces hasta resolverlo con soltura. Debería llevarte unos 20-25 minutos terminarlo.
+
+Si has ido siguiendo mi desarrollo, he intentado hacer hincapié en el uso de Test-Driven Development como herramienta para escribir un código que "hace lo que tiene que hacer". Y nada más. Es un estilo que llevo años practicando y me costó casi una década valorar. Pero pienso que intentar de escribir código sencillo, cohesionado y sostenido por pruebas me hace mejor profesional.
+
+Espero que te haya gustado. Tienes el ejercicio terminado en este [repositorio de Github](https://github.com/delacruz-dev/fetch-from-an-api-exercise). Si tienes alguna duda, déjame un comentario.
 
 <small>Foto de la cabecera de [Thao Le Hoang](https://unsplash.com/@h4x0r3?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) en [Unsplash](https://unsplash.com/s/photos/kata?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)</small>
