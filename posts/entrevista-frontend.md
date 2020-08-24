@@ -524,6 +524,6 @@ He querido escribir este artículo para explicar algunos de los errores que he v
 
 Si has ido siguiendo mi desarrollo, he intentado hacer hincapié en el uso de Test-Driven Development como herramienta para escribir un código que "hace lo que tiene que hacer". Y nada más. Es un estilo que llevo años practicando y me costó casi una década valorar. Pero pienso que intentar de escribir código sencillo, cohesionado y sostenido por pruebas me hace mejor profesional.
 
-Espero que te haya gustado. Tienes el ejercicio terminado en este [repositorio de Github](https://github.com/delacruz-dev/fetch-from-an-api-exercise). Si tienes alguna duda, déjame un comentario.
+Espero que te haya gustado. Tienes el ejercicio terminado en este [repositorio de Github](https://github.com/delacruz-dev/fetch-from-an-api-exercise). Si tienes alguna duda, [déjame un comentario](https://twitter.com/intent/tweet?text=https%3A//delacruz.dev/blog/entrevista-frontend).
 
 <small>Foto de la cabecera de [Thao Le Hoang](https://unsplash.com/@h4x0r3?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) en [Unsplash](https://unsplash.com/s/photos/kata?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)</small>
