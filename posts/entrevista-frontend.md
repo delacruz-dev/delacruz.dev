@@ -8,7 +8,7 @@ frontImageSrc: /images/blog-images/entrevista-frontend/thao-le-hoang-Xl-ilWBKJNk
 frontListImageSrc: /images/blog-images/entrevista-frontend/thao-le-hoang-Xl-ilWBKJNk-unsplash.jpg
 ---
 
-¿Tienes una entrevista para un puesto de Frontend? Entonces, es muy probable que te hagan hacer una prueba para comprobar tus habilidades. Esa prueba técnica puede ser en vivo (con alguien acompañándote mientras programas) o te la enviarán para hacer en casa. Pero por lo general, prepárate para que te hagan realizar alguna llamada a una API.
+¿Tienes una entrevista para un puesto de Frontend? Entonces, es muy probable que te hagan una prueba para comprobar tus habilidades. Esa prueba técnica puede ser en vivo (con alguien acompañándote mientras programas) o te la enviarán para hacer en casa. Pero por lo general, prepárate para que te hagan realizar alguna llamada a una API.
 
 Cuando me involucro en procesos de selección, una de las cosas que más me interesa saber es cómo programa la persona que tengo delante. Del mismo modo, cuando comienzo con una nueva [mentoría](/mentoring), es habitual que te pida que programemos algo en la primera o la segunda sesión.
 
@@ -26,7 +26,7 @@ En este artículo te propongo un ejercicio para que practiques tu próxima entre
 
 ## Enunciado
 
-El objetivo del ejercicio es utilizar una API de tu elección para mostrar un listado de elementos.
+> El objetivo del ejercicio es utilizar una API de tu elección para mostrar un listado de elementos.
 
 Ya está, ese es el enunciado. 😅
 
@@ -60,11 +60,11 @@ Tienes muchísimos ejemplos de APIs que puedes utilizar en el repositorio de [Pu
 
 Voy a dar una cifra arbitraria, pero alrededor del 90% de entrevistas que he hecho a lo largo de mi carrera a candidatos no han escrito ningún test. En mi humilde opinión, si estás aplicando para un puesto de rango medio o senior, finalizar tu prueba técnica sin hacer ni un solo test **no es aceptable**.
 
-Empezar escribiendo un test no solo te hará ganar puntos con las personas que te entrevisten, sino que te ayudará a enfocar tu desarrollo, centrándote en lo esencial.
+Empezar escribiendo un test no solo te hará ganar puntos con las personas que te entrevisten, sino que te ayudará a enfocar tu desarrollo y centrarte en lo esencial.
 
 Escribe la primera especificación. No hace falta que sea perfecta, ya que parte del proceso de Test-Driven Development es el refactor. Ya tendrás ocasión de mejorar tu código y tus pruebas. Pero empieza por algo, aunque sea sencillo.
 
-Para testear aplicaciones de React, mi librería favorita en estos momentos [Jest](https://jestjs.io/), junto con [React Testing Library](https://testing-library.com/docs/react-testing-library/intro). Estuve muchos años utilizando [enzyme](https://enzymejs.github.io/enzyme/), pero no me gustaba su filosofía. Está demasiado orientada a probar detalles de implementación como cambios de estado o métodos del ciclo de vida del componente. Creo que tiene mucho más sentido escribir pruebas que realicen sus verificaciones desde el **punto de vista del usuario**. Por ejemplo:
+Para testear aplicaciones de React, mi librería favorita en estos momentos es [Jest](https://jestjs.io/), junto con [React Testing Library](https://testing-library.com/docs/react-testing-library/intro). Estuve muchos años utilizando [enzyme](https://enzymejs.github.io/enzyme/), pero no me gustaba su filosofía. Está demasiado orientada a probar detalles de implementación como cambios de estado o métodos del ciclo de vida del componente. Creo que tiene mucho más sentido escribir pruebas que realicen sus verificaciones desde el **punto de vista del usuario**. Por ejemplo:
 
 > Mi aplicación incluye un listado de Pokémons que incluye a Bulbasaur
 
@@ -85,9 +85,9 @@ describe("Pokémon app", () => {
 });
 ```
 
-No es la mejor implementación para probar este comportamiento, pero no te preocupes: iremos refinándola poco a poco como parte del proceso de TDD.
+No es la mejor implementación para probar este comportamiento, pero no te preocupes: iremos refinando poco a poco como parte del proceso de TDD.
 
-**Nota** La expresión regular que utilizo hace que tenga que coincidir con el nombre la palabra exacta (`\b`), sin importar minúsculas o mayúsculas (`/i`). Tienes más información [en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/RegExp).
+**Nota:** La expresión regular que he utilizado hace que tenga que coincidir con el nombre la palabra exacta (`\b`), sin importar minúsculas o mayúsculas (`/i`). Tienes más información [en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/RegExp).
 
 ## Implementa un prototipo
 
@@ -123,7 +123,7 @@ $ npm run test
 ✅ Pokémon app > has a list of Pokémons including Bulbasaur     19ms
 ```
 
-Bien, ahora sí: siguamos. Piensa: ¿cómo podemos mejorar nuestra implementación en este punto? Lo primero que podríamos hacer es extraer cada elemento de la lista a un componente. Así podremos trabajar en darle un poco de estilo y evitar repetir código.
+Bien, ahora sí: sigamos. Piensa: ¿cómo podemos mejorar nuestra implementación en este punto? Lo primero que podríamos hacer es extraer cada elemento de la lista a un componente. Así podremos trabajar en darle un poco de estilo y evitar repetir código.
 
 ```jsx
 // pokemon-list-item.jsx
@@ -155,7 +155,7 @@ export default function App() {
 
 Deja los test ejecutándose en [modo --watch](https://jestjs.io/docs/en/cli#--watch) para asegurarte de que siguen estando en verde 🟢 mientras haces tus cambios.
 
-Como ves, el componente `App` sigue teniendo código repetido. Podemos mejorarlo extrayendo un listado de Pokémon e **iterándolo** para renderizar los elementos de la lista. Aprovecharemos para mirar la [documentación de la API](https://pokeapi.co/docs/v2#resource-listspagination-section) y modelar el contrato que vamos a utilizar. Pruébala antes [en su propia web](https://pokeapi.co/) o utilizando una herramienta como [Postman](https://www.postman.com/).
+Como ves, el componente `App` sigue teniendo código repetido. Podemos mejorarlo extrayendo un listado de Pokémon e **iterando** los elementos para renderizarlos. Aprovecharemos para mirar la [documentación de la API](https://pokeapi.co/docs/v2#resource-listspagination-section) y modelar el contrato que vamos a utilizar. Pruébala antes [en su propia web](https://pokeapi.co/) o utilizando una herramienta como [Postman](https://www.postman.com/).
 
 La API devuelve la siguiente estructura JSON:
 
@@ -229,13 +229,13 @@ export default function App() {
 
 Asegurémonos de que nuestro test sigue estando verde tras este cambio 🟢. Debería ser así, ya que el pequeño Bulbasaur sigue apareciendo en el listado.
 
-Con esto ya nos hemos asegurado de que nuestra jerarquía de componentes visuales ya es capaz de renderizar todos los elementos de un listado. Ahora solo tenemos que proporcionárselos. Es el momento de consumir la API.
+Con esto ya nos hemos asegurado de que nuestra jerarquía de componentes visuales ya es capaz de renderizar todos los elementos de un listado. Ahora solo tenemos que proporcionarlos. Es el momento de consumir la API.
 
 ## Consume tu API
 
 Vamos a escribir un nuevo test. Esta vez consumiremos una API y para hacerlo, utilizaremos simplemente [fetch](https://developer.mozilla.org/es/docs/Web/API/Fetch_API/Utilizando_Fetch). En el momento de escribir este artículo, Fetch lleva tiempo siendo parte del estándar ECMAScript y su [soporte en navegadores supera el 95%](https://caniuse.com/#feat=fetch). No veo un motivo para incrementar el tamaño del bundle que se envía al cliente instalando una librería adicional para realizar peticiones HTTP y me siento cómodo usándola.
 
-Para que nuestro test pueda funcionar en cualquier entorno, debemos **escribir un mock** que simule la respuesta de llamar a fetch. De lo contrario, al ejecutarse en un entorno virtual (como por ejemplo, de integración contínua) podría no tener acceso al servidor de la api a la que llama y hacer que nuestros test fallen.
+Para que nuestro test pueda funciónar en cualquier entorno, debemos **escribir un mock** que simule la respuesta de llamar a fetch. De lo contrario, al ejecutarse en un entorno virtual (como por ejemplo, de integración contínua) podría no tener acceso al servidor de la api a la que llama y hacer que nuestros test fallen.
 
 Añadiremos un paso antes de ejecutar todas las especificaciones de prueba en nuestro archivo de test:
 
@@ -388,7 +388,7 @@ export default function App() {
   const [errorState, setErrorState] = React.useState({ hasErrors: false });
 
   React.useEffect(() => {
-    getPokemons().then(setPokemons).catch(handleError); // Este catch llama a la funcion handleError
+    getPokemons().then(setPokemons).catch(handleError); // Este catch llama a la función handleError
   }, []);
 
   // Función para gestionar el error de forma muy simple: solo guardamos
@@ -409,7 +409,7 @@ export default function App() {
 }
 ```
 
-Con esto cubrimos el caso de errores de red, pero nos quedaría por controlar el de llamadas que llegan al servidor y devuelven algún tipo de error HTTP (4xx o 5xx). Por ejemplo, para probar un posible error 500, escribiríamos un nuevo test:
+Con esto cubrimos el caso de errores de red, pero nos quedaría por controlar aquellas llamadas que llegan al servidor y devuelven algún tipo de error HTTP (4xx o 5xx). Por ejemplo, para probar un posible error 500, escribiríamos un nuevo test:
 
 ```js
 it("shows an error message when there's a server error", async () => {
@@ -478,13 +478,13 @@ Quiero detenerme a explicarte algunos de los errores más frecuentes que he vist
 
 Si ya estás trabajando con una aplicación y te acostumbras a _copiar y pegar_ el código de otro componente al crear uno nuevo, puede que sea un mal hábito. También es frecuente utilizar _snippets_ que te autocompletan código en tu editor favorito, como [este](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets). Eso está bien si vas a la entrevista con tu equipo portátil. Pero ¿y si te hacen programar en uno de los suyos o en una herramienta online?.
 
-Asegúrate de repasar cómo funciona el código que utilizas a diario. Si copias o utilizas alguna herramienta como la citada anteriormente, hazlo de forma consciente sin olvidar qué trabajo te están ahorrando hacer. O al menos, acuérdate dónde buscar esa información si te quedas en blanco.
+Asegúrate de repasar cómo funcióna el código que utilizas a diario. Si copias o utilizas alguna herramienta como la citada anteriormente, hazlo de forma consciente sin olvidar qué trabajo te están ahorrando hacer. O al menos, acuérdate dónde buscar esa información si te quedas en blanco.
 
 De todos modos, si te quedas en blanco no pasa nada: dilo. Todo el mundo consulta algo de vez en cuando. Solo asegúrate de saber dónde hacerlo y de explicar qué es lo que vas a buscar en concreto.
 
 ### Hacer sobreingeniería
 
-Otro error frecuente: empezar a añadir archivos y carpetas con **Components**, **Containers**, **Reducers**, **instalar Redux** u otra librería de gestíon de estados. Olvídate de todo eso. No necesitas hacer sobreingeniería con una aplicación tan sencilla. Si alguien quisiera ver si sabes manejarte con una gestión de estados compleja, te habrían puesto un problema más difícil.
+Otro error frecuente: empezar a añadir archivos y carpetas con **Components**, **Containers**, **Reducers**, **instalar Redux** u otra librería de gestión de estados. Olvídate de todo eso. No necesitas hacer sobreingeniería con una aplicación tan sencilla. Si alguien quisiera ver si sabes manejarte con una gestión de estados compleja, te habrían puesto un problema más difícil.
 
 Al contrario: evita caer en la trampa y **cíñete a seguir el ciclo de Test-Driven Development**:
 
@@ -498,13 +498,13 @@ La habilidad para evitar esto puede marcar la diferencia en una entrevista técn
 
 Mucha gente quiere demostrar que conoce JavaScript en profundidad y se lanza a implementar el ejercicio en JavaScript puro. Sin librerías. Esto no es una mala decisión si la primera vez que lo haces no es en la entrevista, o si te lo piden explícitamente. Pero puede ser complicado diseñar un sistema de renderizado de componentes que además demuestre que sabes escribir código limpio.
 
-También he visto pruebas en las que se ha evitado utilizar _bootstrappers_ como `create-react-app`, con un montón de configuración. Es guay que sepas cómo configurar Babel, Webpack, Prettier, Eslint... ¿Pero realmente crees que es lo que quiero ver con este ejercicio? Solo te he pedido que muestres los resultados de la llamada a una API. No pierdas el tiempo. Nadie se lo va a mirar.
+También he visto pruebas en las que se ha evitado utilizar _bootstrappers_ como `create-react-app`, con un montón de configuración. Es guay que sepas cómo configurar Babel, Webpack, Prettier, Eslint... ¿Pero realmente crees que es lo que quiero ver con este ejercicio? Solo te he pedido que muestres los resultados de la llamada a una API. No pierdas el tiempo. Nadie lo va a mirar.
 
 Huelga decir que si la entrevista es un Live Coding, es decir: en directo... **me parece un suicidio**. Una de las habilidades que me gusta ver en este tipo de entrevistas es **cómo gestionas tu tiempo para entregar el máximo valor posible**.
 
 ### Entregar el resultado con warnings
 
-A veces tu código funciona, pero la consola arroja errores o advertencias que te dan información importante, pero de forma silenciosa para tus usuarios. Por ejemplo: un clásico es olvidarse las `key` en los elementos de un listado de React. Tener que añadir una clave única a cada elemento no es demasiado intuitivo. Llevo cinco años trabajando con React y reconozco que aún se me olvida. Para evitar estas cosas, es bueno coger el **hábito de ir revisando la consola** del browser. Los warnings te darán pistas de los errores que se te han escapado.
+A veces tu código funcióna, pero la consola arroja errores o advertencias que te dan información importante, pero de forma silenciosa para tus usuarios. Por ejemplo: un clásico es olvidarse las `key` en los elementos de un listado de React. Tener que añadir una clave única a cada elemento no es demasiado intuitivo. Llevo cinco años trabajando con React y reconozco que aún se me olvida. Para evitar estas cosas, es bueno coger el **hábito de ir revisando la consola** del browser. Los warnings te darán pistas de los errores que se te han escapado.
 
 Si estás en una entrevista, prepárate para que te pregunten **por qué es importante utilizar keys en los listados**. Si crees que no puedes explicarlo, échale un vistazo a [este artículo de Kent C. Dodds](https://kentcdodds.com/blog/understanding-reacts-key-prop) donde lo explica perfectamente.
 
@@ -514,15 +514,15 @@ Lo primero que voy a hacer si me envías una prueba técnica es `npm install`. L
 
 1. No hay tests
 2. Hay tests, pero alguno (o más) fallan
-3. Hay tests! 🍾
+3. ¡Hay tests! 🍾
 
-Vigila esto, antes de dar por finalizado el ejercicio. Causa muy mala impresión y una sensación de falta de atención en los detalles. No empiezes el partido con un gol en contra.
+Vigila esto, antes de dar por finalizado el ejercicio. Causa muy mala impresión y una sensación de falta de atención en los detalles. No empieces el partido con un gol en contra.
 
 ## Conclusiones
 
 He querido escribir este artículo para explicar algunos de los errores que he visto con más frecuencia haciendo entrevistas para puestos de especialistas de Frontend. El ejercicio propuesto puede servirte como kata de programación para practicar y no quedarte en blanco en una entrevista. Te recomiendo encarecidamente que lo hagas varias veces hasta resolverlo con soltura. Debería llevarte unos 20-25 minutos terminarlo.
 
-Si has ido siguiendo mi desarrollo, he intentado hacer hincapié en el uso de Test-Driven Development como herramienta para escribir un código que "hace lo que tiene que hacer". Y nada más. Es un estilo que llevo años practicando y me costó casi una década valorar. Pero pienso que intentar de escribir código sencillo, cohesionado y sostenido por pruebas me hace mejor profesional.
+Si has ido siguiendo mi desarrollo, he intentado hacer hincapié en el uso de Test-Driven Development como herramienta para escribir un código que "hace lo que tiene que hacer". Y nada más. Es un estilo que llevo años practicando y me costó casi una década valorar. Pero pienso que intentar escribir código sencillo, cohesionado y sostenido por pruebas me hace mejor profesional.
 
 Espero que te haya gustado. Tienes el ejercicio terminado en este [repositorio de Github](https://github.com/delacruz-dev/fetch-from-an-api-exercise). Si tienes alguna duda, [déjame un comentario](https://twitter.com/intent/tweet?text=https%3A//delacruz.dev/blog/entrevista-frontend).
 
