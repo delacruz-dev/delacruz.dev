@@ -25,6 +25,7 @@ const styles = css`
     justify-content: center;
     align-items: center;
     min-height: 720px;
+    overflow: hidden;
   }
 
   .diagonal-bar {
