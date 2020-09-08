@@ -4,7 +4,7 @@ import css from "styled-jsx/css";
 function Section({ bgColor = "transparent", centered = true, children, className, diagonal = false }) {
   return (
     <>
-      <section className={cn(className, { "has-text-centered": centered })} style={{ backgroundColor: bgColor }}>
+      <section className={cn(className, { "has-text-centered": centered }, { "diagonal": diagonal })} style={{ backgroundColor: bgColor }}>
         {diagonal ? <div className="diagonal-bar"></div> : null}
         {children}
       </section>
@@ -16,18 +16,26 @@ const styles = css`
   section {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
   }
 
+  section.diagonal {
+    justify-content: center;
+    align-items: center;
+    min-height: 720px;
+  }
+
   .diagonal-bar {
-    background-image: linear-gradient(135deg, #4ecdc4, #2cbfcf 63%, #29aac0);
-    height: 440px;
-    left: 50%;
     position: absolute;
-    top: 100px;
-    transform: translate(-50%) rotate(-6deg);
-    width: 200%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(-6deg);
     z-index: -2;
+    width: 200%;
+    height: 440px;
+    background-image: linear-gradient(135deg, #4ecdc4, #2cbfcf 63%, #29aac0);
   }
 `;
 export default Section;
