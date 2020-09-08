@@ -17,6 +17,7 @@ const styles = css`
     display: flex;
     flex-direction: column;
     position: relative;
+    overflow: hidden;
   }
 
   .diagonal-bar {
