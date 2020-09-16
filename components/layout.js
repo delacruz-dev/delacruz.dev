@@ -53,6 +53,7 @@ function Layout({
         <meta property="og:image" content={`https://delacruz.dev${image}`} />
         <meta property="og:description" content={description} />
         <meta name="google-site-verification" content="EjvTftuJDIpIilQKH0ZPmH5_HmVA4dZMdUS8n6-V7hw" />
+        <script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="eQRnrifWM" data-description="¡Apóyame invitándome a un café!" data-message="Gracias por tu visita. Te gustaría invitarme a un café?" data-color="#FF5F5F" data-position="" data-x_margin="18" data-y_margin="18"></script>
       </Head>
       <NavBar />
       <main>{children}</main>
