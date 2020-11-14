@@ -2,28 +2,7 @@
 title: "Lazy load de imágenes utilizando Intersection Observer API en React"
 date: "2018-01-07"
 draft: false
-frontImageSrcSet: "/images/blog-images/lazy-load-header/lazy-load-header_vk2jni_c_scale,w_200.png 200w,
-/images/blog-images/lazy-load-header/lazy-load-header_vk2jni_c_scale,w_288.png 288w,
-/images/blog-images/lazy-load-header/lazy-load-header_vk2jni_c_scale,w_362.png 362w,
-/images/blog-images/lazy-load-header/lazy-load-header_vk2jni_c_scale,w_429.png 429w,
-/images/blog-images/lazy-load-header/lazy-load-header_vk2jni_c_scale,w_487.png 487w,
-/images/blog-images/lazy-load-header/lazy-load-header_vk2jni_c_scale,w_544.png 544w,
-/images/blog-images/lazy-load-header/lazy-load-header_vk2jni_c_scale,w_599.png 599w,
-/images/blog-images/lazy-load-header/lazy-load-header_vk2jni_c_scale,w_650.png 650w,
-/images/blog-images/lazy-load-header/lazy-load-header_vk2jni_c_scale,w_700.png 700w,
-/images/blog-images/lazy-load-header/lazy-load-header_vk2jni_c_scale,w_750.png 750w,
-/images/blog-images/lazy-load-header/lazy-load-header_vk2jni_c_scale,w_795.png 795w,
-/images/blog-images/lazy-load-header/lazy-load-header_vk2jni_c_scale,w_840.png 840w,
-/images/blog-images/lazy-load-header/lazy-load-header_vk2jni_c_scale,w_885.png 885w,
-/images/blog-images/lazy-load-header/lazy-load-header_vk2jni_c_scale,w_929.png 929w,
-/images/blog-images/lazy-load-header/lazy-load-header_vk2jni_c_scale,w_970.png 970w,
-/images/blog-images/lazy-load-header/lazy-load-header_vk2jni_c_scale,w_1012.png 1012w,
-/images/blog-images/lazy-load-header/lazy-load-header_vk2jni_c_scale,w_1055.png 1055w,
-/images/blog-images/lazy-load-header/lazy-load-header_vk2jni_c_scale,w_1096.png 1096w,
-/images/blog-images/lazy-load-header/lazy-load-header_vk2jni_c_scale,w_1136.png 1136w,
-/images/blog-images/lazy-load-header/lazy-load-header_vk2jni_c_scale,w_1174.png 1174w"
-frontImageSrc: /images/blog-images/lazy-load-header/lazy-load-header_vk2jni_c_scale,w_650.png
-frontListImageSrc: /images/blog-images/lazy-load-header/lazy-load-header_vk2jni_c_scale,w_288.png
+imageSrc: /images/blog-images/lazy-load-header/lazy-load-header_vk2jni_c_scale,w_650.png
 summary: 'Hace poco buscaba una forma de hacer "carga perezosa" o diferida (lazy loading) de las imágenes en una aplicación hecha con React. Descubrí la API de Intersection Observer y te explico cómo funciona.'
 ---
 

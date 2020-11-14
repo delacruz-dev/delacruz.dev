@@ -59,6 +59,7 @@ function Skills() {
 const styles = css`
   aside {
     min-width: 25vw;
+    margin: 3.65rem 0;
   }
 
   span {

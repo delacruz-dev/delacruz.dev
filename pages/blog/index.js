@@ -6,7 +6,6 @@ import Layout from "../../components/layout";
 const Index = ({ posts }) => {
   return (
     <Layout>
-      <BlogHeader />
       <BlogList posts={posts} />
     </Layout>
   );

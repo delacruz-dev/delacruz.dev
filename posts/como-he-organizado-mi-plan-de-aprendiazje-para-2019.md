@@ -2,12 +2,8 @@
 title: "Cómo he organizado mi plan de aprendizaje para 2019"
 date: "2019-01-20"
 draft: false
-frontImageSrcSet: '/images/blog-images/learning-plan-header/learning-plan-header_iotvbi_c_scale,w_200.jpg 200w,
-/images/blog-images/learning-plan-header/learning-plan-header_iotvbi_c_scale,w_434.jpg 434w,
-/images/blog-images/learning-plan-header/learning-plan-header_iotvbi_c_scale,w_606.jpg 606w'
-frontListImageSrc: '/images/blog-images/learning-plan-header/learning-plan-header_iotvbi_c_scale,w_200.jpg'
-frontImageSrc: '/images/blog-images/learning-plan-header/learning-plan-header_iotvbi_c_scale,w_606.jpg'
-summary: '¿Quieres saber cómo organizar un plan de aprendizaje? En este artículo te hablo de cómo elaboro mi propio plan, cómo identificar objetivos y adoptar una mentalidad de crecimiento.'
+imageSrc: "/images/blog-images/learning-plan-header/learning-plan-header_iotvbi_c_scale,w_606.jpg"
+summary: "¿Quieres saber cómo organizar un plan de aprendizaje? En este artículo te hablo de cómo elaboro mi propio plan, cómo identificar objetivos y adoptar una mentalidad de crecimiento."
 ---
 
 En el momento de escribir estas líneas [ya ha transcurrido el 5% del año

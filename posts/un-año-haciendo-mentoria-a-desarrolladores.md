@@ -2,8 +2,7 @@
 title: "Un año haciendo mentoría a desarrolladores"
 date: "2020-07-29"
 draft: false
-frontListImageSrc: "/images/blog-images/undraw_absorbed_in_xahs.png"
-frontImageSrc: "/images/blog-images/undraw_absorbed_in_xahs.png"
+imageSrc: "/images/blog-images/undraw_absorbed_in_xahs.png"
 summary: "En este artículo te explico cómo fui dándole forma la idea de ofrecer un servicio de mentoring profesional para programadores. Siguiendo la metodología Lean, fui desde la concepción de la idea hasta la validación de hipótesis y el lanzamiento del primer MVP."
 hasTweets: true
 ---

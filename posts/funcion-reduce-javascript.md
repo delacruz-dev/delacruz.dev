@@ -3,9 +3,7 @@ title: "Manipular listas en JavaScript: La función reduce()"
 date: "2020-10-11"
 draft: false
 summary: "En este artículo explico cómo se utiliza uno de los métodos que proporciona JavaScript para manipular listas. Se trata de la función reduce(), que te permite tomar todos los elementos de un listado y reducirlos a un único valor como resultado."
-frontImageSrcSet: "/images/blog-images/cederic-vandenberghe-KsAwr1ZHQro-unsplash.jpg"
-frontImageSrc: /images/blog-images/cederic-vandenberghe-KsAwr1ZHQro-unsplash.jpg
-frontListImageSrc: /images/blog-images/cederic-vandenberghe-KsAwr1ZHQro-unsplash.jpg
+imageSrc: /images/blog-images/cederic-vandenberghe-KsAwr1ZHQro-unsplash.jpg
 ---
 
 La función `.reduce()` te será útil para tomar todos los elementos de una lista, aplicar una función a cada uno de ellos y **acumular el resultado en un valor** de salida. La principal diferencia con [la función `map()`](https://delacruz.dev/blog/funcion-map-javascript) es que ésta siempre va a devolver un nuevo Array. Sin embargo, como verás, `reduce()` es más flexible.

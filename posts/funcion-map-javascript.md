@@ -3,9 +3,7 @@ title: "Manipular listas en JavaScript: La función map()"
 date: "2020-09-06"
 draft: false
 summary: "En este artículo explico cómo se utiliza uno de los métodos que proporciona JavaScript para manipular listas. Se trata de la función map(), que te permite recorrer una lista y aplicar una función de transformación a todos sus elementos."
-frontImageSrcSet: "/images/blog-images/pierre-bamin-dnGgAIRNnsE-unsplash.jpg"
-frontImageSrc: /images/blog-images/pierre-bamin-dnGgAIRNnsE-unsplash.jpg
-frontListImageSrc: /images/blog-images/pierre-bamin-dnGgAIRNnsE-unsplash.jpg
+imageSrc: /images/blog-images/pierre-bamin-dnGgAIRNnsE-unsplash.jpg
 ---
 
 Map es una función que te permite **transformar** los elementos de una lista y que **devuelve una nueva lista** con los elementos transformados.

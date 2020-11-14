@@ -225,6 +225,13 @@ export default css.global`
     font-size: 1.5rem;
   }
 
+  .post-image img {
+    margin: 0 auto 1em;
+    max-height: 50vh;
+    object-fit: contain;
+    width: 100%;
+  }
+
   h2 {
     font-size: 1.7rem;
     letter-spacing: -0.75px;
@@ -260,14 +267,28 @@ export default css.global`
   }
 
   .container {
-    max-width: 1280px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 50px 20px;
+    padding: 0 1rem;
   }
 
-  .container.is-narrow {
-    max-width: 1024px;
+  @media screen and (min-width: 1408px) {
+    .container {
+      max-width: 1344px;
+    }
+  }
+
+  @media screen and (min-width: 1216px) and (max-width: 1407px) {
+    .container {
+      max-width: 1152px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1215px) {
+    .container {
+      max-width: 960px;
+    }
   }
 
   .centered {
@@ -292,28 +313,6 @@ export default css.global`
   main {
     min-height: 100vh;
     margin-top: 55px;
-  }
-
-  .profile-picture {
-    clip-path: url(#blob);
-  }
-
-  @media (max-width: 767px) {
-    .profile-picture {
-      display: block !important;
-      height: 40vh !important;
-      margin: 20px auto 0 !important;
-      max-height: 40vh !important;
-      max-width: 40vh !important;
-      position: relative !important;
-    }
-
-    .hero-image div {
-      max-height: 40vh; 
-      display: box;
-      align-items: center;
-      justify-content: center;
-    }
   }
 
   @media (max-width: 414px) {
@@ -345,45 +344,6 @@ export default css.global`
     p {
       line-height: 1.4375;
     }
-
-  }
-
-  blockquote.twitter-tweet {
-    display: inline-block;
-    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 16px;
-    border-color: #eee #ddd #bbb;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 1px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
-    margin: 10px 5px;
-    padding: 0 16px 16px 16px;
-    max-width: 468px;
-  }
-
-  blockquote.twitter-tweet p {
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 20px;
-  }
-
-  blockquote.twitter-tweet a {
-    color: inherit;
-    font-weight: normal;
-    text-decoration: none;
-    outline: 0 none;
-  }
-
-  blockquote.twitter-tweet a:hover,
-  blockquote.twitter-tweet a:focus {
-    text-decoration: underline;
-  }
-  .twitter-tweet,
-  .twitter-tweet-rendered {
-    margin-left: auto;
-    margin-right: auto;
   }
 `;
+

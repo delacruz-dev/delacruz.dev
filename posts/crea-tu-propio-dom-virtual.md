@@ -2,13 +2,7 @@
 title: "Crea tu propio DOM Virtual"
 date: "2017-12-29"
 draft: false
-frontImageSrcSet: "/images/blog-images/virtual-dom-header/virtual-dom-header_oefjlu_c_scale,w_200.jpg 200w,
-/images/blog-images/virtual-dom-header/virtual-dom-header_oefjlu_c_scale,w_643.jpg 643w,
-/images/blog-images/virtual-dom-header/virtual-dom-header_oefjlu_c_scale,w_941.jpg 941w,
-/images/blog-images/virtual-dom-header/virtual-dom-header_oefjlu_c_scale,w_1194.jpg 1194w,
-/images/blog-images/virtual-dom-header/virtual-dom-header_oefjlu_c_scale,w_1400.jpg 1400w"
-frontImageSrc: /images/blog-images/virtual-dom-header/virtual-dom-header_oefjlu_c_scale,w_643.jpg
-frontListImageSrc: "/images/blog-images/virtual-dom-header/virtual-dom-header_oefjlu_c_scale,w_200.jpg"
+imageSrc: /images/blog-images/virtual-dom-header/virtual-dom-header_oefjlu_c_scale,w_643.jpg
 summary: "En este artículo me propongo el reto de escribir una pequeña librería para aprovechar y explicar los conceptos que hay detrás del DOM Virtual."
 ---
 

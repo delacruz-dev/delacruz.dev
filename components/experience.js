@@ -1,3 +1,4 @@
+import Image from "next/image";
 import css from "styled-jsx/css";
 import { theme } from "../styles/theme";
 import Box from "./box";
@@ -15,7 +16,7 @@ function Experience() {
               <Box
                 media={
                   <a title="Tempus Labs" target="_blank" rel="nofollow noopener" href="https://tempus.com">
-                    <img loading="lazy" width="263" height="67" alt="Tempus Logo" src="./images/tempus-logo.png" />
+                    <Image loading="lazy" width="263" height="67" alt="Tempus Logo" src="/images/tempus-logo.png" />
                   </a>
                 }
               >
@@ -67,7 +68,7 @@ function Experience() {
               <Box
                 media={
                   <a title="King" target="_blank" rel="nofollow noopener" href="https://king.com">
-                    <img loading="lazy" width="263" height="67" alt="King Logo" src="./images/king-logo.png" />
+                    <Image loading="lazy" width="263" height="67" alt="King Logo" src="/images/king-logo.png" />
                   </a>
                 }
               >
@@ -110,7 +111,7 @@ function Experience() {
                       width="263"
                       height="67"
                       alt="Workshare Logo"
-                      src="./images/workshare-logo.png"
+                      src="/images/workshare-logo.png"
                     />
                   </a>
                 }
@@ -132,7 +133,7 @@ function Experience() {
               <Box
                 media={
                   <a href="https://typeform.com" title="Typeform" target="_blank" rel="nofollow noopener">
-                    <img loading="lazy" width="263" height="67" alt="Typeform Logo" src="./images/typeform-logo.png" />
+                    <Image loading="lazy" width="263" height="67" alt="Typeform Logo" src="/images/typeform-logo.png" />
                   </a>
                 }
               >
@@ -181,7 +182,7 @@ function Experience() {
               <Box
                 media={
                   <a href="https://www.fotocasa.es/" title="Fotocasa" target="_blank" rel="nofollow noopener">
-                    <img loading="lazy" width="263" height="67" alt="Fotocasa Logo" src="./images/fotocasa-logo.png" />
+                    <Image loading="lazy" width="263" height="67" alt="Fotocasa Logo" src="/images/fotocasa-logo.png" />
                   </a>
                 }
               >
@@ -216,7 +217,7 @@ function Experience() {
                       width="263"
                       height="67"
                       alt="Inmofactory Logo"
-                      src="./images/inmofactory-logo.png"
+                      src="/images/inmofactory-logo.png"
                     />
                   </a>
                 }
@@ -261,7 +262,7 @@ function Experience() {
                     target="_blank"
                     rel="nofollow noopener"
                   >
-                    <img loading="lazy" width="263" height="67" alt="dotNET Logo" src="./images/dotNET-logo.png" />
+                    <Image loading="lazy" width="263" height="67" alt="dotNET Logo" src="/images/dotNET-logo.png" />
                   </a>
                 }
               >

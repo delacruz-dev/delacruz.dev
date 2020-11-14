@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import css from "styled-jsx/css";
@@ -6,19 +7,20 @@ import BlogDate from "./blog-date";
 
 const BlogList = ({ posts }) => {
   return (
-    <div className="container">
+    <div className="blog-list container">
       {posts.length > 1 &&
         posts.map((post) => (
           <Link key={post.slug} href={{ pathname: `/blog/${post.slug}` }}>
             <a>
               <article className="article">
-                <img
-                  src={post.frontmatter.frontListImageSrc}
-                  alt={post.frontmatter.title}
-                  loading="lazy"
-                  width="200"
-                  height="200"
-                />
+                <div className='post-image'>
+                  <Image
+                    src={post.frontmatter.imageSrc}
+                    alt={post.frontmatter.title}
+                    loading="lazy"
+                    unsized
+                  />
+                </div>
                 <div>
                   <BlogDate date={post.frontmatter.date} />
                   <h1 className="title">{post.frontmatter.title}</h1>
@@ -34,10 +36,8 @@ const BlogList = ({ posts }) => {
 };
 
 const styles = css`
-  .container {
-    flex-grow: 1;
-    padding-right: 2rem;
-    padding-left: 1rem;
+  .blog-list {
+    margin-top: 5rem;
   }
 
   .title {
@@ -51,9 +51,10 @@ const styles = css`
     flex-direction: column;
   }
 
-  .article > img {
+  .post-image img {
     margin: 0 auto 1em;
-    object-fit: scale-down;
+    width: 100%;
+    object-fit: contain;
   }
 
   article {
@@ -76,22 +77,13 @@ const styles = css`
   }
 
   @media (min-width: 768px) {
-    .container {
-      flex-grow: none;
-      margin-left: 30vw;
-      margin-top: 90px;
-      padding-left: 0;
-      padding-right: 4rem;
-      width: 70vw;
-    }
-
     .article {
       flex-direction: row;
     }
 
-    .article > img {
+    .post-image {
       margin-right: 2em;
-      width: 200px;
+      max-width: 400px;
       object-fit: scale-down;
     }
   }

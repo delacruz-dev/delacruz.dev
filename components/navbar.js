@@ -8,33 +8,35 @@ function NavBar() {
   return (
     <>
       <nav className="navbar" role="navigation" aria-label="main navigation">
-        <div className="navbar-left">
-          <Link href="/">
-            <a className="logo" title="Dani de la Cruz">
-              <Logo fill={theme.colors.primary} />
-            </a>
-          </Link>
+        <div className='container navbar-container'>
+          <div className="navbar-left">
+            <Link href="/">
+              <a className="logo" title="Dani de la Cruz">
+                <Logo fill={theme.colors.primary} />
+              </a>
+            </Link>
 
-          <div className="navbar-sections">
-            <Link href="/blog">
-              <a data-tracking="navbar-blog">Blog</a>
-            </Link>
-            <Link href="/me">
-              <a data-tracking="navbar-skills">Sobre mí</a>
-            </Link>
+            <div className="navbar-sections">
+              <Link href="/blog">
+                <a data-tracking="navbar-blog">Blog</a>
+              </Link>
+              <Link href="/me">
+                <a data-tracking="navbar-skills">Sobre mí</a>
+              </Link>
+            </div>
           </div>
-        </div>
 
-        <div className="navbar-right">
-          <Button
-            title="Mentoring a medida para programadores de Front-End"
-            href="/contact"
-            data-tracking="navbar-cta"
-            withAnimation
-            size="small"
-          >
-            Contactar
+          <div className="navbar-right">
+            <Button
+              title="Mentoring a medida para programadores de Front-End"
+              href="/contact"
+              data-tracking="navbar-cta"
+              withAnimation
+              size="small"
+            >
+              Contactar
           </Button>
+          </div>
         </div>
       </nav>
       <style jsx>{styles}</style>
@@ -51,9 +53,6 @@ const styles = css`
   .navbar {
     background-color: ${theme.colors.background};
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12);
-    display: flex;
-    height: 55px;
-    justify-content: space-between;
     left: 0;
     position: fixed;
     right: 0;
@@ -61,9 +60,15 @@ const styles = css`
     z-index: 2;
   }
 
+  .navbar-container {
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+  }
+
   .navbar-left {
     display: flex;
-    margin: auto 10px;
+    align-items: center;
   }
 
   .navbar-sections {

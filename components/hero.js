@@ -1,13 +1,14 @@
 import css from "styled-jsx/css";
 import Button from "./button";
 import ProfilePicture from "./profile-picture";
+import Section from "./section";
 
 function Hero() {
   return (
     <>
-      <section id="home" className="hero">
-        <div className="hero-container">
-          <div className="hero-image">
+      <Section id="home" className="hero">
+        <div className="hero-container container">
+          <div className="hero-picture">
             <ProfilePicture />
           </div>
           <div className="hero-body">
@@ -32,7 +33,7 @@ function Hero() {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
       <style jsx>{styles}</style>
     </>
   );
@@ -59,7 +60,7 @@ const styles = css`
     flex-direction: row;
   }
 
-  .hero-image {
+  .hero-picture {
     width: 30vw;
   }
 
@@ -112,7 +113,7 @@ const styles = css`
     }
 
     .hero-body,
-    .hero-image {
+    .hero-picture {
       width: 100%;
     }
 
@@ -120,12 +121,12 @@ const styles = css`
       padding: 20px;
     }
 
-    .hero-image {
-      max-height: 40vh;
+    .hero-picture {
       display: flex;
       align-items: center;
       justify-content: center;
     }
+
 
     .title,
     .subtitle {
@@ -134,7 +135,7 @@ const styles = css`
   }
 
   @media (max-width: 414px) {
-    .hero-image img {
+    .hero-picture img {
       object-fit: cover;
     }
 

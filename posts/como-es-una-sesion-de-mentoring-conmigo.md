@@ -2,12 +2,8 @@
 title: "¿Cómo es una sesión de mentoring conmigo?"
 date: "2019-09-01"
 draft: false
-frontImageSrcSet: '/images/blog-images/como-es-una-sesion-de-mentoring-conmigo/como-es-una-sesion-de-mentoring-conmigo_byipdf_c_scale,w_200.jpg 200w,
-/images/blog-images/como-es-una-sesion-de-mentoring-conmigo/como-es-una-sesion-de-mentoring-conmigo_byipdf_c_scale,w_444.jpg 444w,
-/images/blog-images/como-es-una-sesion-de-mentoring-conmigo/como-es-una-sesion-de-mentoring-conmigo_byipdf_c_scale,w_636.jpg 636w'
-frontListImageSrc: '/images/blog-images/como-es-una-sesion-de-mentoring-conmigo/como-es-una-sesion-de-mentoring-conmigo_byipdf_c_scale,w_200.jpg'
-frontImageSrc: '/images/blog-images/como-es-una-sesion-de-mentoring-conmigo/como-es-una-sesion-de-mentoring-conmigo_byipdf_c_scale,w_636.jpg'
-summary: 'Si te gustaría saber cómo es una sesión de mentoring conmigo y qué puedes esperar si decides que trabajemos juntos, este artículo tiene algunas respuestas a preguntas frecuentes.'
+imageSrc: "/images/blog-images/como-es-una-sesion-de-mentoring-conmigo/como-es-una-sesion-de-mentoring-conmigo_byipdf_c_scale,w_636.jpg"
+summary: "Si te gustaría saber cómo es una sesión de mentoring conmigo y qué puedes esperar si decides que trabajemos juntos, este artículo tiene algunas respuestas a preguntas frecuentes."
 ---
 
 ¡Hola! 👋 Soy Dani de la Cruz y si estás leyendo esto, es que tienes interés en saber cómo es una sesión de mentoring conmigo y qué puedes esperar si decides que trabajemos juntos.

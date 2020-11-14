@@ -13,14 +13,13 @@ export default function Post(props) {
       title={props.frontmatter?.title}
       description={props.frontmatter?.summary}
       url={props.slug}
-      image={props.frontmatter?.frontImageSrc}
+      image={props.frontmatter?.imageSrc}
     >
       <Head>
         {props.frontmatter?.hasTweets && (
           <script async={true} src="//platform.twitter.com/widgets.js" charSet="utf-8"></script>
         )}
       </Head>
-      <BlogHeader />
       <BlogPost {...props} />
     </Layout>
   );

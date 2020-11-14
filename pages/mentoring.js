@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Layout from "../components/layout";
 import MentoringBenefits from "../components/mentoring-benefits";
 import MentoringHero from "../components/mentoring-hero";
@@ -13,6 +14,10 @@ function Mentoring() {
       <MentoringPricing />
       <MentoringPlans />
       <MentoringStyle />
+      <Head>
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+      </Head>
+      <script defer src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
     </Layout>
   );
 }

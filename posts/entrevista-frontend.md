@@ -3,9 +3,7 @@ title: "Si tienes una entrevista para un puesto de programador Frontend, antes p
 date: "2020-08-15"
 draft: false
 summary: "Cuando hago una entrevista a alguien que aplica a un puesto de desarrollo en Frontend, suelo ver una serie de errores comunes en la mayoría de candidatos. En este artículo te explico un ejercicio que puede servirte para practicar y aprender cómo evitarlos."
-frontImageSrcSet: "/images/blog-images/entrevista-frontend/thao-le-hoang-Xl-ilWBKJNk-unsplash.jpg"
-frontImageSrc: /images/blog-images/entrevista-frontend/thao-le-hoang-Xl-ilWBKJNk-unsplash.jpg
-frontListImageSrc: /images/blog-images/entrevista-frontend/thao-le-hoang-Xl-ilWBKJNk-unsplash.jpg
+imageSrc: /images/blog-images/entrevista-frontend/thao-le-hoang-Xl-ilWBKJNk-unsplash.jpg
 ---
 
 ¿Tienes una entrevista para un puesto de Frontend? Entonces, es muy probable que te hagan una prueba para comprobar tus habilidades. Esa prueba técnica puede ser en vivo (con alguien acompañándote mientras programas) o te la enviarán para hacer en casa. Pero por lo general, prepárate para que te hagan realizar alguna llamada a una API.

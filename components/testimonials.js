@@ -9,7 +9,7 @@ function Testimonials() {
   return (
     <>
       <Section id="testimonials">
-        <div className="container has-text-centered is-narrow">
+        <div className="container has-text-centered">
           <h1 className="title">Referencias</h1>
           <h2 className="subtitle">
             Lo que dicen de mí algunos de los profesionales con los que he tenido el privilegio de trabajar.

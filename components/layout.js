@@ -58,8 +58,6 @@ function Layout({
       <main>{children}</main>
       <Footer />
       <script type="text/javascript" src="/js/scripts.js"></script>
-      <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
-      <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
       <style jsx global>
         {globalStyles}
       </style>

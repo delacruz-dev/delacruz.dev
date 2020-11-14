@@ -1,6 +1,7 @@
+import css from "styled-jsx/css";
 import Image from 'next/image';
 
-function ProfilePicture() {
+function ProfilePicture({ width = 500, height = 500 }) {
   return <>
     <svg height="0" width="0">
       <defs>
@@ -13,10 +14,18 @@ function ProfilePicture() {
       src="/images/profile/me.jpg"
       className='profile-picture'
       alt="Dani de la Cruz"
-      width='500'
-      height='500'
+      width={width}
+      height={height}
       loading='eager'
     />
+    <style global jsx>{styles}</style>
   </>
 }
+
+const styles = css.global`
+  .profile-picture {
+    clip-path: url(#blob);
+  }
+`;
+
 export default ProfilePicture;

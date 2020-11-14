@@ -19,6 +19,7 @@ const styles = css`
     justify-content: center;
     align-items: center;
     position: relative;
+    padding: 3rem 0;
   }
 
   section.diagonal {
