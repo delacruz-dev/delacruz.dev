@@ -7,7 +7,9 @@ export const platinum = "#E5E5E5";
 export const spaceCadet = "#2B2D42";
 export const white = "#FFFFFF";
 export const cream = "#F5F2F0";
-export const limeGreen = '#32CD32'
+export const limeGreen = '#32CD32';
+export const mustard = '#f9a826';
+export const electricBlue = '#4ecdc4';
 
 export const theme = {
   fontFamily: {
@@ -34,6 +36,7 @@ export const theme = {
     link: amaranthRed,
     linkHover: imperialRed,
     mentoringServiceBg: platinum,
+    consultancyServiceBg: white,
     primary: amaranthRed,
     skillsBg: platinum,
     text: spaceCadet,

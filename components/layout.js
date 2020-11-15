@@ -6,8 +6,8 @@ import NavBar from "./navbar";
 
 function Layout({
   children,
-  title = "Mentoring para programadores",
-  description = "Mentoring, tutoría y coaching a medida para programadores y programadoras que buscan dar un salto en su carrera profesional",
+  title = "Consultoría de desarrollo de software y Mentor profesional",
+  description = "Especialista en desarrollo de aplicaciones web y Frontend ofrece servicios de mentoring y consultoría a medida para programadores y empresas",
   image = "/images/profile/dani-mobile-flat.jpg",
   url,
 }) {
