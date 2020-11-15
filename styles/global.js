@@ -124,6 +124,13 @@ export default css.global`
     margin-bottom: 1.45rem;
   }
 
+  @media screen and (max-width: 414px) {
+    blockquote {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
   strong {
     font-weight: bold;
   }
@@ -318,6 +325,12 @@ export default css.global`
     max-width: 100%;
     object-fit: contain;
   }
+
+  @media screen and (max-width: 321px) {
+    .box-media img {
+      max-width: 210px;
+    }
+  }
   
   main {
     min-height: 100vh;
@@ -326,8 +339,11 @@ export default css.global`
 
   @media (max-width: 414px) {
     h1 {
-      font-size: 2.2rem;
+      font-size: 1.9em;
       margin-bottom: 1.25rem;
+    }
+    h2 {
+      font-size: 1.2em;
     }
   }
 

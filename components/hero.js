@@ -118,7 +118,7 @@ const styles = css`
     }
 
     .hero-body {
-      padding: 20px;
+      padding: 0;
     }
 
     .hero-picture {
@@ -146,24 +146,6 @@ const styles = css`
     .subtitle,
     .greet {
       font-size: 1.2em;
-    }
-  }
-
-  @media (max-width: 360px) {
-    .subtitle,
-    .greet {
-      font-size: 1.1em;
-    }
-  }
-
-  @media (max-width: 320px) {
-    .title {
-      font-size: 1.5em;
-    }
-
-    .subtitle,
-    .greet {
-      font-size: 1em;
     }
   }
 `;

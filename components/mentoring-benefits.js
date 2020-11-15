@@ -14,20 +14,18 @@ function MentoringBenefits() {
             <div className="row">
               <div className="column">
                 <Box>
-                  <div className="box-content">
-                    <h1 className="box-title">¿Cómo puede ayudarte tener un mentor?</h1>
-                    <p>
-                      He aprendido un par de cosas durante mi carrera como programador, y me comprometo a ayudarte a
-                      hacer el mejor uso de ese conocimiento compartiéndolo contigo.
+                  <h1 className="box-title">¿Cómo puede ayudarte tener un mentor?</h1>
+                  <p>
+                    He aprendido un par de cosas durante mi carrera como programador, y me comprometo a ayudarte a
+                    hacer el mejor uso de ese conocimiento compartiéndolo contigo.
                     </p>
-                    <p>
-                      Si me dejas ser tu mentor, puedo ayudarte a <strong>mejorar tus habilidades técnicas</strong>,{" "}
-                      <strong>acompañarte en tu búsqueda de empleo</strong> o{" "}
-                      <strong>decidir cuál debería ser el próximo paso en tu carrera.</strong>
-                    </p>
-                    <div className="has-text-centered">
-                      <HireButton text="Contrátame" />
-                    </div>
+                  <p>
+                    Si me dejas ser tu mentor, puedo ayudarte a <strong>mejorar tus habilidades técnicas</strong>,{" "}
+                    <strong>acompañarte en tu búsqueda de empleo</strong> o{" "}
+                    <strong>decidir cuál debería ser el próximo paso en tu carrera.</strong>
+                  </p>
+                  <div className="has-text-centered">
+                    <HireButton text="Contrátame" />
                   </div>
                 </Box>
               </div>
@@ -48,10 +46,6 @@ function MentoringBenefits() {
 const styles = css`
   .box-title {
     font-size: 1.5rem;
-  }
-
-  .box-content {
-    margin: 20px 40px;
   }
 
   .stackable {

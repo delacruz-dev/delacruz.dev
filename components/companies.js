@@ -40,6 +40,12 @@ const styles = css`
   .logos svg {
     max-width: 250px;
   }
+
+  @media screen and (max-width: 414px) {
+    .logos {
+      width: 90vw;
+    }
+  }
 `;
 
 export default Companies;
