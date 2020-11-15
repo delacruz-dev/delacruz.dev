@@ -4,6 +4,7 @@ import Box from "./box";
 import Section from "./section";
 import spacing from "./spacing";
 import QuotationMark from "./assets/quotation-mark";
+import Image from "next/image";
 
 function Testimonials() {
   return (
@@ -16,7 +17,7 @@ function Testimonials() {
           </h2>
 
           <div className="grid">
-            <Box media={<img src="/images/jesus.jpg" alt="Jesús Olazagoitia" loading="lazy" width="96" height="96" />}>
+            <Box media={<Image className='avatar' src="/images/jesus.jpg" alt="Jesús Olazagoitia" loading="lazy" width="96" height="96" />}>
               <div className="name">
                 <strong>Jesús Olazagoitia</strong>
                 <small>
@@ -37,7 +38,7 @@ function Testimonials() {
               />
             </Box>
 
-            <Box media={<img src="/images/david.jfif" alt="David García" loading="lazy" width="96" height="96" />}>
+            <Box media={<Image className='avatar' src="/images/david.jfif" alt="David García" loading="lazy" width="96" height="96" />}>
               <div className="name">
                 <strong>David García</strong>
                 <small>
@@ -59,7 +60,7 @@ function Testimonials() {
             </Box>
 
             <Box
-              media={<img src="/images/miguel.jfif" alt="Miguel Ángel Durán" loading="lazy" width="96" height="96" />}
+              media={<Image className='avatar' src="/images/miguel.jfif" alt="Miguel Ángel Durán" loading="lazy" width="96" height="96" />}
             >
               <div className="name">
                 <strong>Miguel Ángel Durán</strong>
@@ -81,7 +82,7 @@ function Testimonials() {
             </Box>
 
             <Box
-              media={<img src="/images/ruben.jfif" alt="Rubén Sáez Beltrán" loading="lazy" width="96" height="96" />}
+              media={<Image className='avatar' src="/images/ruben.jfif" alt="Rubén Sáez Beltrán" loading="lazy" width="96" height="96" />}
             >
               <div className="name">
                 <strong>Rubén Sáez</strong>
@@ -138,10 +139,6 @@ const styles = css`
 
   .name small {
     margin-left: ${spacing.unit * 2}px;
-  }
-
-  img {
-    border-radius: 290486px;
   }
 
   @media (max-width: 768px) {

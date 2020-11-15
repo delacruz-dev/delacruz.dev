@@ -32,11 +32,16 @@ const styles = css`
     flex-grow: 0;
     flex-shrink: 0;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: '100%';
   }
 
-  .box-media img {
-    border-radius: 290486px;
+  .box-content {
+    margin-top: 1em;
   }
+
 `;
 
 export default Box;

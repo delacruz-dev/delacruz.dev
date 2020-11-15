@@ -310,6 +310,15 @@ export default css.global`
     color: ${theme.colors.textWithDarkBg};
   }
 
+  .avatar {
+    border-radius: 290486px;
+  }
+  
+  .box-media img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+  
   main {
     min-height: 100vh;
     margin-top: 55px;
