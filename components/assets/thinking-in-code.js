@@ -1,7 +1,7 @@
 function SvgComponent(props) {
   return (
     <svg data-name="Layer 1" width={1082.439} height={449.881} viewBox="0 0 1082.439 449.881" {...props}>
-      <title>{"code_thinking"}</title>
+      <title>{"Thinking in code"}</title>
       <path fill="#ffb9b9" d="M77.591 390.495l-24.819-1.655 8.273 37.229 28.128-11.582-11.582-23.992z" />
       <path
         fill="#2f2e41"

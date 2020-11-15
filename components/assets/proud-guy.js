@@ -1,7 +1,7 @@
 function ProudGuy(props) {
   return (
     <svg data-name="Layer 1" width={711.188} height={669.683} viewBox="0 0 711.188 669.683" {...props}>
-      <title>{"feeling_proud"}</title>
+      <title>{"Feeling proud"}</title>
       <path fill="#e6e6e6" d="M516.326 380.018v184.995l30.944 50.43 2.355 3.836h122.097l2.467-239.261H516.326z" />
       <path opacity={0.1} d="M516.326 380.018v184.995l30.944 50.43 1.899-235.425h-32.843z" />
       <path fill="#e6e6e6" d="M221.566 375.084V560.08l-30.944 50.43-2.355 3.835H66.17l-2.467-239.261h157.863z" />
