@@ -9,7 +9,7 @@ hasTweets: true
 
 ¿Alguna vez te has preguntado cómo sería trabajar en remoto para una empresa de otro país? En este artículo te explico mi experiencia tras un año trabajando para una empresa de Estados Unidos.
 
-Quiero responder algunas de las preguntas que me habéis hecho en Twitter, desde un punto de vista personal. Si al final del artículo echas de menos alguna, no dudes en unirte a la conversación o [escribirme](/contact).
+Quiero responder algunas de las preguntas que me habéis hecho en Twitter, desde un punto de vista personal. Si al final del artículo echas de menos alguna, no dudes en unirte a la conversación o [contactar conmigo](/contact).
 
 <blockquote class="twitter-tweet"><p lang="es" dir="ltr">Estoy preparando un artículo sobre mi experiencia tras un año trabajando en remoto para una empresa de EEUU.<br><br>¿Hay algo que queráis saber?</p>&mdash; Dani de la Cruz (@d4nidev) <a href="https://twitter.com/d4nidev/status/1319474990723551232?ref_src=twsrc%5Etfw">October 23, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -29,7 +29,7 @@ Cuando hablo de _adaptar_ el CV no me refiero a mentir ni a añadir cosas que no
 
 También adapto mi **carta de presentación**, o el texto que envío junto a mi CV cuando aplico a la oferta. En ella explico mis motivaciones, por qué creo que encajo en ese puesto y por qué considero interesante la empresa. Así demuestro que me he informado sobre ella y que me he preparado para el proceso. Creo que son detalles que marcan la diferencia.
 
-Por último, puedes utilizar una herramienta llamada [TopResume](https://topresume.com), donde te ofrecen una review de tu currículum de forma gratuita. Tras enviarlo te enviarán algo de "spam" para que contrates una review profesional, pero solo con el feedback de la review gratuita ya tendrás muchas ideas para mejorar y optimizar tu CV. Una de las cosas que aprendí con el feedback que me enviaron fue que la mayoría de empresas utilizan un software que analiza el CV de forma automática buscando palabras clave que encajen con el puesto. Por esto **es importante adaptarlo para cada oferta**.
+Por último, puedes utilizar un servicio para revisar tu currículum, como por ejemplo [TopResume](https://topresume.com). Si les envías tu currículum, te darán un primer feedback de forma gratuita. Después te escribirán algo de "spam" para que contrates una review profesional, pero solo con los comentarios de la revisión gratuita ya tendrás muchas ideas para mejorar y optimizar tu CV. Una de las cosas que aprendí cuando lo utilicé fue que la mayoría de empresas utilizan un software que analiza el CV automáticamente buscando palabras clave que encajen con el puesto. Por esto **es importante adaptarlo para cada oferta** y darle relevancia.
 
 ## ¿Te hicieron contrato o eres autónomo?
 
