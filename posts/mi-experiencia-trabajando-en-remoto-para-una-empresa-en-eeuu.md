@@ -1,6 +1,6 @@
 ---
 title: "Mi experiencia trabajando en remoto para una empresa en EEUU"
-date: "2019-09-01"
+date: "2020-11-22"
 draft: false
 imageSrc: "/images/blog-images/goran-ivos-idmvPhF8t4E-unsplash.jpg"
 summary: "¿Alguna vez te has preguntado cómo sería trabajar en remoto para una empresa de otro país? En este artículo te explico mi experiencia tras un año trabajando para una empresa de Chicago."
