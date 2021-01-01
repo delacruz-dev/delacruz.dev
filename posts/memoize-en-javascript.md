@@ -383,6 +383,6 @@ He visto muchos proyectos en los que se utiliza una **librería de estado global
 
 Si consideras utilizar este patrón en tu código, **no te recomiendo utilizar mi implementación**. Aunque es suficiente a efectos didácticos, hay otras opciones mucho mejor testeadas, como [memoizee](https://github.com/medikoo/memoizee#readme) o la propia de [lodash](https://lodash.com/docs/#memoize).
 
-Espero que te haya gustado el artículo, que hayas podido seguirlo y te haya dado algunas ideas para tus próximos proyectos. Si es así, [comparte]() y me harás un poco más feliz 😄.
+Espero que te haya gustado el artículo, que hayas podido seguirlo y te haya dado algunas ideas para tus próximos proyectos. Si es así, [comparte](http://www.twitter.com/share?url=https%3A%2F%2Fdelacruz.dev%2Fblog%2Fmemoize-en-javascript&text=Qu%C3%A9%20es%20un%20memoize%2C%20para%20qu%C3%A9%20sirve%20y%20c%C3%B3mo%20se%20implementa%20en%20JavaScript&hashtags=javascript) y me harás un poco más feliz 😄.
 
 <small>Foto de la cabecera de [Fredy Jacob](https://unsplash.com/@thefredyjacob?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) en [Unsplash](https://unsplash.com/@thefredyjacob?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)</small>
