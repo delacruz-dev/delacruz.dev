@@ -5,7 +5,7 @@ import Section from "./section";
 import { unit } from "./spacing";
 import Title from "./title";
 
-const FORMSPARK_ACTION_URL = "https://submit-form.com/Enp0wn17";
+const FORM_ACTION_URL = "https://usebasin.com/f/2e7223846893";
 
 function Contact() {
   const [status, setStatus] = useState('');
@@ -18,7 +18,7 @@ function Contact() {
 
       setStatus('LOADING');
 
-      await fetch(FORMSPARK_ACTION_URL, {
+      await fetch(FORM_ACTION_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -42,7 +42,7 @@ function Contact() {
         <form
           id="form"
           acceptCharset="utf-8"
-          action={FORMSPARK_ACTION_URL}
+          action={FORM_ACTION_URL}
           onSubmit={handleSubmit}
         >
           <div className="field">
