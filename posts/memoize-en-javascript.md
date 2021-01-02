@@ -11,11 +11,11 @@ Si has oído hablar de la técnica de **memoize** o **[memoization](https://en.w
 
 ## ¿Qué es memoize?
 
-Para empezar, ¿por qué se dice _memoize_ y no _memo**ri**ze_? La diferencia es sutil, pero son dos palabras distintas. En [esta respuesta de Stack Overflow](https://stackoverflow.com/a/52873721) lo explican muy bien. Imagina que estás en un examen y te preguntan los 20 primeros dígitos del número Pi. La diferencia sería que **memorizar** implica estudiarlos antemano para que cuando te los pregunten, sepas responder rápidamente. En cambio, **memoizar** implicaría calcularlos por primera vez sin haberlos estudiado previamente - asumiendo que sabes [hacer el cálculo](https://www.wikihow.com/Calculate-Pi) - y recordar el resultado para las siguientes veces que te los pregunten.
+Para empezar, ¿por qué se dice _memoize_ y no _memo**ri**ze_? La diferencia es sutil, pero son dos palabras distintas. En [esta respuesta de Stack Overflow](https://stackoverflow.com/a/52873721) lo explican muy bien. Imagina que estás en un examen y te preguntan los 20 primeros dígitos del número Pi. La diferencia sería que **memorizar** implica estudiarlos de antemano para que cuando te los pregunten, sepas responder rápidamente. En cambio, **memoizar** implicaría calcularlos por primera vez sin haberlos estudiado previamente - asumiendo que sabes [hacer el cálculo](https://www.wikihow.com/Calculate-Pi) - y recordar el resultado para las siguientes veces que te los pregunten.
 
 ## ¿Para qué sirve hacer un memoize?
 
-Imagina que tienes que hacer una operación costosa, que por algún motivo tarda un tiempo en ejecutarse. Por ejemplo: un cálculo, una transformación de muchos datos, un algoritmo de búsqueda, ordenación o una llamada a una API. Tu aplicación no tendrá forma de saber el resultado la primera vez que se ejecute. Pero una vez lo tengas no tienes por qué hacerlo de nuevo para las siguientes ejecuciones, porque el resultado será el mismo. En escenarios así es cuando tiene sentido _memoizar_ el resultado.
+Imagina que tienes que hacer una operación costosa, que por algún motivo tarda un tiempo en ejecutarse. Por ejemplo: un cálculo, una transformación de muchos datos, un algoritmo de búsqueda, ordenación o una llamada a una API. Tu aplicación no tendrá forma de saber el resultado la primera vez que se ejecute. Pero una vez lo tengas no tienes porqué hacerlo de nuevo para las siguientes ejecuciones, porque el resultado será el mismo. En escenarios así es cuando tiene sentido _memoizar_ el resultado.
 
 Mira estos ejemplos con algunos tipos de funciones a las que puedes aplicar la técnica:
 
@@ -76,7 +76,7 @@ Vamos a ir poco a poco. Lo primero que haré será que la función suma sea capa
 let resultado;
 
 function suma(a, b) {
-  // La instrucción solo se ejecutará si la variable
+  // La instrucción sólo se ejecutará si la variable
   // "resultado" no tiene asignado un valor.
   if (!resultado) {
     console.log(`calcula la suma de ${a} y ${b}`);
@@ -107,7 +107,7 @@ console.log("resultado 2: " + resultado2);
 
 ## Segundo paso: Encapsular la variable para almacenar la memoria
 
-El ejemplo anterior no es demasiado práctico. No tiene mucho sentido tener por ahí variabes colgando para almacenar el resultado que corresponde al ámbito de la función suma. Lo ideal es que sea la propia función la que tenga memoria y no obligue al que la use a crear una variable para ello. Esto es lo que se conoce en programación como [encapsulamiento](https://es.wikipedia.org/wiki/Encapsulamiento_(inform%C3%A1tica)#:~:text=En%20programaci%C3%B3n%20modular%2C%20y%20m%C3%A1s,operaciones%20definidas%20para%20ese%20objeto.).
+El ejemplo anterior no es demasiado práctico. No tiene mucho sentido tener por ahí variables colgando para almacenar el resultado que corresponde al ámbito de la función suma. Lo ideal es que sea la propia función la que tenga memoria y no obligue al que la use a crear una variable para ello. Esto es lo que se conoce en programación como [encapsulamiento](https://es.wikipedia.org/wiki/Encapsulamiento_(inform%C3%A1tica)#:~:text=En%20programaci%C3%B3n%20modular%2C%20y%20m%C3%A1s,operaciones%20definidas%20para%20ese%20objeto.).
 
 El problema es que si se declara la variable `resultado` dentro de suma, ésta se volverá a crear cada vez que se ejecute y no lograremos lo que queremos. Tenemos que crear la función suma de forma que tenga acceso a esa variable y que se mantenga el valor entre diferentes ejecuciones.
 
@@ -178,7 +178,7 @@ console.log("resultado 2: " + resultado2);
 
 No parece demasiado útil, ¿verdad? Vamos a arreglarlo. La clave ahora es conseguir que almacenar el resultado en memoria en función de los parámetros. De este modo, **si se vuelve a llamar a la función con los mismos parámetros, se devolverá el resultado almacenado**. Pero si cambian, se ejecutará el cálculo.
 
-La estructura de datos que mejor nos va a venir para conseguir esto es un **diccionario**. En un diccionario, tienes una colección de datos almacenados por clave y valor. La clave puede ser una composición de los parámetros y el valor el resultado de la suma. En JavaScript puedes implementar un diccionario con un objeto.
+La estructura de datos que mejor nos va a venir para conseguir esto es un **diccionario**. En un diccionario, tienes una colección de datos almacenados por clave y valor. La clave puede ser una composición de los parámetros y el valor del resultado de la suma. En JavaScript puedes implementar un diccionario con un objeto.
 
 ```js
 function sumaConMemoria() {
@@ -260,7 +260,7 @@ function memoize(fn) {
   // número de parámetros gracias a la desestructuración 
   // (los tres puntos).
   return function (...args) {
-    // Si los argumentos existen en el diccionario, devolver el valor memoriado
+    // Si los argumentos existen en el diccionario, devolver el valor memorizado
 
     // Si no existen, ejecutar fn(), almacenar el resultado y devolverlo.
   }
@@ -278,7 +278,7 @@ function memoize (fn) {
   
   return function(...args) {
     // Se genera la clave igual que en los pasos anteriores,
-    // pero en este caso se soporta cualquier número de parámetos.
+    // pero en este caso se soporta cualquier número de parámetros.
     const clave = args.join("_");
 
     // Si la clave se encuentra en el diccionario, devuelve el valor
@@ -300,7 +300,7 @@ function memoize (fn) {
 export default memoize;
 ```
 
-Si escribes la implementación de memoize en un módulo, podrás utilizarlo en cualquier parte de nuestro código simplemente importándolo.
+Si escribes la implementación de memoize en un módulo, podrás utilizarlo en cualquier parte de nuestro código simplemente importando dicho módulo.
 
 ```js
 // suma.js
@@ -377,9 +377,9 @@ getPermissions().then(console.log);
 
 ## Conclusiones
 
-Hemos visto cómo implementar algo que aparentemente es sencillo, pero que implica varios conocimientos sobre cómo funciona JavaScript. Las clausuras y el trato que le da el lenguaje a las funciones, considerándolas ciudadanas de primera clase, permiten realizar cosas tan potentes como el memoize que hemos visto en este artículo.
+Hemos visto cómo implementar algo que aparentemente es sencillo, pero que implica varios conocimientos sobre cómo funciona JavaScript. Las clausuras y el trato que le da el lenguaje a las funciones, considerándose ciudadanas de primera clase, permiten realizar cosas tan potentes como el memoize que hemos visto en este artículo.
 
-He visto muchos proyectos en los que se utiliza una **librería de estado global** como **Redux** o **Vuex** para conseguir comportamientos como este. Si es tu caso, piensa dos veces si realmente la necesitas. En mi opinión conseguir una caché en memoria no es suficiente motivo para instalar una dependencia, cuando se puede conseguir lo mismo con una simple función. 
+He visto muchos proyectos en los que se utiliza una **librería de estado global** como **Redux** o **Vuex** para conseguir comportamientos como este. Si es tu caso, piensa dos veces si realmente la necesitas. En mi opinión, conseguir una caché en memoria no es suficiente motivo para instalar una dependencia, cuando se puede conseguir lo mismo con una simple función. 
 
 Si consideras utilizar este patrón en tu código, **no te recomiendo utilizar mi implementación**. Aunque es suficiente a efectos didácticos, hay otras opciones mucho mejor testeadas, como [memoizee](https://github.com/medikoo/memoizee#readme) o la propia de [lodash](https://lodash.com/docs/#memoize).
 
